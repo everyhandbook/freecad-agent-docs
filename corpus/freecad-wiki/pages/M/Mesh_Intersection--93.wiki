@@ -1,0 +1,63 @@
+<languages/>
+<translate>
+
+<!--T:9-->
+{{Docnav
+|[[Mesh_Union|Union]]
+|[[Mesh_Difference|Difference]]
+|[[Mesh_Workbench|Mesh]]
+|IconL=Mesh_Union.svg
+|IconR=Mesh_Difference.svg
+|IconC=Workbench_Mesh.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Mesh Intersection
+|MenuLocation=Meshes → Boolean → Intersection
+|Workbenches=[[Mesh_Workbench|Mesh]]
+|SeeAlso=[[Mesh_Union|Mesh Union]], [[Mesh_Difference|Mesh Difference]]
+}}
+
+==Description== <!--T:13-->
+
+<!--T:2-->
+The '''Mesh Intersection''' command creates a new non-parametric mesh object, a [[Mesh_Feature|Mesh Feature]], that is the intersection (common) of two mesh objects.
+
+<!--T:6-->
+[http://www.openscad.org/ OpenSCAD] must be installed to use this command, and the path to its executable must be set in the [[OpenSCAD_Preferences|OpenSCAD preferences]].
+
+</translate>
+[[Image:Mesh_Intersection_example.png]]
+<translate>
+<!--T:8-->
+{{Caption|On the left two mesh objects, on the right the mesh object that is the intersection of those objects}}
+
+==Usage== <!--T:14-->
+
+<!--T:3-->
+# Select two mesh objects that partially overlap.
+# There are several ways to invoke the command:
+#* Press the {{Button|[[Image:Mesh_Intersection.svg|16px]] [[Mesh_Intersection|Intersection]]}} button.
+#* Select the {{MenuCommand|Meshes → Boolean → [[Image:Mesh_Intersection.svg|16px]] Intersection}} option from the menu.
+
+==Properties== <!--T:15-->
+
+<!--T:16-->
+See: [[Mesh_Feature|Mesh Feature]].
+
+
+<!--T:17-->
+{{Docnav
+|[[Mesh_Union|Union]]
+|[[Mesh_Difference|Difference]]
+|[[Mesh_Workbench|Mesh]]
+|IconL=Mesh_Union.svg
+|IconR=Mesh_Difference.svg
+|IconC=Workbench_Mesh.svg
+}}
+
+</translate>
+{{Mesh Tools navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}
+{{clear}}

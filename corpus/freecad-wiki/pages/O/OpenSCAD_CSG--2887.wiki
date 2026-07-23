@@ -1,0 +1,38 @@
+<languages/>
+{{TOCright}}
+<translate>
+== Import == <!--T:1-->
+=== Supported Elements ===
+* primitives: cube, sphere, cylinder, square, circle, polygon, polyhedron
+* boolean: union, difference, intersection
+* linearextrude, rotateextrude
+* import (dxf, stl, off) (without scaling or transformation of origin)
+* multmatrix
+* color
+
+=== Unsupported Elements === <!--T:2-->
+* projection
+* surface
+* render (ignored)
+* cgal operations: minkowski, glide, path, subdiv, hull
+
+== Export == <!--T:3-->
+=== Supported Elements ===
+* primitives: Box, Cylinder, Cone, Torus
+* boolean: Cut, Fuse, Common
+
+=== Fallback === <!--T:4-->
+Every object derived from Part::Feature which is not (yet) supported will get meshed and exported as a polyhedron element
+
+== Related == <!--T:7-->
+
+<!--T:8-->
+* [[OpenSCAD Workbench]]
+* [[Import Export]]
+* [[FreeCAD Howto Import Export]]
+
+
+</translate>
+{{Userdocnavi{{#translation:}}}}
+{{OpenSCAD Tools navi{{#translation:}}}}
+[[Category:File_Formats{{#translation:}}]]

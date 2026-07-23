@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Start"
+  short_description: "Summarize repo state at session start"
+  default_prompt: "Use $session-start to regain context from task.md, AGENTS.md, and recent session logs."

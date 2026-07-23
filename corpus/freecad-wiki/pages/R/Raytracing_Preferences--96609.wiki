@@ -1,0 +1,18 @@
+<languages/>
+<translate>
+<!--T:1-->
+The preferences screen of the [[Raytracing_Workbench|Raytracing Workbench]] are found in the [[Preferences Editor|Preferences Editor]], {{MenuCommand|Edit → Preferences → Raytracing}}.
+
+<!--T:4-->
+There is only one tab: Raytracing.
+
+==Raytracing== <!--T:2-->
+
+<!--T:5-->
+[[File:Preference_Raytracing_Tab_01.png]]
+
+</translate>
+{{Raytracing_Tools_navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}
+[[Category:Preferences{{#translation:}}]]
+{{clear}}

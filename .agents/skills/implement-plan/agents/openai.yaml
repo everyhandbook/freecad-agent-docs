@@ -1,0 +1,4 @@
+interface:
+  display_name: "Implement Plan"
+  short_description: "Execute an approved plan with validation"
+  default_prompt: "Use implement-plan to execute the approved plan, validate the result, and update relevant docs or handoff notes."

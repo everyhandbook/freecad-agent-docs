@@ -1,0 +1,64 @@
+<languages/>
+<translate>
+
+<!--T:53-->
+[[Image:Pyramids-and-Polyhedrons_workbench_icon.svg|thumb|128px|The Pyramids-and-Polyhedrons Workbench Icon]]
+
+</translate>
+{{TOCright}}
+<translate>
+
+== Introduction == <!--T:57-->
+
+<!--T:4-->
+This workbench creates: 
+* Parametric pyramids
+* Parametric polyhedrons: tetrahedron, hexahedron, octahedron, dodecahedron, icosahedron, icosahedron_truncated
+* Geodesic spheres (with divisions 1 to 10)
+
+<!--T:5-->
+Parameters like radius and side, ...can be adjusted just like with normal parts.
+
+</translate>
+[[Image:Pyramids-and-Polyhedrons_workbench.png|600px]]
+
+[[Image:Polyhedrons.png|600px]]
+<translate>
+
+== Installation == <!--T:6-->
+
+<!--T:58-->
+<b>Install via the Addon manager</b>
+
+<!--T:59-->
+To install the Addon use the [[Image:Std_AddonMgr.svg|24px]] [[Std_AddonMgr|Addon manager]] to seamlessly download the Pyramids and Polygons Workbench.
+
+<!--T:55-->
+<b>Manual install</b>
+
+<!--T:56-->
+Go to https://github.com/eddyverl/FreeCad-Pyramids-and-Polyhedrons and follow the instructions there. Further details about this workbench can also be found there.
+
+== Usage == <!--T:8-->
+
+<!--T:9-->
+* Once installed, open workbench Pyramids-and-Polyhedrons
+* Click on a part of your choice and adjust the parameters to your preferences.
+
+== Tutorials on youtube == <!--T:60-->
+
+<!--T:10-->
+* Pyramids use and possibilities :  https://youtu.be/H8IgmzpMpSg
+* More advanced, build a model of a geodesic dome : https://youtu.be/FsYHYnVcVvI
+
+== Discussion == <!--T:11-->
+
+<!--T:12-->
+Please direct your feedback, ideas, thoughts about this workbench to the dedicated FreeCAD forum thread (link). Bugs can also be submitted to the GitHub repo issue queue.
+
+
+</translate>
+{{Userdocnavi{{#translation:}}}}
+[[Category:User Documentation{{#translation:}}]]
+[[Category:Addons{{#translation:}}]]
+[[Category:External Workbenches{{#translation:}}]]

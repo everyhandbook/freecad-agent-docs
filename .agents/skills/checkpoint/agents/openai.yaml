@@ -1,0 +1,4 @@
+interface:
+  display_name: "Checkpoint"
+  short_description: "Record a compact progress checkpoint"
+  default_prompt: "Use $checkpoint to summarize what changed, what is next, and any remaining risks."

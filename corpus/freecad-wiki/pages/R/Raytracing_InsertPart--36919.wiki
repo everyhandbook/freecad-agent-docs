@@ -1,0 +1,54 @@
+<languages/>
+<translate>
+
+<!--T:6-->
+{{Docnav
+|[[Raytracing_Lux|New LuxRender project]]
+|[[Raytracing_ResetCamera|Reset camera]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_Lux.svg
+|IconR=Raytracing_ResetCamera.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Raytracing InsertPart
+|MenuLocation=Raytracing → InsertPart‏‎
+|Workbenches=[[Raytracing_Workbench|Raytracing]]
+|Shortcut=
+|SeeAlso=
+}}
+
+==Description== <!--T:10-->
+
+<!--T:2-->
+Insert a view of a Part in a raytracing project.
+
+==Usage== <!--T:11-->
+
+<!--T:3-->
+# Select object in the [[Tree_view|tree view]].
+# Click on [[Image:Raytracing_InsertPart.svg|32px]] or choose {{KEY|Raytracing}}  →  {{KEY|[[Image:Raytracing_InsertPart.svg|32px]] Insert Part}} from the top menu.
+# View of selected part will be inserted in the raytracing project.
+# If more than one raytracing projects exist in the active document you will be prompted to choose on specific project.
+
+==Limitations== <!--T:4-->
+
+
+==Notes== <!--T:5-->
+
+
+<!--T:7-->
+{{Docnav
+|[[Raytracing_Lux|New LuxRender project]]
+|[[Raytracing_ResetCamera|Reset camera]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_Lux.svg
+|IconR=Raytracing_ResetCamera.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+</translate>
+{{Raytracing_Tools_navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

@@ -1,458 +1,255 @@
 #!/usr/bin/env python3
-"""Build a deterministic, text-only documentation snapshot from FreeCAD."""
-
+"""Build a deterministic, text-only FreeCAD documentation corpus."""
 from __future__ import annotations
-
-import argparse
-import hashlib
-import json
-import os
-import re
-import shutil
-import sys
-import subprocess
-import tempfile
-import urllib.error
-import urllib.parse
-import urllib.request
+import argparse, hashlib, json, os, re, shutil, subprocess, sys, tempfile, urllib.error, urllib.parse, urllib.request
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path, PurePosixPath
-from typing import Any
+from typing import Any, Iterable
+PROJECT_ROOT=Path(__file__).resolve().parents[1]
+CONFIG_PATH=PROJECT_ROOT/"source-config.json"; MANIFEST_PATH=PROJECT_ROOT/"manifest.json"; CORPUS_INFO_PATH=PROJECT_ROOT/"CORPUS_INFO.md"
+REPORT_JSON_PATH=PROJECT_ROOT/"reports"/"inventory.json"; REPORT_MD_PATH=PROJECT_ROOT/"reports"/"inventory.md"
+USER_AGENT="freecad-agent-docs-sync/2.0"; SYNC_FORMAT_VERSION=2; WIKI_BATCH_SIZE=50
+class SyncError(RuntimeError): pass
 
-
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
-CONFIG_PATH = PROJECT_ROOT / "source-config.json"
-MANIFEST_PATH = PROJECT_ROOT / "manifest.json"
-CORPUS_INFO_PATH = PROJECT_ROOT / "CORPUS_INFO.md"
-REPORT_JSON_PATH = PROJECT_ROOT / "reports" / "inventory.json"
-REPORT_MD_PATH = PROJECT_ROOT / "reports" / "inventory.md"
-USER_AGENT = "freecad-agent-docs-sync/1.0"
-
-
-class SyncError(RuntimeError):
-    """Raised when a safe, reproducible sync cannot be completed."""
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--force",
-        action="store_true",
-        help="Download and rebuild even if the selected upstream blobs are unchanged.",
-    )
-    parser.add_argument(
-        "--ref",
-        help="Override the configured upstream ref for this run.",
-    )
-    return parser.parse_args()
-
-
-def load_json(path: Path) -> dict[str, Any]:
-    try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise SyncError(f"Cannot read valid JSON from {path}: {exc}") from exc
-
-
-def compile_glob(pattern: str) -> re.Pattern[str]:
-    """Translate a small, path-aware glob subset to a regular expression."""
-    pattern = pattern.lstrip("/")
-    index = 0
-    output = ["^"]
-    while index < len(pattern):
-        char = pattern[index]
-        if char == "*":
-            if index + 1 < len(pattern) and pattern[index + 1] == "*":
-                index += 2
-                if index < len(pattern) and pattern[index] == "/":
-                    output.append("(?:.*/)?")
-                    index += 1
-                else:
-                    output.append(".*")
+def parse_args():
+    p=argparse.ArgumentParser(description=__doc__); p.add_argument("--force",action="store_true"); p.add_argument("--ref"); return p.parse_args()
+def load_json(path):
+    try: return json.loads(path.read_text(encoding="utf-8"))
+    except (OSError,json.JSONDecodeError) as exc: raise SyncError(f"Cannot read valid JSON from {path}: {exc}") from exc
+def write_json(path,payload):
+    path.parent.mkdir(parents=True,exist_ok=True); path.write_text(json.dumps(payload,indent=2,ensure_ascii=False,sort_keys=True)+"\n",encoding="utf-8",newline="\n")
+def sha256(content): return hashlib.sha256(content).hexdigest()
+def compile_glob(pattern):
+    pattern=pattern.lstrip("/"); i=0; out=["^"]
+    while i<len(pattern):
+        char=pattern[i]
+        if char=="*":
+            if i+1<len(pattern) and pattern[i+1]=="*":
+                i+=2
+                if i<len(pattern) and pattern[i]=="/": out.append("(?:.*/)?"); i+=1
+                else: out.append(".*")
                 continue
-            output.append("[^/]*")
-        elif char == "?":
-            output.append("[^/]")
-        else:
-            output.append(re.escape(char))
-        index += 1
-    output.append("$")
-    return re.compile("".join(output))
-
-
-def matches(path: str, patterns: list[re.Pattern[str]]) -> bool:
-    return any(pattern.fullmatch(path) for pattern in patterns)
-
-
-def github_headers() -> dict[str, str]:
-    headers = {
-        "Accept": "application/vnd.github+json",
-        "User-Agent": USER_AGENT,
-        "X-GitHub-Api-Version": "2022-11-28",
-    }
-    token = os.environ.get("GITHUB_TOKEN")
-    if token:
-        headers["Authorization"] = f"Bearer {token}"
-    return headers
-
-
-def fetch_json(url: str) -> dict[str, Any]:
-    request = urllib.request.Request(url, headers=github_headers())
+            out.append("[^/]*")
+        elif char=="?": out.append("[^/]")
+        else: out.append(re.escape(char))
+        i+=1
+    out.append("$"); return re.compile("".join(out))
+def matches(path,patterns): return any(pattern.fullmatch(path) for pattern in patterns)
+def github_headers():
+    h={"Accept":"application/vnd.github+json","User-Agent":USER_AGENT,"X-GitHub-Api-Version":"2022-11-28"}; token=os.environ.get("GITHUB_TOKEN")
+    if token: h["Authorization"]=f"Bearer {token}"
+    return h
+def fetch_json(url,headers=None):
     try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            return json.load(response)
-    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError) as exc:
-        raise SyncError(f"GitHub request failed for {url}: {exc}") from exc
-
-
-def fetch_blob(repository: str, commit_sha: str, path: str) -> bytes:
-    encoded_path = urllib.parse.quote(path, safe="/")
-    url = f"https://raw.githubusercontent.com/{repository}/{commit_sha}/{encoded_path}"
-    request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(urllib.request.Request(url,headers=headers or {"User-Agent":USER_AGENT}),timeout=90) as response: payload=json.load(response)
+    except (urllib.error.URLError,TimeoutError,json.JSONDecodeError) as exc: raise SyncError(f"Request failed for {url}: {exc}") from exc
+    if not isinstance(payload,dict): raise SyncError(f"Request did not return a JSON object: {url}")
+    return payload
+def api_url(base,params): return f"{base}?{urllib.parse.urlencode(params)}"
+def fetch_github_blob(repo,commit,path):
+    url=f"https://raw.githubusercontent.com/{repo}/{commit}/{urllib.parse.quote(path,safe='/')}"
     try:
-        with urllib.request.urlopen(request, timeout=60) as response:
-            return response.read()
-    except (urllib.error.URLError, TimeoutError) as exc:
-        raise SyncError(f"Cannot download upstream file {path}: {exc}") from exc
-
-
-def resolve_commit(repository: str, ref: str) -> tuple[str, str]:
-    encoded_ref = urllib.parse.quote(ref, safe="")
-    commit_url = f"https://api.github.com/repos/{repository}/commits/{encoded_ref}"
-    commit = fetch_json(commit_url)
+        with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":USER_AGENT}),timeout=90) as response: return response.read()
+    except (urllib.error.URLError,TimeoutError) as exc: raise SyncError(f"Cannot download {repo}:{path}: {exc}") from exc
+def resolve_github_commit(repo,ref):
+    c=fetch_json(f"https://api.github.com/repos/{repo}/commits/{urllib.parse.quote(ref,safe='')}",github_headers())
+    try: return c["sha"],c["commit"]["tree"]["sha"]
+    except (KeyError,TypeError) as exc: raise SyncError(f"Incomplete commit response for {repo}@{ref}") from exc
+def fetch_github_tree(repo,tree_sha):
+    p=fetch_json(f"https://api.github.com/repos/{repo}/git/trees/{tree_sha}?recursive=1",github_headers())
+    if p.get("truncated"): raise SyncError(f"Truncated GitHub tree for {repo}")
+    if not isinstance(p.get("tree"),list): raise SyncError(f"Missing GitHub tree for {repo}")
+    return p["tree"]
+def fetch_tree_with_git(repo,ref):
+    parent=PROJECT_ROOT/".sync-tmp"; parent.mkdir(parents=True,exist_ok=True)
     try:
-        return commit["sha"], commit["commit"]["tree"]["sha"]
-    except (KeyError, TypeError) as exc:
-        raise SyncError("GitHub commit response did not contain the expected SHAs") from exc
-
-
-def fetch_tree(repository: str, tree_sha: str) -> list[dict[str, Any]]:
-    url = f"https://api.github.com/repos/{repository}/git/trees/{tree_sha}?recursive=1"
-    payload = fetch_json(url)
-    if payload.get("truncated"):
-        raise SyncError("GitHub returned a truncated recursive tree; refusing a partial sync")
-    tree = payload.get("tree")
-    if not isinstance(tree, list):
-        raise SyncError("GitHub tree response did not contain a file list")
-    return tree
-
-
-def fetch_tree_with_git(repository: str, ref: str) -> tuple[str, str, list[dict[str, Any]]]:
-    """Fallback for unauthenticated GitHub API rate limits."""
-    temp_parent = PROJECT_ROOT / ".sync-tmp"
-    temp_parent.mkdir(parents=True, exist_ok=True)
-    try:
-        with tempfile.TemporaryDirectory(dir=temp_parent) as temporary:
-            checkout = Path(temporary) / "metadata"
-            clone = [
-                "git",
-                "clone",
-                "--quiet",
-                "--depth",
-                "1",
-                "--filter=blob:none",
-                "--no-checkout",
-                "--branch",
-                ref,
-                f"https://github.com/{repository}.git",
-                str(checkout),
-            ]
-            subprocess.run(clone, check=True, text=True, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE)
-            commit_sha = subprocess.check_output(
-                ["git", "-C", str(checkout), "rev-parse", "HEAD^{commit}"], text=True
-            ).strip()
-            tree_sha = subprocess.check_output(
-                ["git", "-C", str(checkout), "rev-parse", "HEAD^{tree}"], text=True
-            ).strip()
-            raw_tree = subprocess.check_output(
-                ["git", "-C", str(checkout), "ls-tree", "-r", "-z", "HEAD"]
-            )
-            entries: list[dict[str, Any]] = []
-            for record in raw_tree.split(b"\0"):
-                if not record:
-                    continue
-                header, raw_path = record.split(b"\t", 1)
-                _mode, object_type, object_sha = header.decode("ascii").split()
-                entries.append(
-                    {
-                        "path": raw_path.decode("utf-8"),
-                        "type": object_type,
-                        "sha": object_sha,
-                        "size": None,
-                    }
-                )
-            return commit_sha, tree_sha, entries
-    except (FileNotFoundError, subprocess.CalledProcessError, ValueError, UnicodeDecodeError) as exc:
-        raise SyncError(f"Git metadata fallback failed for {repository}@{ref}: {exc}") from exc
+        with tempfile.TemporaryDirectory(dir=parent) as temporary:
+            checkout=Path(temporary)/"metadata"; subprocess.run(["git","clone","--quiet","--depth","1","--filter=blob:none","--no-checkout","--branch",ref,f"https://github.com/{repo}.git",str(checkout)],check=True,text=True,stdout=subprocess.DEVNULL,stderr=subprocess.PIPE)
+            commit=subprocess.check_output(["git","-C",str(checkout),"rev-parse","HEAD^{commit}"],text=True).strip(); tree_sha=subprocess.check_output(["git","-C",str(checkout),"rev-parse","HEAD^{tree}"],text=True).strip(); raw=subprocess.check_output(["git","-C",str(checkout),"ls-tree","-r","-z","HEAD"]); entries=[]
+            for record in raw.split(b"\0"):
+                if record:
+                    header,path=record.split(b"\t",1); _mode,kind,obj_sha=header.decode("ascii").split(); entries.append({"path":path.decode("utf-8"),"type":kind,"sha":obj_sha,"size":None})
+            return commit,tree_sha,entries
+    except (FileNotFoundError,subprocess.CalledProcessError,ValueError,UnicodeDecodeError) as exc: raise SyncError(f"Git metadata fallback failed for {repo}@{ref}: {exc}") from exc
     finally:
-        try:
-            temp_parent.rmdir()
-        except OSError:
-            pass
-
-
-def document_extension(path: str, extensions: list[str]) -> str | None:
-    lowered = path.lower()
-    for extension in sorted(extensions, key=len, reverse=True):
-        if lowered.endswith(extension.lower()):
-            return extension.lower()
-    if PurePosixPath(path).name.lower().startswith("readme"):
-        return "README"
-    return None
-
-
-def safe_destination(root: Path, relative_path: str) -> Path:
-    destination = (root / PurePosixPath(relative_path)).resolve()
-    try:
-        destination.relative_to(root.resolve())
-    except ValueError as exc:
-        raise SyncError(f"Unsafe output path from upstream: {relative_path}") from exc
+        try: parent.rmdir()
+        except OSError: pass
+def document_extension(path,extensions):
+    lowered=path.lower()
+    for ext in sorted(extensions,key=len,reverse=True):
+        if lowered.endswith(ext.lower()): return ext.lower()
+    return "README" if PurePosixPath(path).name.lower().startswith("readme") else None
+def safe_destination(root,relative):
+    destination=(root/PurePosixPath(relative)).resolve()
+    try: destination.relative_to(root.resolve())
+    except ValueError as exc: raise SyncError(f"Unsafe output path: {relative}") from exc
     return destination
-
-
-def sha256(content: bytes) -> str:
-    return hashlib.sha256(content).hexdigest()
-
-
-def selection_fingerprint(entries: list[dict[str, Any]]) -> str:
-    lines = [f"{entry['path']}\0{entry['sha']}" for entry in entries]
+def batched(values,size):
+    for index in range(0,len(values),size): yield values[index:index+size]
+def discover_github(source,ref_override):
+    sid=source["id"]; repo=source["repository"]; ref=ref_override if sid=="freecad-source" and ref_override else source["ref"]
+    try: commit,tree_sha=resolve_github_commit(repo,ref); tree=fetch_github_tree(repo,tree_sha)
+    except SyncError as api_error: print(f"GitHub API failed for {repo}; trying git: {api_error}",file=sys.stderr); commit,tree_sha,tree=fetch_tree_with_git(repo,ref)
+    blobs=[e for e in tree if e.get("type")=="blob"]; includes=[compile_glob(v) for v in source["include_patterns"]]; excludes=[compile_glob(v) for v in source["exclude_patterns"]]; max_bytes=int(source["max_file_bytes"]); selected=[]; skipped=[]
+    for entry in blobs:
+        path=entry["path"]
+        if not matches(path,includes): continue
+        if matches(path,excludes): skipped.append({"path":path,"reason":"matched an exclude pattern"}); continue
+        size=entry.get("size")
+        if size is not None and int(size)>max_bytes: skipped.append({"path":path,"reason":f"larger than {max_bytes} bytes"}); continue
+        selected.append({"path":path,"sha":entry["sha"],"size":None if size is None else int(size)})
+    selected.sort(key=lambda e:e["path"]); counts=Counter(); sizes=Counter(); unknown=Counter()
+    for entry in blobs:
+        ext=document_extension(entry["path"],list(source["inventory_extensions"]))
+        if ext:
+            counts[ext]+=1
+            if entry.get("size") is None: unknown[ext]+=1
+            else: sizes[ext]+=int(entry["size"])
+    stats={ext:{"files":counts[ext],"bytes":None if unknown[ext] else sizes[ext]} for ext in sorted(counts)}
+    return {"id":sid,"type":"github","config":source,"metadata":{"repository":repo,"ref":ref,"commit":commit,"tree":tree_sha,"web_url":source["web_url"]},"entries":selected,"skipped":sorted(skipped,key=lambda e:e["path"]),"total_upstream_files":len(blobs),"candidate_extension_stats":stats}
+def mediawiki_query(source,params):
+    common={"format":"json","formatversion":2}; common.update(params); return fetch_json(api_url(source["api_url"],common),{"User-Agent":USER_AGENT})
+def discover_mediawiki(source):
+    members={}; namespace=int(source["namespace"])
+    for category in source["categories"]:
+        continuation=None
+        while True:
+            params={"action":"query","list":"categorymembers","cmtitle":f"Category:{category}","cmtype":"page","cmnamespace":namespace,"cmlimit":"max"}
+            if continuation: params["cmcontinue"]=continuation
+            payload=mediawiki_query(source,params)
+            try: category_members=payload["query"]["categorymembers"]
+            except (KeyError,TypeError) as exc: raise SyncError(f"Incomplete MediaWiki category response for {category}") from exc
+            for member in category_members:
+                pageid=int(member["pageid"]); record=members.setdefault(pageid,{"pageid":pageid,"title":member["title"],"categories":set()}); record["categories"].add(category)
+            continuation=payload.get("continue",{}).get("cmcontinue")
+            if not continuation: break
+    pages=[]
+    for batch in batched(sorted(members),WIKI_BATCH_SIZE):
+        payload=mediawiki_query(source,{"action":"query","prop":"info","pageids":"|".join(str(v) for v in batch)})
+        try: pages.extend(payload["query"]["pages"])
+        except (KeyError,TypeError) as exc: raise SyncError("Incomplete MediaWiki page-info response") from exc
+    excludes=[re.compile(v) for v in source["exclude_title_patterns"]]; language=source["language"]; max_bytes=int(source["max_page_bytes"]); selected=[]; skipped=[]
+    for page in pages:
+        title=page.get("title",""); pageid=int(page.get("pageid",0)); reason=None
+        if page.get("missing"): reason="page is missing"
+        elif int(page.get("ns",-1))!=namespace: reason="outside the selected namespace"
+        elif page.get("contentmodel")!="wikitext": reason=f"content model is {page.get('contentmodel')}"
+        elif page.get("pagelanguage")!=language: reason=f"page language is {page.get('pagelanguage')}"
+        elif any(pattern.search(title) for pattern in excludes): reason="title matched an exclude pattern"
+        elif int(page.get("length",0))>max_bytes: reason=f"larger than {max_bytes} bytes"
+        if reason: skipped.append({"path":title or str(pageid),"reason":reason})
+        else: selected.append({"pageid":pageid,"title":title,"lastrevid":int(page["lastrevid"]),"length":int(page.get("length",0)),"categories":sorted(members[pageid]["categories"])})
+    selected.sort(key=lambda e:(e["title"].casefold(),e["pageid"])); rights=mediawiki_query(source,{"action":"query","meta":"siteinfo","siprop":"general|rightsinfo"})
+    try: general=rights["query"]["general"]; rightsinfo=rights["query"]["rightsinfo"]
+    except (KeyError,TypeError) as exc: raise SyncError("Incomplete MediaWiki site-info response") from exc
+    metadata={"api_url":source["api_url"],"web_url":source["web_url"],"site_name":general.get("sitename","FreeCAD Documentation"),"generator":general.get("generator"),"language":language,"categories":list(source["categories"]),"license_name":rightsinfo.get("text"),"license_url":rightsinfo.get("url")}
+    return {"id":source["id"],"type":"mediawiki","config":source,"metadata":metadata,"entries":selected,"skipped":sorted(skipped,key=lambda e:e["path"].casefold()),"total_upstream_files":len(members)}
+def selection_fingerprint(config,discoveries):
+    lines=[f"sync-format\0{SYNC_FORMAT_VERSION}",json.dumps(config,ensure_ascii=False,sort_keys=True,separators=(",",":"))]
+    for discovery in discoveries:
+        lines.append(f"source\0{discovery['id']}\0{discovery['type']}")
+        for entry in discovery["entries"]:
+            lines.append(f"{entry['path']}\0{entry['sha']}" if discovery["type"]=="github" else f"{entry['pageid']}\0{entry['title']}\0{entry['lastrevid']}")
     return sha256("\n".join(lines).encode("utf-8"))
-
-
-def write_json(path: Path, payload: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
-
-
-def write_inventory_markdown(report: dict[str, Any]) -> None:
-    included = report["included"]
-    skipped = report["skipped"]
-    candidate_stats = report["candidate_extension_stats"]
-    lines = [
-        "# FreeCAD documentation inventory",
-        "",
-        f"- Upstream: `{report['source_repository']}`",
-        f"- Ref: `{report['source_ref']}`",
-        f"- Commit: `{report['source_commit']}`",
-        f"- Total upstream blobs: {report['total_upstream_blobs']:,}",
-        f"- Selected text files: {len(included):,}",
-        f"- Selected bytes: {report['selected_bytes']:,}",
-        f"- Rough token estimate: {report['estimated_tokens']:,}",
-        f"- Skipped after selection: {len(skipped):,}",
-        "",
-        "## Document-like files in upstream",
-        "",
-        "| Extension | Files | Bytes |",
-        "|---|---:|---:|",
-    ]
-    for extension, values in sorted(candidate_stats.items()):
-        size_label = f"{values['bytes']:,}" if values["bytes"] is not None else "unknown"
-        lines.append(f"| `{extension}` | {values['files']:,} | {size_label} |")
-
-    lines.extend(["", "## Selected files", ""])
-    for entry in included:
-        lines.append(f"- `{entry['source_path']}` ({entry['size']:,} bytes)")
-
-    lines.extend(["", "## Skipped selected files", ""])
-    if skipped:
-        for entry in skipped:
-            lines.append(f"- `{entry['path']}`: {entry['reason']}")
-    else:
-        lines.append("None.")
-
-    REPORT_MD_PATH.parent.mkdir(parents=True, exist_ok=True)
-    REPORT_MD_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
-
-
-def ensure_replaceable_directory(path: Path) -> None:
-    resolved = path.resolve()
-    project = PROJECT_ROOT.resolve()
-    try:
-        relative = resolved.relative_to(project)
-    except ValueError as exc:
-        raise SyncError(f"Refusing to replace a directory outside the project: {resolved}") from exc
-    if len(relative.parts) < 2 or relative.parts[0] != "corpus":
-        raise SyncError(f"Refusing to replace unexpected generated directory: {resolved}")
-
-
-def main() -> int:
-    args = parse_args()
-    config = load_json(CONFIG_PATH)
-    repository = config["source"]["repository"]
-    ref = args.ref or config["source"]["ref"]
-    destination = (PROJECT_ROOT / config["destination"]).resolve()
-    ensure_replaceable_directory(destination)
-
-    include_patterns = [compile_glob(value) for value in config["include_patterns"]]
-    exclude_patterns = [compile_glob(value) for value in config["exclude_patterns"]]
-    max_file_bytes = int(config["max_file_bytes"])
-    inventory_extensions = list(config["inventory_extensions"])
-
-    try:
-        commit_sha, tree_sha = resolve_commit(repository, ref)
-        tree = fetch_tree(repository, tree_sha)
-    except SyncError as api_error:
-        print(f"GitHub API metadata lookup failed; trying a filtered git clone: {api_error}", file=sys.stderr)
-        commit_sha, tree_sha, tree = fetch_tree_with_git(repository, ref)
-    blobs = [entry for entry in tree if entry.get("type") == "blob"]
-
-    candidate_stats: dict[str, dict[str, Any]] = {}
-    counts: Counter[str] = Counter()
-    sizes: Counter[str] = Counter()
-    unknown_sizes: Counter[str] = Counter()
-    for entry in blobs:
-        extension = document_extension(entry["path"], inventory_extensions)
-        if extension:
-            counts[extension] += 1
-            if entry.get("size") is None:
-                unknown_sizes[extension] += 1
-            else:
-                sizes[extension] += int(entry["size"])
-    for extension in sorted(counts):
-        candidate_stats[extension] = {
-            "files": counts[extension],
-            "bytes": None if unknown_sizes[extension] else sizes[extension],
-        }
-
-    selected_tree_entries: list[dict[str, Any]] = []
-    pre_download_skips: list[dict[str, str]] = []
-    for entry in blobs:
-        path = entry["path"]
-        if not matches(path, include_patterns):
-            continue
-        if matches(path, exclude_patterns):
-            pre_download_skips.append({"path": path, "reason": "matched an exclude pattern"})
-            continue
-        size = int(entry.get("size") or 0)
-        if size > max_file_bytes:
-            pre_download_skips.append(
-                {"path": path, "reason": f"larger than {max_file_bytes} bytes"}
-            )
-            continue
-        selected_tree_entries.append(entry)
-
-    selected_tree_entries.sort(key=lambda entry: entry["path"])
-    fingerprint = selection_fingerprint(selected_tree_entries)
+def manifest_entry(discovery,source_path,output_path,content,**extra):
+    entry={"source_id":discovery["id"],"source_type":discovery["type"],"source_path":source_path,"output_path":str(output_path),"sha256":sha256(content),"size":len(content)}; entry.update(extra); return entry
+def download_github(discovery,staging):
+    source=discovery["config"]; metadata=discovery["metadata"]; name=source["destination"]; destination=staging/name; max_bytes=int(source["max_file_bytes"]); downloaded=[]; skipped=list(discovery["skipped"])
+    for index,entry in enumerate(discovery["entries"],start=1):
+        path=entry["path"]; print(f"[{discovery['id']} {index}/{len(discovery['entries'])}] {path}"); content=fetch_github_blob(metadata["repository"],metadata["commit"],path)
+        if len(content)>max_bytes: skipped.append({"path":path,"reason":f"larger than {max_bytes} bytes"}); continue
+        try: content.decode("utf-8")
+        except UnicodeDecodeError: skipped.append({"path":path,"reason":"not valid UTF-8 text"}); continue
+        output=safe_destination(destination,path); output.parent.mkdir(parents=True,exist_ok=True); output.write_bytes(content); url=f"https://github.com/{metadata['repository']}/blob/{metadata['commit']}/{urllib.parse.quote(path,safe='/')}"
+        downloaded.append(manifest_entry(discovery,path,PurePosixPath("corpus")/name/PurePosixPath(path),content,source_url=url,source_revision=metadata["commit"],git_blob_sha=entry["sha"]))
+    return downloaded,sorted(skipped,key=lambda i:i["path"])
+def wiki_filename(title,pageid):
+    stem=re.sub(r'[<>:"/\\|?*\x00-\x1f]',"_",title.replace(" ","_")); stem=re.sub(r"_+","_",stem).strip(" ._") or "page"; stem=stem[:120].rstrip(" ._") or "page"; first=stem[0].upper(); bucket=first if "A"<=first<="Z" else "_"; return PurePosixPath("pages")/bucket/f"{stem}--{pageid}.wiki"
+def download_mediawiki(discovery,staging):
+    source=discovery["config"]; name=source["destination"]; destination=staging/name; max_bytes=int(source["max_page_bytes"]); by_id={e["pageid"]:e for e in discovery["entries"]}; downloaded=[]; skipped=list(discovery["skipped"]); completed=0
+    for batch in batched(sorted(by_id),WIKI_BATCH_SIZE):
+        payload=mediawiki_query(source,{"action":"query","prop":"info|revisions","pageids":"|".join(str(v) for v in batch),"rvprop":"ids|timestamp|content|contentmodel","rvslots":"main"})
+        try: pages=payload["query"]["pages"]
+        except (KeyError,TypeError) as exc: raise SyncError("Incomplete MediaWiki revision response") from exc
+        for page in pages:
+            pageid=int(page["pageid"]); expected=by_id.get(pageid)
+            if expected is None: raise SyncError(f"Unexpected MediaWiki page ID: {pageid}")
+            try: revision=page["revisions"][0]; text=revision["slots"]["main"]["content"]
+            except (KeyError,IndexError,TypeError) as exc: raise SyncError(f"No readable revision for {page['title']}") from exc
+            if int(revision["revid"])!=expected["lastrevid"]: raise SyncError(f"MediaWiki page changed during sync; retry: {page['title']}")
+            content=text.encode("utf-8")
+            if len(content)>max_bytes: skipped.append({"path":page["title"],"reason":f"larger than {max_bytes} bytes"}); continue
+            relative=wiki_filename(page["title"],pageid); output=safe_destination(destination,str(relative)); output.parent.mkdir(parents=True,exist_ok=True); output.write_bytes(content); slug=urllib.parse.quote(page["title"].replace(" ","_"),safe="()_-/")
+            downloaded.append(manifest_entry(discovery,page["title"],PurePosixPath("corpus")/name/relative,content,source_url=f"{source['web_url']}/{slug}",source_revision=str(revision["revid"]),revision_timestamp=revision["timestamp"],page_id=pageid,categories=expected["categories"])); completed+=1
+        print(f"[{discovery['id']}] downloaded {completed}/{len(by_id)} pages")
+    readme=("# FreeCAD Wiki corpus\n\nRaw English MediaWiki source selected from the live FreeCAD Documentation wiki.\n\n"+f"- API: `{source['api_url']}`\n- Categories: {', '.join(f'`{v}`' for v in source['categories'])}\n- Pages: {len(downloaded):,}\n- License: [{discovery['metadata']['license_name']}]({discovery['metadata']['license_url']})\n\nThe `--<pageid>` suffix keeps filenames unique. Revision IDs and original URLs are in `manifest.json`. MediaWiki templates and translation markers are preserved as source evidence.\n").encode("utf-8")
+    readme_path=destination/"README.md"; readme_path.parent.mkdir(parents=True,exist_ok=True); readme_path.write_bytes(readme); downloaded.append(manifest_entry({"id":"generated","type":"generated"},"freecad-wiki/README.md",PurePosixPath("corpus")/name/"README.md",readme,source_revision=str(SYNC_FORMAT_VERSION)))
+    return downloaded,sorted(skipped,key=lambda i:i["path"].casefold())
+def ensure_replaceable_corpus(path):
+    expected=(PROJECT_ROOT/"corpus").resolve()
+    if path.resolve()!=expected: raise SyncError(f"Refusing to replace unexpected corpus directory: {path.resolve()}")
+def write_inventory_markdown(report):
+    lines=["# FreeCAD documentation inventory","",f"- Sources: {len(report['sources']):,}",f"- Selected text files: {report['selected_files']:,}",f"- Selected bytes: {report['selected_bytes']:,}",f"- Rough token estimate: {report['estimated_tokens']:,}",f"- Corpus byte limit: {report['max_corpus_bytes']:,}","","## Source summary","","| Source | Type | Revision | Files | Bytes | Skipped |","|---|---|---|---:|---:|---:|"]
+    for source in report["sources"]: lines.append(f"| `{source['id']}` | {source['type']} | `{source['revision']}` | {source['selected_files']:,} | {source['selected_bytes']:,} | {len(source['skipped']):,} |")
+    for source in report["sources"]:
+        lines.extend(["",f"## `{source['id']}` selected files",""])
+        for entry in source["included"]: lines.append(f"- `{entry['source_path']}` ({entry['size']:,} bytes)")
+        lines.extend(["",f"### `{source['id']}` skipped files",""])
+        if source["skipped"]:
+            for entry in source["skipped"]: lines.append(f"- `{entry['path']}`: {entry['reason']}")
+        else: lines.append("None.")
+    REPORT_MD_PATH.parent.mkdir(parents=True,exist_ok=True); REPORT_MD_PATH.write_text("\n".join(lines)+"\n",encoding="utf-8",newline="\n")
+def write_corpus_info(discoveries,downloaded,generated_at):
+    counts=Counter(e["source_id"] for e in downloaded); sizes=Counter()
+    for entry in downloaded: sizes[entry["source_id"]]+=int(entry["size"])
+    lines=["# Corpus snapshot","",f"- Generated at: `{generated_at}`",f"- UTF-8 files: {len(downloaded):,}",f"- Corpus bytes: {sum(e['size'] for e in downloaded):,}","","## Sources",""]
+    for discovery in discoveries:
+        meta=discovery["metadata"]
+        if discovery["type"]=="github": revision=meta["commit"]; label=f"[{meta['repository']}]({meta['web_url']})"
+        else: revision=f"{len(discovery['entries']):,} selected page revisions"; label=f"[{meta['site_name']}]({meta['web_url']})"
+        lines.append(f"- `{discovery['id']}`: {label}; `{revision}`; {counts[discovery['id']]:,} files; {sizes[discovery['id']]:,} bytes")
+    lines.extend(["","GitHub files preserve upstream blobs byte-for-byte. Wiki files preserve the UTF-8 wikitext returned for the recorded MediaWiki revision IDs. Detailed paths, revisions, URLs, hashes, and selection reports are stored in `manifest.json` and `reports/inventory.md`."])
+    CORPUS_INFO_PATH.write_text("\n".join(lines)+"\n",encoding="utf-8",newline="\n")
+def main():
+    args=parse_args(); config=load_json(CONFIG_PATH)
+    if int(config.get("schema_version",0))!=2: raise SyncError("source-config.json must use schema version 2")
+    corpus_root=(PROJECT_ROOT/config["destination"]).resolve(); ensure_replaceable_corpus(corpus_root); discoveries=[]
+    for source in config["sources"]:
+        print(f"Discovering {source['id']} ({source['type']})...")
+        if source["type"]=="github": discoveries.append(discover_github(source,args.ref))
+        elif source["type"]=="mediawiki": discoveries.append(discover_mediawiki(source))
+        else: raise SyncError(f"Unsupported source type: {source['type']}")
+    fingerprint=selection_fingerprint(config,discoveries)
     if MANIFEST_PATH.exists() and not args.force:
-        existing = load_json(MANIFEST_PATH)
-        if (
-            existing.get("selection_fingerprint") == fingerprint
-            and CORPUS_INFO_PATH.exists()
-            and REPORT_JSON_PATH.exists()
-            and REPORT_MD_PATH.exists()
-        ):
-            print(
-                f"No selected documentation changes: {repository}@{commit_sha[:12]} "
-                f"matches the existing corpus fingerprint."
-            )
-            return 0
-
-    temp_parent = PROJECT_ROOT / ".sync-tmp"
-    temp_parent.mkdir(parents=True, exist_ok=True)
-    downloaded: list[dict[str, Any]] = []
-    skipped = list(pre_download_skips)
-
-    with tempfile.TemporaryDirectory(dir=temp_parent) as temporary:
-        staging = Path(temporary) / "freecad"
-        staging.mkdir(parents=True)
-
-        for index, entry in enumerate(selected_tree_entries, start=1):
-            path = entry["path"]
-            print(f"[{index}/{len(selected_tree_entries)}] {path}")
-            content = fetch_blob(repository, commit_sha, path)
-            if len(content) > max_file_bytes:
-                skipped.append({"path": path, "reason": f"larger than {max_file_bytes} bytes"})
-                continue
-
-            try:
-                content.decode("utf-8")
-            except UnicodeDecodeError:
-                skipped.append({"path": path, "reason": "not valid UTF-8 text"})
-                continue
-
-            output = safe_destination(staging, path)
-            output.parent.mkdir(parents=True, exist_ok=True)
-            output.write_bytes(content)
-            downloaded.append(
-                {
-                    "source_path": path,
-                    "output_path": str(
-                        PurePosixPath(config["destination"]) / PurePosixPath(path)
-                    ),
-                    "git_blob_sha": entry["sha"],
-                    "sha256": sha256(content),
-                    "size": len(content),
-                }
-            )
-
-        if destination.exists():
-            shutil.rmtree(destination)
-        destination.parent.mkdir(parents=True, exist_ok=True)
-        shutil.move(str(staging), str(destination))
-
+        existing=load_json(MANIFEST_PATH)
+        if existing.get("schema_version")==2 and existing.get("selection_fingerprint")==fingerprint and corpus_root.exists() and CORPUS_INFO_PATH.exists() and REPORT_JSON_PATH.exists() and REPORT_MD_PATH.exists(): print("No selected documentation changes across configured sources."); return 0
+    predicted=sum(int(e.get("size") or e.get("length") or 0) for d in discoveries for e in d["entries"]); limit=int(config["max_corpus_bytes"])
+    if predicted>limit: raise SyncError(f"Selected upstream text is {predicted:,} bytes, above the {limit:,}-byte corpus budget")
+    parent=PROJECT_ROOT/".sync-tmp"; parent.mkdir(parents=True,exist_ok=True); downloaded=[]; source_reports=[]
     try:
-        temp_parent.rmdir()
-    except OSError:
-        pass
-
-    generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-    manifest = {
-        "schema_version": 1,
-        "generated_at": generated_at,
-        "source_repository": repository,
-        "source_ref": ref,
-        "source_commit": commit_sha,
-        "source_tree": tree_sha,
-        "selection_fingerprint": fingerprint,
-        "files": downloaded,
-    }
-    selected_bytes = sum(entry["size"] for entry in downloaded)
-    report = {
-        "generated_at": generated_at,
-        "source_repository": repository,
-        "source_ref": ref,
-        "source_commit": commit_sha,
-        "total_upstream_blobs": len(blobs),
-        "candidate_extension_stats": candidate_stats,
-        "selected_bytes": selected_bytes,
-        "estimated_tokens": round(selected_bytes / 4),
-        "included": downloaded,
-        "skipped": sorted(skipped, key=lambda entry: entry["path"]),
-    }
-    write_json(MANIFEST_PATH, manifest)
-    write_json(REPORT_JSON_PATH, report)
-    write_inventory_markdown(report)
-    corpus_info = (
-        "# Corpus snapshot\n\n"
-        f"- Source repository: `{repository}`\n"
-        f"- Source ref: `{ref}`\n"
-        f"- Source commit: `{commit_sha}`\n"
-        f"- Generated at: `{generated_at}`\n"
-        f"- Selected UTF-8 files: {len(downloaded):,}\n"
-        f"- Selected source bytes: {selected_bytes:,}\n\n"
-        "The detailed path and checksum inventory is stored in `manifest.json`.\n"
-    )
-    CORPUS_INFO_PATH.write_text(corpus_info, encoding="utf-8", newline="\n")
-
-    upstream_license = destination / "LICENSE"
-    if upstream_license.exists():
-        shutil.copyfile(upstream_license, PROJECT_ROOT / "LICENSE")
-
-    print(
-        f"Synced {len(downloaded)} UTF-8 text files ({selected_bytes:,} bytes) "
-        f"from {repository}@{commit_sha[:12]}."
-    )
-    return 0
-
-
-if __name__ == "__main__":
-    try:
-        raise SystemExit(main())
-    except SyncError as error:
-        print(f"sync error: {error}", file=sys.stderr)
-        raise SystemExit(1) from error
+        with tempfile.TemporaryDirectory(dir=parent) as temporary:
+            staging=Path(temporary)/"corpus"; staging.mkdir(parents=True)
+            for discovery in discoveries:
+                if discovery["type"]=="github": files,skipped=download_github(discovery,staging); revision=discovery["metadata"]["commit"]
+                else: files,skipped=download_mediawiki(discovery,staging); revision=f"{len(discovery['entries'])} page revisions"
+                downloaded.extend(files)
+                source_files=[entry for entry in files if entry["source_id"]==discovery["id"]]
+                source_reports.append({"id":discovery["id"],"type":discovery["type"],"revision":revision,"metadata":discovery["metadata"],"selected_files":len(source_files),"selected_bytes":sum(e["size"] for e in source_files),"included":source_files,"skipped":skipped,"total_upstream_files":discovery["total_upstream_files"],"candidate_extension_stats":discovery.get("candidate_extension_stats",{})})
+            actual=sum(e["size"] for e in downloaded)
+            if actual>limit: raise SyncError(f"Generated corpus is {actual:,} bytes, above the {limit:,}-byte limit")
+            if corpus_root.exists(): shutil.rmtree(corpus_root)
+            shutil.move(str(staging),str(corpus_root))
+    finally:
+        try: parent.rmdir()
+        except OSError: pass
+    generated_at=datetime.now(timezone.utc).replace(microsecond=0).isoformat(); downloaded.sort(key=lambda e:e["output_path"])
+    manifest={"schema_version":2,"generated_at":generated_at,"selection_fingerprint":fingerprint,"max_corpus_bytes":limit,"selected_bytes":sum(e["size"] for e in downloaded),"sources":[{"id":d["id"],"type":d["type"],**d["metadata"]} for d in discoveries],"files":downloaded}
+    report={"schema_version":2,"generated_at":generated_at,"max_corpus_bytes":limit,"selected_files":len(downloaded),"selected_bytes":manifest["selected_bytes"],"estimated_tokens":round(manifest["selected_bytes"]/4),"sources":source_reports}
+    write_json(MANIFEST_PATH,manifest); write_json(REPORT_JSON_PATH,report); write_inventory_markdown(report); write_corpus_info(discoveries,downloaded,generated_at)
+    upstream_license=corpus_root/"freecad-source"/"LICENSE"
+    if upstream_license.exists(): shutil.copyfile(upstream_license,PROJECT_ROOT/"LICENSE")
+    print(f"Synced {len(downloaded):,} UTF-8 files ({manifest['selected_bytes']:,} bytes) from {len(discoveries)} sources."); return 0
+if __name__=="__main__":
+    try: raise SystemExit(main())
+    except SyncError as error: print(f"sync error: {error}",file=sys.stderr); raise SystemExit(1) from error

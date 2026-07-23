@@ -1,0 +1,49 @@
+<languages/>
+<translate>
+
+<!--T:8-->
+{{Docnav
+|
+|[[Image_CreateImagePlane|CreateImagePlane]]
+|[[Image_Workbench|Image]]
+|IconL=
+|IconR=Image_CreateImagePlane.svg
+|IconC=Workbench_Image.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Image Open
+|MenuLocation=
+|Workbenches=[[Image_Workbench|Image]]
+|SeeAlso=[[Image_CreateImagePlane|Image CreateImagePlane]], [[Image_Scaling|Image Scaling]]
+}}
+
+== Description == <!--T:2-->
+
+<!--T:3-->
+The [[Image_Open|Image Open]] tool simply opens an image from your system in a new tab in the viewport.
+
+== Usage == <!--T:4-->
+
+<!--T:5-->
+# Press the {{Button|[[Image:Image_Open.svg|16px]] [[Image_Open|Image Open]]}} button.
+# Select the image file that you want.
+
+<!--T:6-->
+The image is placed in a new viewport, not in the 3D view.
+
+
+<!--T:7-->
+{{Docnav
+|
+|[[Image_CreateImagePlane|CreateImagePlane]]
+|[[Image_Workbench|Image]]
+|IconL=
+|IconR=Image_CreateImagePlane.svg
+|IconC=Workbench_Image.svg
+}}
+
+</translate>
+{{Image Tools navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

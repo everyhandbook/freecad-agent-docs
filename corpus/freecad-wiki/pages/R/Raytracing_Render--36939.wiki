@@ -1,0 +1,54 @@
+<languages/>
+<translate>
+
+<!--T:6-->
+{{Docnav
+|[[Raytracing_ExportProject|Export project]]
+|[[Raytracing_WriteView|Export view to povray]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_ExportProject.svg
+|IconR=Raytracing_WriteView.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Raytracing Render
+|MenuLocation=Raytracing → Render‏‎
+|Workbenches=[[Raytracing_Workbench|Raytracing]]
+|Shortcut=
+|SeeAlso=
+}}
+
+==Description== <!--T:10-->
+
+<!--T:2-->
+Renders the selected raytracing project using an external renderer.
+
+==Usage== <!--T:11-->
+
+<!--T:3-->
+# Select raytracing project in the [[Tree_view|tree view]].
+# Click on [[Image:Raytracing_Render.svg|32px]] or choose {{KEY| Raytracing}}  →  {{KEY|[[Image:Raytracing_Render.svg|32px]] Render}} from the top menu.
+
+==Limitations== <!--T:12-->
+
+<!--T:4-->
+Currently only POV-Ray and Luxrender are supported.
+
+==Notes== <!--T:5-->
+
+
+<!--T:7-->
+{{Docnav
+|[[Raytracing_ExportProject|Export project]]
+|[[Raytracing_WriteView|Export view to povray]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_ExportProject.svg
+|IconR=Raytracing_WriteView.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+</translate>
+{{Raytracing_Tools_navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

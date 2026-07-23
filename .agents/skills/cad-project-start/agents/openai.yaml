@@ -1,0 +1,4 @@
+interface:
+  display_name: "CAD Project Start"
+  short_description: "Start a traceable FreeCAD project workspace"
+  default_prompt: "Use $cad-project-start to initialize a traceable CAD project with requirements, units, tolerances, deliverables, and validation."

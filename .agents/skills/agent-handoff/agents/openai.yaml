@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Handoff"
+  short_description: "Prepare a clean handoff for later work"
+  default_prompt: "Use $agent-handoff to write a handoff with current status, changed files, next steps, and risks."
