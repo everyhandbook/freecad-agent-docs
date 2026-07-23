@@ -1,0 +1,4 @@
+interface:
+  display_name: "Post Implement Check"
+  short_description: "Review implementation readiness and risks"
+  default_prompt: "Use post-implement-check to review the completed work against scope, validation, docs, and remaining risks."

@@ -1,6 +1,6 @@
-# FreeCAD Agent Documentation Corpus
+# FreeCAD Agent Documentation and CAD Workspace
 
-This repository is an unofficial, automatically selected text corpus for AI agents that answer questions about FreeCAD. It combines versioned documentation embedded in the FreeCAD source tree with current English pages from the live FreeCAD Documentation wiki.
+This repository is an unofficial, agent-oriented FreeCAD knowledge corpus and a traceable workspace for future CAD projects. It combines versioned documentation embedded in the FreeCAD source tree with current English pages from the live FreeCAD Documentation wiki, then adds lightweight project and review conventions for agents.
 
 ## Included sources
 
@@ -11,7 +11,7 @@ The Wiki selection excludes macro-library pages and sandbox pages, which consume
 
 ## Using with an agent
 
-Ingest the whole repository for broad FreeCAD help:
+Ingest the whole repository for broad FreeCAD help and project context:
 
 ```text
 https://github.com/everyhandbook/freecad-agent-docs
@@ -25,7 +25,20 @@ https://github.com/everyhandbook/freecad-agent-docs/tree/main/corpus/freecad-sou
 https://github.com/everyhandbook/freecad-agent-docs/tree/main/corpus/freecad-wiki
 ```
 
-`AGENTS.md` defines interpretation and trust rules. `CORPUS_INFO.md` records the current source snapshot. Wiki files use a `--<pageid>.wiki` suffix and preserve MediaWiki templates, links, and translation markers. Exact page revision IDs, original URLs, Git blob IDs, sizes, and hashes are stored in `manifest.json`.
+`AGENTS.md` defines operating, interpretation, and trust rules. `CORPUS_INFO.md` records the current source snapshot. Wiki files use a `--<pageid>.wiki` suffix and preserve MediaWiki templates, links, and translation markers. Exact page revision IDs, original URLs, Git blob IDs, sizes, and hashes are stored in `manifest.json`.
+
+## CAD project workspace
+
+Create real CAD work under `projects/<project-slug>/`, starting from `projects/_template/`. Each project records its goal, FreeCAD version, units, tolerances, constraints, source references, planned model tree, deliverables, and validation instead of leaving this context only in chat.
+
+Repository-level continuity is intentionally small:
+
+- `task.md` tracks the active phase and next actions.
+- `docs/lessons.md` stores reusable decisions and pitfalls.
+- `docs/session-logs/` preserves compact handoffs.
+- `.agents/skills/` provides Codex workflows for project setup, checkpoints, implementation, handoff, and the PR review loop.
+
+The imported workflow is a lean subset of [everyhandbook/3-agent-template](https://github.com/everyhandbook/3-agent-template). Product-specific mirrors, synchronization hooks, and unrelated optional packs are intentionally omitted.
 
 ## What this corpus can and cannot answer
 
@@ -35,7 +48,7 @@ This still is not the complete FreeCAD implementation, generated C++ API referen
 
 The actively maintained [FreeCAD Developers Handbook](https://github.com/FreeCAD/DevelopersHandbook) is a useful external reference. Its contents are not copied here because that repository currently does not expose an explicit redistribution license.
 
-## Rebuilding
+## Rebuilding and validation
 
 Python 3.11 or newer is recommended. The scripts use only the Python standard library.
 

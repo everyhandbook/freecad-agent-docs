@@ -1,8 +1,33 @@
 # Agent instructions
 
+## Working protocol
+
+- At the start of substantial work, read `task.md`, `docs/lessons.md`, and relevant recent files in `docs/session-logs/`.
+- Keep durable work state in the repository. Update `task.md` when phase or next action changes; record reusable findings in `docs/lessons.md`.
+- Use repository-local skills under `.agents/skills/` when their description matches the request:
+  - `cad-project-start` for a new CAD/FreeCAD project workspace;
+  - `checkpoint` before risky changes or at meaningful milestones;
+  - `agent-handoff`, `session-start`, and `session-wrap-up` for continuity;
+  - `implement-plan` and `post-implement-check` for implementation work;
+  - `pr-review-loop` after a pull request is ready for Codex review.
+- Put actual CAD work under `projects/<slug>/`. Start from `projects/_template/` and preserve requirements, units, tolerances, evidence, deliverables, and validation.
+- Never hand-edit generated files below `corpus/`; change selection rules or tooling and run `python scripts/sync.py`.
+- Do not commit secrets, credentials, or machine-specific absolute paths.
+- Do not merge pull requests or perform destructive external actions without explicit user authorization.
+
+## Validation
+
+- Run `python scripts/validate.py` for repository changes.
+- For corpus changes, also measure the complete local Gitingest output against the 10 MB delivery ceiling.
+- For CAD projects, complete the project-specific `validation.md`, including dimensional, constraint, recompute, geometry, manufacturing, and export checks that apply.
+- Report anything that could not be validated and why.
+
 ## Purpose
 
-This repository is an automatically selected, multi-source documentation snapshot for answering questions about FreeCAD concepts, workflows, modules, architecture, scripting, and development.
+This repository has two related roles:
+
+1. an automatically selected, multi-source documentation snapshot for answering questions about FreeCAD concepts, workflows, modules, architecture, scripting, and development;
+2. a traceable workspace for CAD projects that use that evidence, beginning with FreeCAD.
 
 ## Evidence routing
 
@@ -27,4 +52,4 @@ This repository is an automatically selected, multi-source documentation snapsho
 
 - Files under `corpus/freecad-source` are byte-for-byte Git blobs from the FreeCAD commit recorded in `CORPUS_INFO.md` and `manifest.json`.
 - Files below `corpus/freecad-wiki/pages` are UTF-8 wikitext returned by the live FreeCAD MediaWiki API for the revision recorded in `manifest.json`.
-- `corpus/freecad-wiki/README.md`, repository root files, scripts, reports, and workflows are local generated tooling or project guidance rather than upstream FreeCAD documentation.
+- `corpus/freecad-wiki/README.md`, repository root files, scripts, reports, workflows, project files, and agent skills are local tooling or guidance rather than upstream FreeCAD documentation.

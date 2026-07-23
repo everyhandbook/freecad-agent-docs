@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Wrap Up"
+  short_description: "Close out a session with repo updates"
+  default_prompt: "Use $session-wrap-up to finish the session and update task.md, logs, and lessons."
