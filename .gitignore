@@ -1,0 +1,5 @@
+.sync-tmp/
+__pycache__/
+*.pyc
+digest.txt
+gitingest-*.txt

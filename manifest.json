@@ -1,0 +1,522 @@
+{
+  "files": [
+    {
+      "git_blob_sha": "bc0390e98c98f2ad3ab7decdb82b4d57d7f850d4",
+      "output_path": "corpus/freecad/LICENSE",
+      "sha256": "7ffe1954587c77dfba1cf8eb9b2ea743671fa6e63f9e7a2f258119d42e14eefe",
+      "size": 27030,
+      "source_path": "LICENSE"
+    },
+    {
+      "git_blob_sha": "573a8cd5b06864c8514dada37ad292f03475c4e3",
+      "output_path": "corpus/freecad/README.md",
+      "sha256": "d225bee87b5023b28c76afba2ac2db4a69ba1e7a3e07c3247e67eb1a2d29f080",
+      "size": 5105,
+      "source_path": "README.md"
+    },
+    {
+      "git_blob_sha": "fa9b2fd547737943b8ce9b827b7348b0a14ecd58",
+      "output_path": "corpus/freecad/src/Doc/AsyncRecompute.dox",
+      "sha256": "3bae505a91c29944b97e7f32014c9ece1daec5f584c58daa04ff35180a9817a8",
+      "size": 2959,
+      "source_path": "src/Doc/AsyncRecompute.dox"
+    },
+    {
+      "git_blob_sha": "876e27123da76b7119b0b08ca1445d10a06b3229",
+      "output_path": "corpus/freecad/src/Doc/doctips.dox",
+      "sha256": "0a077299b16f34abf88a3beaba0f2dd6e266f63fd3a0d08801d1f5316a9e8511",
+      "size": 2522,
+      "source_path": "src/Doc/doctips.dox"
+    },
+    {
+      "git_blob_sha": "713f24809484d47a814ddb38c3230df44416ff25",
+      "output_path": "corpus/freecad/src/Doc/mainpage.dox.in",
+      "sha256": "26399dbaf40b576abf2441df35af4aa4cadfbafa63fc1ccaf54b1f47f6274285",
+      "size": 6492,
+      "source_path": "src/Doc/mainpage.dox.in"
+    },
+    {
+      "git_blob_sha": "30f40f2ec447068004533ccba7caf4093289e4ed",
+      "output_path": "corpus/freecad/src/Doc/makingDocs.dox",
+      "sha256": "2119a658a068dbbd330d25bbcb0c1a7bde3f2f9fa18bd1527a3de29fa4a94b85",
+      "size": 438,
+      "source_path": "src/Doc/makingDocs.dox"
+    },
+    {
+      "git_blob_sha": "d54bdc7504e94afafc4200fcefebce40479d4a93",
+      "output_path": "corpus/freecad/src/Doc/primary-groups.dox",
+      "sha256": "c359ace608a401be90f7b16c8e1ee6e779959fc000204b99212b0192d1910dce",
+      "size": 515,
+      "source_path": "src/Doc/primary-groups.dox"
+    },
+    {
+      "git_blob_sha": "91624586e58137475594af24cfd8a596f0cca08a",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Arch.rst",
+      "sha256": "a9a136323be8082044d9f6e49d6431fa18586771bdb356892181584df3644e15",
+      "size": 979,
+      "source_path": "src/Doc/sphinx/Arch.rst"
+    },
+    {
+      "git_blob_sha": "f6874f7eaaf4cf1873bc9310bba08a4827086d46",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Document.rst",
+      "sha256": "e9c55b3de37f39091eea35e227a54af5411f8895f11a69ec9d7e35c555a09cd7",
+      "size": 193,
+      "source_path": "src/Doc/sphinx/Document.rst"
+    },
+    {
+      "git_blob_sha": "89ec3c1fb203bab73a1d835437f694891fdfc332",
+      "output_path": "corpus/freecad/src/Doc/sphinx/DocumentObject.rst",
+      "sha256": "bf2905ac741d88ad2616b94505c9d4816021154754752f44353830151d98a24c",
+      "size": 472,
+      "source_path": "src/Doc/sphinx/DocumentObject.rst"
+    },
+    {
+      "git_blob_sha": "255a5dc448e0826e67dd450e1305f702e147ebf5",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Draft.rst",
+      "sha256": "ce6b0d5b12827394d1366625590b0bf8fbc47f3a9e8b34923e6d5eb3375daeaa",
+      "size": 221,
+      "source_path": "src/Doc/sphinx/Draft.rst"
+    },
+    {
+      "git_blob_sha": "3b99de2b8e4c1faecb5a5e5bac64c13015c37d52",
+      "output_path": "corpus/freecad/src/Doc/sphinx/DraftGeomUtils.rst",
+      "sha256": "d939c54c47d541b6ac4b19c13041f3b105a5df13e51c3f6527a1b717aa0b00a7",
+      "size": 240,
+      "source_path": "src/Doc/sphinx/DraftGeomUtils.rst"
+    },
+    {
+      "git_blob_sha": "45f25ffd3bab7d2e50cae3808c2f44e430d49a82",
+      "output_path": "corpus/freecad/src/Doc/sphinx/DraftSnap.rst",
+      "sha256": "c144d39e1811bcf6cf7092322edb6552782095c5a543ccf78b4365290322e12f",
+      "size": 215,
+      "source_path": "src/Doc/sphinx/DraftSnap.rst"
+    },
+    {
+      "git_blob_sha": "7478c937360e2ba2fe6f5526eb61b4c15ce22782",
+      "output_path": "corpus/freecad/src/Doc/sphinx/DraftTrackers.rst",
+      "sha256": "bee5af8ad15d323e02a42c63d0ed10c4b0c951f0169bc52db37b2890019dc178",
+      "size": 234,
+      "source_path": "src/Doc/sphinx/DraftTrackers.rst"
+    },
+    {
+      "git_blob_sha": "1ec5d709b7b4fa4697f5102e72b1c3f00ec49880",
+      "output_path": "corpus/freecad/src/Doc/sphinx/DraftVecUtils.rst",
+      "sha256": "fef25006fd21630a6baac98b8910893914830808d966cff32d78ff13fd7ea8e3",
+      "size": 249,
+      "source_path": "src/Doc/sphinx/DraftVecUtils.rst"
+    },
+    {
+      "git_blob_sha": "3a0718837bab916b74cc6740ac88a657a167e714",
+      "output_path": "corpus/freecad/src/Doc/sphinx/DraftWorkingPlane.rst",
+      "sha256": "7340549bc07d08be752feff6263cd0e49945cc52663107e6ee132748614f4059",
+      "size": 297,
+      "source_path": "src/Doc/sphinx/DraftWorkingPlane.rst"
+    },
+    {
+      "git_blob_sha": "d02a2477c3431da397ea7b07f3ac6955936ebc1e",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Drawing.rst",
+      "sha256": "0281255a4ebd69f545c4d742480c2bef1d8f5047a54347af0e2432f4ab59d906",
+      "size": 153,
+      "source_path": "src/Doc/sphinx/Drawing.rst"
+    },
+    {
+      "git_blob_sha": "59ef5711978d044f210334e6c07e7f44eba8b410",
+      "output_path": "corpus/freecad/src/Doc/sphinx/FreeCAD.rst",
+      "sha256": "c89d9542e4f0ef70c41f065c7562e5c5d915ae62f48d3391cce776289b4800ba",
+      "size": 196,
+      "source_path": "src/Doc/sphinx/FreeCAD.rst"
+    },
+    {
+      "git_blob_sha": "25eb126773c058760cee0caef17124cee6b45b5a",
+      "output_path": "corpus/freecad/src/Doc/sphinx/FreeCADGui.rst",
+      "sha256": "a035eda0faa74c61b947f0e6b3336560a3570a62b4b6d130bc6f2bbdf1c6df50",
+      "size": 163,
+      "source_path": "src/Doc/sphinx/FreeCADGui.rst"
+    },
+    {
+      "git_blob_sha": "4cb1451c146fb18136a472dbc6ce9b99021752d4",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Matrix.rst",
+      "sha256": "26be64305c609b3cb24a79d664fb8a606d870c52bcb78c84295eaa0b006a775e",
+      "size": 180,
+      "source_path": "src/Doc/sphinx/Matrix.rst"
+    },
+    {
+      "git_blob_sha": "f4e18d4bad306ab9eaeca9c72a9e61ac6cad62fc",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Mesh.rst",
+      "sha256": "1c11506f2af38157e1f38661a77c1f5a6f48801836c9eacf3504033b57c4d1e8",
+      "size": 182,
+      "source_path": "src/Doc/sphinx/Mesh.rst"
+    },
+    {
+      "git_blob_sha": "9784c0ffa5c73419ad71060672adf98988d618e7",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Part.rst",
+      "sha256": "d2562f6b027406f157b39fa7837fc06dc6bccc227a2e544d712cfca5a7c6a173",
+      "size": 166,
+      "source_path": "src/Doc/sphinx/Part.rst"
+    },
+    {
+      "git_blob_sha": "6d278a9c04dcd682107b518c81e29d5338f05f4b",
+      "output_path": "corpus/freecad/src/Doc/sphinx/PartDesign.rst",
+      "sha256": "d80d5cfe2bb261d750015810861a379d7a7ebe51ddec005d4d42b9f7c47fc550",
+      "size": 162,
+      "source_path": "src/Doc/sphinx/PartDesign.rst"
+    },
+    {
+      "git_blob_sha": "312f69b6ba12bbe4a0fe4fae32a194d1967bb2ce",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Placement.rst",
+      "sha256": "f53a46d7fbce34d0be88a45e43feb54fa830b3e912c19783770a03deb289215f",
+      "size": 189,
+      "source_path": "src/Doc/sphinx/Placement.rst"
+    },
+    {
+      "git_blob_sha": "3452a5c98d9d03d785eab2cfc0d640c12ed5fb7f",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Sketch.rst",
+      "sha256": "d7217dfd1c06fc86246238a4ba45ee049af8c94361ced6fccf077813f9493c43",
+      "size": 156,
+      "source_path": "src/Doc/sphinx/Sketch.rst"
+    },
+    {
+      "git_blob_sha": "c8b110d8471e6eb31a208044685c2ad9c2b16e2f",
+      "output_path": "corpus/freecad/src/Doc/sphinx/Vector.rst",
+      "sha256": "d73e226e045d7f475fe133b368362df574c53262af2f01d9c4d6b07e35b36735",
+      "size": 180,
+      "source_path": "src/Doc/sphinx/Vector.rst"
+    },
+    {
+      "git_blob_sha": "960c3e12a4e2ddbd97a6f119143a02e1e1079699",
+      "output_path": "corpus/freecad/src/Doc/sphinx/ViewProvider.rst",
+      "sha256": "51e8ba04645b64fc90caba0b265e2000838f1b072f71935c4aaadb9c858e89e5",
+      "size": 207,
+      "source_path": "src/Doc/sphinx/ViewProvider.rst"
+    },
+    {
+      "git_blob_sha": "ea32f5d5a1b749ef8ee8cf1bcb7ca6566ecf2cc6",
+      "output_path": "corpus/freecad/src/Doc/sphinx/index.rst",
+      "sha256": "6de5adba42bbe9c3e487b38342736c7d5115500833dbb56a9e7a63b17d81e100",
+      "size": 871,
+      "source_path": "src/Doc/sphinx/index.rst"
+    },
+    {
+      "git_blob_sha": "4adb844addae9e41a4c87b70407a01a532b049bc",
+      "output_path": "corpus/freecad/src/Mod/Assembly/assembly.dox",
+      "sha256": "cde9b1f7dfaa74fffca4ce009c73e71696d348db6d2fcce5f9364178b66b5dec",
+      "size": 104,
+      "source_path": "src/Mod/Assembly/assembly.dox"
+    },
+    {
+      "git_blob_sha": "b825eaff500b1657ef2fa886ab4c025ed8f5cdb2",
+      "output_path": "corpus/freecad/src/Mod/BIM/Dice3DS/dice3ds.dox",
+      "sha256": "f0f9817b71f01bf39b336731d072397c61112fae5e859b481adb652b2b88a2c8",
+      "size": 140,
+      "source_path": "src/Mod/BIM/Dice3DS/dice3ds.dox"
+    },
+    {
+      "git_blob_sha": "8508f695ee502c13a03fe295771aafeca496a515",
+      "output_path": "corpus/freecad/src/Mod/BIM/arch.dox",
+      "sha256": "3b8e45b61f8cf3458bf1ff5f947b8caaffcc1332ac800025ceb1d2ac99000de1",
+      "size": 58,
+      "source_path": "src/Mod/BIM/arch.dox"
+    },
+    {
+      "git_blob_sha": "9bd3fd8ee7c02e1a94865f3e91c0ddad61002130",
+      "output_path": "corpus/freecad/src/Mod/BIM/coding_conventions.md",
+      "sha256": "14a72bc00228cf0f945fae39cb970fc4eda17ba1c926670bf3ccbdd908157b79",
+      "size": 138,
+      "source_path": "src/Mod/BIM/coding_conventions.md"
+    },
+    {
+      "git_blob_sha": "62492caa6638093ff109b64a3cbd626007b8937a",
+      "output_path": "corpus/freecad/src/Mod/CAM/GCode-description.md",
+      "sha256": "c56e227b31736a50b4296ec2b6cd1fb6a5400ce48a4ae1621c352f2ffd474fa5",
+      "size": 3648,
+      "source_path": "src/Mod/CAM/GCode-description.md"
+    },
+    {
+      "git_blob_sha": "4ad1f009b36271e9ee05d42200c23b47cb225873",
+      "output_path": "corpus/freecad/src/Mod/CAM/Path/Tool/assets/README.md",
+      "sha256": "8d159246c2cafe75e4a65b7a7020e0e49e87f6744985315b4015c2d8b86af463",
+      "size": 11211,
+      "source_path": "src/Mod/CAM/Path/Tool/assets/README.md"
+    },
+    {
+      "git_blob_sha": "7ce3416f40fe6d2d447f71589eade2d47ffe5367",
+      "output_path": "corpus/freecad/src/Mod/CAM/PathScripts/README.md",
+      "sha256": "95292a1660ebf0a7e37e7deeb7595155796d63cb52087038253adf255e6fc89c",
+      "size": 460,
+      "source_path": "src/Mod/CAM/PathScripts/README.md"
+    },
+    {
+      "git_blob_sha": "6a628f3be818db9c7ff7b85059d796c5c41a79e7",
+      "output_path": "corpus/freecad/src/Mod/CAM/PathSimulator/PathSimulator.dox",
+      "sha256": "65e417d39e795e6f73a39f96cf5da534ab9a8ae5bfa326db67ecddeda3c62ab1",
+      "size": 65,
+      "source_path": "src/Mod/CAM/PathSimulator/PathSimulator.dox"
+    },
+    {
+      "git_blob_sha": "8445d225a6a326e1794d10f64334f817ca9977af",
+      "output_path": "corpus/freecad/src/Mod/CAM/Tools/README.md",
+      "sha256": "cffe5dcb62963e8adcfb49ae18a39d04f859c4c6360e1838b92b054abcfefd3f",
+      "size": 5220,
+      "source_path": "src/Mod/CAM/Tools/README.md"
+    },
+    {
+      "git_blob_sha": "eb75636e86b522609fb62f42cea8e3dd295e146e",
+      "output_path": "corpus/freecad/src/Mod/CAM/path.dox",
+      "sha256": "62c698b4e8b011ef48109233009bbce12d602f969b0f062258b5908c220c017a",
+      "size": 113,
+      "source_path": "src/Mod/CAM/path.dox"
+    },
+    {
+      "git_blob_sha": "d88526a48a9163994ef91e924735ec42ceb7f3ef",
+      "output_path": "corpus/freecad/src/Mod/Draft/coding_conventions.md",
+      "sha256": "951406c55f4d87be897073614282045fcd6390981b1cf2fee39c5e73fec465b8",
+      "size": 5469,
+      "source_path": "src/Mod/Draft/coding_conventions.md"
+    },
+    {
+      "git_blob_sha": "12dd1fafee2f9e325d0979934e61cb80171e2884",
+      "output_path": "corpus/freecad/src/Mod/Draft/draft.dox",
+      "sha256": "2626e10c7e5697cb71d8de9e091b7b6f2100b90c4035255ade38436a307081ad",
+      "size": 1996,
+      "source_path": "src/Mod/Draft/draft.dox"
+    },
+    {
+      "git_blob_sha": "edacae44f840074f6237763ef43eb850e9b4cdbf",
+      "output_path": "corpus/freecad/src/Mod/Draft/draftfunctions/README.md",
+      "sha256": "fb8d8b156300cde9e692db02a941c7c589e4d72b35f5b064dcd5b85089e15d0f",
+      "size": 742,
+      "source_path": "src/Mod/Draft/draftfunctions/README.md"
+    },
+    {
+      "git_blob_sha": "590d05d5c3f985237112a071de86c5849ff8b9c3",
+      "output_path": "corpus/freecad/src/Mod/Draft/draftguitools/README.md",
+      "sha256": "0c43f6f7258b82d945abb6fbd7287fe378071ae3cf52bff4fbc7e2243f6157d9",
+      "size": 1984,
+      "source_path": "src/Mod/Draft/draftguitools/README.md"
+    },
+    {
+      "git_blob_sha": "62de47b6d6d907b8102b79066e89f46fddcd409f",
+      "output_path": "corpus/freecad/src/Mod/Draft/draftmake/README.md",
+      "sha256": "14d8127584d362d0a91ed472f36ad64f51dbc29a6335afdfb5422d454a89038f",
+      "size": 1521,
+      "source_path": "src/Mod/Draft/draftmake/README.md"
+    },
+    {
+      "git_blob_sha": "1cc77ec9991ee8122530de6e2ff6125a5adfa012",
+      "output_path": "corpus/freecad/src/Mod/Draft/draftobjects/README.md",
+      "sha256": "6856a39a047bb59fce466ffec75765620fbad6c0429def0de9b38e29a7fa3b67",
+      "size": 1761,
+      "source_path": "src/Mod/Draft/draftobjects/README.md"
+    },
+    {
+      "git_blob_sha": "6722be155222be4c5cb60617f5622a82536e874e",
+      "output_path": "corpus/freecad/src/Mod/Draft/drafttaskpanels/README.md",
+      "sha256": "d980ee7bd0b169b135853549d1cf67d2026c587a3c0f7a17c4a17399ce3d32ab",
+      "size": 1526,
+      "source_path": "src/Mod/Draft/drafttaskpanels/README.md"
+    },
+    {
+      "git_blob_sha": "efc688e6da11489a41f26cbfa7261203e6d8e9e0",
+      "output_path": "corpus/freecad/src/Mod/Draft/draftutils/README.md",
+      "sha256": "80474f09035e368d2e7b43fb1dc4d71303a15b64482e92c923c49abd38532628",
+      "size": 1397,
+      "source_path": "src/Mod/Draft/draftutils/README.md"
+    },
+    {
+      "git_blob_sha": "ae9575684feae5cd1ec7d4d3588e1983c375f574",
+      "output_path": "corpus/freecad/src/Mod/Draft/draftviewproviders/README.md",
+      "sha256": "ef850bd35e43255a687a029129294e6bc43a0e61c756f26f7ec2c0fbd8e22385",
+      "size": 2076,
+      "source_path": "src/Mod/Draft/draftviewproviders/README.md"
+    },
+    {
+      "git_blob_sha": "b706b25aea32ce8f6fc51b9fc6ccece8b9c544d7",
+      "output_path": "corpus/freecad/src/Mod/Fem/coding_conventions.md",
+      "sha256": "d7e6b5153b81b8b1d17c60ebe3d53031c8827fb25a8b16ee2da5cc4030f94ca6",
+      "size": 6292,
+      "source_path": "src/Mod/Fem/coding_conventions.md"
+    },
+    {
+      "git_blob_sha": "75b425c9e234e87b5c2d3f3dd06448389b4fd1de",
+      "output_path": "corpus/freecad/src/Mod/Fem/fem.dox",
+      "sha256": "495b4f91823fb080f30b50dc1ce48477cfd82311d0fa5dbc9eada82f9e9c6128",
+      "size": 182,
+      "source_path": "src/Mod/Fem/fem.dox"
+    },
+    {
+      "git_blob_sha": "8db06d292d20d57dd48a56e2a9c09a624e00e33d",
+      "output_path": "corpus/freecad/src/Mod/Fem/femguiobjects/readme.md",
+      "sha256": "fa67c6686c19306befb1f524bee51d124a47a33920e39340e0def30f51764ead",
+      "size": 234,
+      "source_path": "src/Mod/Fem/femguiobjects/readme.md"
+    },
+    {
+      "git_blob_sha": "446762d982cc531167df30a2b7050e522070a3dc",
+      "output_path": "corpus/freecad/src/Mod/Import/import.dox",
+      "sha256": "c2d06920afd9133e57fd344aaeab5b21b60dd751898c5f1bb8847a2b54d46c62",
+      "size": 133,
+      "source_path": "src/Mod/Import/import.dox"
+    },
+    {
+      "git_blob_sha": "43db6c6a220bfbeb39de1e02a0e8224ce813ec8e",
+      "output_path": "corpus/freecad/src/Mod/Inspection/Inspection.dox",
+      "sha256": "4964c8e9aa2e044d3a657528aaa9534203fec2d6db14b7e86f75e1ff9d01938d",
+      "size": 65,
+      "source_path": "src/Mod/Inspection/Inspection.dox"
+    },
+    {
+      "git_blob_sha": "dbef75b3911a22a35a911ad96dc0603ff4f0dfd6",
+      "output_path": "corpus/freecad/src/Mod/Material/material.dox",
+      "sha256": "2d31be1e83cce4fe59f71a4b9296586ddf293a2af341d70f3585a89900bbd43a",
+      "size": 100,
+      "source_path": "src/Mod/Material/material.dox"
+    },
+    {
+      "git_blob_sha": "5ba9bb700a94231de7a9757fb5e9f3ac0739979a",
+      "output_path": "corpus/freecad/src/Mod/Measure/measure.dox",
+      "sha256": "d699afec27684a8110d5215322b8d7c9ab751e0fd005e96cc5ecf45b7020a70e",
+      "size": 56,
+      "source_path": "src/Mod/Measure/measure.dox"
+    },
+    {
+      "git_blob_sha": "0edd24a4bdb5d69655ff8c49bef98a0f434250c9",
+      "output_path": "corpus/freecad/src/Mod/Mesh/mesh.dox",
+      "sha256": "627336df7710528390a0a056d2b2b82ecc91a9af09770a6ee4e9f97ee2647c9a",
+      "size": 103,
+      "source_path": "src/Mod/Mesh/mesh.dox"
+    },
+    {
+      "git_blob_sha": "78f968f938f42c0b685413c471d5267b252fab45",
+      "output_path": "corpus/freecad/src/Mod/MeshPart/meshpart.dox",
+      "sha256": "1ad99fede64e1b8ab8b7bbae0c44d3544e5a1fe4a21ac60448e23de8f7df7a33",
+      "size": 124,
+      "source_path": "src/Mod/MeshPart/meshpart.dox"
+    },
+    {
+      "git_blob_sha": "884ade370f0c71c0a60b587c188963b45a2a4c44",
+      "output_path": "corpus/freecad/src/Mod/OpenSCAD/OpenSCAD.dox",
+      "sha256": "435036293c7daef4b7bf6927b5364f0f9ff47f546a10f486869424b7cc91db5a",
+      "size": 103,
+      "source_path": "src/Mod/OpenSCAD/OpenSCAD.dox"
+    },
+    {
+      "git_blob_sha": "5b7cf2f095cec3c3794fce79594771d2e608356d",
+      "output_path": "corpus/freecad/src/Mod/Part/part.dox",
+      "sha256": "f13bc4d4c27415c7cb25c8c4d82e574500e82f5d7cbd1583b4e9354f9117b326",
+      "size": 219,
+      "source_path": "src/Mod/Part/part.dox"
+    },
+    {
+      "git_blob_sha": "785530d31e0b7528ffcf607a0c3065dfa376046c",
+      "output_path": "corpus/freecad/src/Mod/PartDesign/fcgear/README",
+      "sha256": "055a3886f8e4503aa481ab42a68b6939573728a99870bfa9c329de3e9a6b6289",
+      "size": 953,
+      "source_path": "src/Mod/PartDesign/fcgear/README"
+    },
+    {
+      "git_blob_sha": "8225b61711a8a5bb2610a2f1ff7204a6fc518d32",
+      "output_path": "corpus/freecad/src/Mod/PartDesign/fcsprocket/README.md",
+      "sha256": "fd670d74323c2dacdc7c6477d9789f86c251d88b1911755070269b33ff46525d",
+      "size": 908,
+      "source_path": "src/Mod/PartDesign/fcsprocket/README.md"
+    },
+    {
+      "git_blob_sha": "26894834204069f2fbba8c17eed8945928af5fb2",
+      "output_path": "corpus/freecad/src/Mod/PartDesign/partdesign.dox",
+      "sha256": "ff0324842fab206bccdd10b9dffad0f656ae0aead71d9043d13bf2ad932ec1ec",
+      "size": 139,
+      "source_path": "src/Mod/PartDesign/partdesign.dox"
+    },
+    {
+      "git_blob_sha": "9c2ce0a92892c2706cb8e612610b6c6a0f222bfa",
+      "output_path": "corpus/freecad/src/Mod/Plot/README.md",
+      "sha256": "1aaf34639c3bd8d5c61e0324ddbf17e3a5fb1486e4b449d98270215a737a6e0e",
+      "size": 383,
+      "source_path": "src/Mod/Plot/README.md"
+    },
+    {
+      "git_blob_sha": "8fe66d6b14ab7fa19137a3623408341765b869a2",
+      "output_path": "corpus/freecad/src/Mod/Plot/plot.dox",
+      "sha256": "96b3b816a95086670dcb5b068de13d135f7c8881fd4a2382399ef6e7e8d91d8c",
+      "size": 118,
+      "source_path": "src/Mod/Plot/plot.dox"
+    },
+    {
+      "git_blob_sha": "44a1625a755089a79f566917499438c612238d18",
+      "output_path": "corpus/freecad/src/Mod/Points/points.dox",
+      "sha256": "71effd069e169df6690908d2428f17300f2dc9226b14cf33ab8dc8da9bcfbc99",
+      "size": 105,
+      "source_path": "src/Mod/Points/points.dox"
+    },
+    {
+      "git_blob_sha": "6eea5afcc15852150ee7e3101ef07f8178b808bb",
+      "output_path": "corpus/freecad/src/Mod/ReverseEngineering/reverseengineering.dox",
+      "sha256": "2c619aacf85a03b84d1d8de2e97747166728a6aecbcba35d0d11ff120825e6c2",
+      "size": 220,
+      "source_path": "src/Mod/ReverseEngineering/reverseengineering.dox"
+    },
+    {
+      "git_blob_sha": "5e80c1dbd126288651464576ff278da33191e1d6",
+      "output_path": "corpus/freecad/src/Mod/Robot/robot.dox",
+      "sha256": "c1faa62a02e5d3377e27b86718eafebcbe8a43602cd095673d9241a49e18d1e4",
+      "size": 104,
+      "source_path": "src/Mod/Robot/robot.dox"
+    },
+    {
+      "git_blob_sha": "8390e4c77c64e51984accd3faa4c83162b25aa67",
+      "output_path": "corpus/freecad/src/Mod/Sketcher/sketcher.dox",
+      "sha256": "7d040915348f902df64cfeabf90dbc1603d85ad42539c4138f0ea455233d1ce8",
+      "size": 100,
+      "source_path": "src/Mod/Sketcher/sketcher.dox"
+    },
+    {
+      "git_blob_sha": "740ef37b7525ce827e45312a856eb603e6832f51",
+      "output_path": "corpus/freecad/src/Mod/Spreadsheet/spreadsheet.dox",
+      "sha256": "0ebbc8a37e46773e0139a2891b4a04b97440c8049712168d5db91d86b40b3325",
+      "size": 196,
+      "source_path": "src/Mod/Spreadsheet/spreadsheet.dox"
+    },
+    {
+      "git_blob_sha": "395965e0371e1c515629d9b9827e60b0dc49f165",
+      "output_path": "corpus/freecad/src/Mod/Start/README.md",
+      "sha256": "df680bc2cc10d5ac3f6ee7889bc329b6422d8b5da6a7bcaf40f569e2f3b8337e",
+      "size": 4224,
+      "source_path": "src/Mod/Start/README.md"
+    },
+    {
+      "git_blob_sha": "4ac28fb6932319e15128cad7bd1ffe236f7c8b93",
+      "output_path": "corpus/freecad/src/Mod/Surface/Surface.dox",
+      "sha256": "8f55a5b2ea4f8b6bc3bb1afd1a40bffe026d546e781013c798c9488b2f577fa6",
+      "size": 197,
+      "source_path": "src/Mod/Surface/Surface.dox"
+    },
+    {
+      "git_blob_sha": "c97973d0877f11f0337539de69c9f0e31f086518",
+      "output_path": "corpus/freecad/src/Mod/TechDraw/techdraw.dox",
+      "sha256": "7cd041e064fe9ffcb4a80e4bcc25ab96938eec8f0c5df9ff75e725746e2484b4",
+      "size": 154,
+      "source_path": "src/Mod/TechDraw/techdraw.dox"
+    },
+    {
+      "git_blob_sha": "3e1f4bca45a56562f64c91e6f77f55a8b6978d67",
+      "output_path": "corpus/freecad/src/Mod/Web/web.dox",
+      "sha256": "d2cff7c52acb6cdf54fd7f0a70664a50aa4cd203695caf24ffa8822d131c9c2d",
+      "size": 2149,
+      "source_path": "src/Mod/Web/web.dox"
+    },
+    {
+      "git_blob_sha": "8bc47a7ff0f32f203d51244266bf7d3665b45dbb",
+      "output_path": "corpus/freecad/src/Mod/mod.dox",
+      "sha256": "de402e03cbefede09a0b49f6e388bbf4bb937517ac182c9bbf00bc2710d98752",
+      "size": 1172,
+      "source_path": "src/Mod/mod.dox"
+    }
+  ],
+  "generated_at": "2026-07-23T02:33:53+00:00",
+  "schema_version": 1,
+  "selection_fingerprint": "743bcaeec1d2464f9c238b35222fa8e0c7b5777c40c8aa9288f735732608a96c",
+  "source_commit": "3d9a7808cd40d5eb97e4deee5a2e8047a94995f9",
+  "source_ref": "main",
+  "source_repository": "FreeCAD/FreeCAD",
+  "source_tree": "2e9d60984e36ea2e1c5f0b9f2b77f81aa2dbefb4"
+}

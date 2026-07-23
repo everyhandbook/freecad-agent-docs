@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "source": {
+    "repository": "FreeCAD/FreeCAD",
+    "ref": "main",
+    "web_url": "https://github.com/FreeCAD/FreeCAD"
+  },
+  "destination": "corpus/freecad",
+  "max_file_bytes": 1048576,
+  "include_patterns": [
+    "README.md",
+    "LICENSE",
+    "src/Doc/**/*.md",
+    "src/Doc/**/*.rst",
+    "src/Doc/**/*.txt",
+    "src/Doc/**/*.dox",
+    "src/Doc/**/*.dox.in",
+    "src/Mod/mod.dox",
+    "src/Mod/**/README*",
+    "src/Mod/**/*.md",
+    "src/Mod/**/*.rst",
+    "src/Mod/**/*.dox",
+    "src/Mod/**/*.dox.in"
+  ],
+  "exclude_patterns": [
+    "**/CMakeLists.txt",
+    "src/3rdParty/**",
+    "src/**/3rdParty/**",
+    "src/**/ThirdParty/**",
+    "src/**/tests/**",
+    "src/**/Tests/**",
+    "src/Mod/**/*test*/**",
+    "src/Mod/**/*Test*/**",
+    "src/Mod/Test/**",
+    "src/**/templates/**",
+    "src/**/Templates/**",
+    "src/**/Resources/**",
+    "src/Mod/**/Roadmap/**",
+    "src/**/libarea/**",
+    "src/Mod/Robot/App/kdl_cp/**"
+  ],
+  "inventory_extensions": [
+    ".md",
+    ".rst",
+    ".txt",
+    ".dox",
+    ".dox.in",
+    ".uml",
+    ".mm"
+  ]
+}

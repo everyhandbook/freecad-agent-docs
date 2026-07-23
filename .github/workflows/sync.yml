@@ -1,0 +1,52 @@
+name: Sync FreeCAD documentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Optional FreeCAD ref override
+        required: false
+        type: string
+  schedule:
+    - cron: "17 3 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: freecad-documentation-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Synchronize selected documentation
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REQUESTED_REF: ${{ inputs.ref }}
+        shell: bash
+        run: |
+          if [[ -n "$REQUESTED_REF" ]]; then
+            python scripts/sync.py --ref "$REQUESTED_REF"
+          else
+            python scripts/sync.py
+          fi
+      - name: Validate generated corpus
+        run: python scripts/validate.py
+      - name: Commit upstream documentation changes
+        shell: bash
+        run: |
+          if git diff --quiet; then
+            echo "No selected documentation changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add corpus manifest.json reports CORPUS_INFO.md LICENSE
+          git commit -m "Sync FreeCAD documentation"
+          git push
