@@ -1,0 +1,54 @@
+<languages/>
+<translate>
+
+<!--T:6-->
+{{Docnav
+|[[Mesh_CrossSections|CrossSections]]
+|[[Mesh_SplitComponents|SplitComponents]]
+|[[Mesh_Workbench|Mesh]]
+|IconL=Mesh_CrossSections.svg
+|IconR=Mesh_SplitComponents.svg
+|IconC=Workbench_Mesh.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Mesh Merge
+|MenuLocation=Meshes → Merge
+|Workbenches=[[Mesh_Workbench|Mesh]]
+|SeeAlso=[[Mesh_SplitComponents|Mesh SplitComponents]]
+}}
+
+==Description== <!--T:10-->
+
+<!--T:2-->
+The '''Mesh Merge''' command creates a new non-parametric mesh object, a [[Mesh_Feature|Mesh Feature]], by combining the meshes of two or more mesh objects. The command does not perform a Boolean union, the new object will contain separate mesh components. For a Boolean union use the [[Mesh_Union|Mesh Union]] command instead. This command is the counterpart of the [[Mesh_SplitComponents|Mesh SplitComponents]] command.
+
+==Usage== <!--T:11-->
+
+<!--T:3-->
+# Select two or more mesh objects.
+# There are several ways to invoke the command:
+#* Press the {{Button|[[Image:Mesh_Merge.svg|16px]] [[Mesh_Merge|Merge]]}} button.
+#* Select the {{MenuCommand|Meshes → [[Image:Mesh_Merge.svg|16px]] Merge}} option from the menu.
+
+==Properties== <!--T:15-->
+
+<!--T:16-->
+See: [[Mesh_Feature|Mesh Feature]].
+
+
+<!--T:14-->
+{{Docnav
+|[[Mesh_CrossSections|CrossSections]]
+|[[Mesh_SplitComponents|SplitComponents]]
+|[[Mesh_Workbench|Mesh]]
+|IconL=Mesh_CrossSections.svg
+|IconR=Mesh_SplitComponents.svg
+|IconC=Workbench_Mesh.svg
+}}
+
+</translate>
+{{Mesh Tools navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}
+{{clear}}

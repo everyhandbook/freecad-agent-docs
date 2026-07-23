@@ -1,0 +1,56 @@
+<languages/>
+<translate>
+
+<!--T:6-->
+{{Docnav
+|[[Raytracing_New|New PovRay project]]
+|[[Raytracing_InsertPart|Insert part]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_New.svg
+|IconR=Raytracing_InsertPart.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Raytracing Lux
+|MenuLocation=Raytracing → New Luxrender project‏‎
+|Workbenches=[[Raytracing_Workbench|Raytracing]]
+|Shortcut=
+|SeeAlso=
+}}
+
+==Description== <!--T:11-->
+
+<!--T:2-->
+Insert new LuxRender project in the document.
+
+==Usage== <!--T:12-->
+
+<!--T:3-->
+# Click on the black "down"-icon after [[Image:Raytracing_Lux.svg|32px]] to select between the different pre-defined templates
+# Or choose {{KEY|Raytracing}}  →  {{KEY|New Luxrender project}}  and one of the pre-defined templates from the top menu.
+# A new LuxRender project will be created named "LuxProject"
+
+==Limitations== <!--T:4-->
+
+<!--T:10-->
+* Project can only be created from pre-defined templates.
+* Additional project-setups would require definition of extra templates.
+
+==Notes== <!--T:5-->
+
+
+<!--T:7-->
+{{Docnav
+|[[Raytracing_New|New PovRay project]]
+|[[Raytracing_InsertPart|Insert part]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_New.svg
+|IconR=Raytracing_InsertPart.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+</translate>
+{{Raytracing_Tools_navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

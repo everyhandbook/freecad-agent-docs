@@ -1,0 +1,52 @@
+<languages/>
+<translate>
+
+<!--T:6-->
+{{Docnav
+|[[Raytracing_ResetCamera|Reset camera]]
+|[[Raytracing_Render|Render]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_ResetCamera.svg
+|IconR=Raytracing_Render.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+<!--T:1-->
+{{GuiCommand
+|Name=Raytracing ExportProject
+|MenuLocation=Raytracing → ExportProject
+|Workbenches=[[Raytracing_Workbench|Raytracing]]
+|Shortcut=
+|SeeAlso=
+}}
+
+==Description== <!--T:10-->
+
+<!--T:2-->
+Exports the selected raytracing project to a file.
+
+==Usage== <!--T:11-->
+
+<!--T:3-->
+# Select raytracing project in the [[Tree_view|tree view]].
+# Click on [[Image:Raytracing_ExportProject.svg|32px]] or choose {{KEY| Raytracing}}  →  {{KEY|[[Image:Raytracing_ExportProject.svg|32px]] Export project...}} from the top menu.
+
+==Limitations== <!--T:4-->
+
+
+==Notes== <!--T:5-->
+
+
+<!--T:7-->
+{{Docnav
+|[[Raytracing_ResetCamera|Reset camera]]
+|[[Raytracing_Render|Render]]
+|[[Raytracing_Workbench|Raytracing]]
+|IconL=Raytracing_ResetCamera.svg
+|IconR=Raytracing_Render.svg
+|IconC=Workbench_Raytracing.svg
+}}
+
+</translate>
+{{Raytracing_Tools_navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

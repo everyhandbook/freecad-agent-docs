@@ -1,0 +1,232 @@
+<languages/>
+<translate>
+
+== Introduction == <!--T:1-->
+This example is based on the [https://github.com/FreeCAD/FreeCAD_sf_master/blob/master/src/Mod/Robot/RobotExample.py RobotExample.py] example.
+
+<!--T:2-->
+You may use this file directly if you want.
+
+<!--T:3-->
+Example how to use the basic robot class Robot6Axis which represents a 6-axis industrial robot. The Robot module is  dependent on Part but not on other modules.
+It works mostly with the basic types Placement, Vector and Matrix. So we need only:
+</translate>
+{{Code|code=
+from Robot import *
+from Part import *
+from FreeCAD import *
+}}
+<translate>
+
+=== Basic robot stuff === <!--T:4-->
+create the robot. If you do not specify another kinematic it becomes a Puma 560
+</translate>
+{{Code|code=
+rob = Robot6Axis()
+print rob
+}}
+<translate>
+
+<!--T:5-->
+accessing the axis and the TCP. Axes go from 1-6 and are in degree:
+</translate>
+{{Code|code=
+Start = rob.Tcp
+print Start
+print rob.Axis1
+}}
+<translate>
+
+<!--T:6-->
+move the first axis of the robot:
+</translate>
+{{Code|code=
+rob.Axis1 = 5.0
+}}
+<translate>
+
+<!--T:7-->
+the TCP has changed (forward kinematic)
+</translate>
+{{Code|code=
+print rob.Tcp
+}}
+<translate>
+
+<!--T:8-->
+move the robot back to start position (reverse kinematic):
+</translate>
+{{Code|code=
+rob.Tcp = Start
+print rob.Axis1
+}}
+<translate>
+
+<!--T:9-->
+the same with axis 2:
+</translate>
+{{Code|code=
+rob.Axis2 = 5.0
+print rob.Tcp
+rob.Tcp = Start
+print rob.Axis2
+}}
+<translate>
+
+<!--T:10-->
+Waypoints:
+</translate>
+{{Code|code=
+w = Waypoint(Placement(),name="Pt",type="LIN")
+print w.Name,w.Type,w.Pos,w.Cont,w.Velocity,w.Base,w.Tool
+}}
+<translate>
+
+<!--T:11-->
+generate more. The trajectory always finds automatically a unique name for the waypoints
+</translate>
+{{Code|code=
+l = [w]
+for i in range(5):
+  l.append(Waypoint(Placement(Vector(0,0,i*100),Vector(1,0,0),0),"LIN","Pt"))
+}}
+<translate>
+
+<!--T:12-->
+create a trajectory  
+</translate>
+{{Code|code=
+t = Trajectory(l)
+print t
+for i in range(7):
+  t.insertWaypoints(Waypoint(Placement(Vector(0,0,i*100+500),Vector(1,0,0),0),"LIN","Pt"))
+}}
+<translate>
+
+<!--T:13-->
+see a list of all waypoints:
+</translate>
+{{Code|code=
+print t.Waypoints
+ 
+del rob,Start,t,l,w
+}}
+<translate>
+
+=== Working with the document objects === <!--T:14-->
+
+<!--T:15-->
+Working with the robot document objects:
+first create a robot in the active document
+</translate>
+{{Code|code=
+if(App.activeDocument() == None):App.newDocument()
+ 
+App.activeDocument().addObject("Robot::RobotObject","Robot")
+}}
+<translate>
+
+<!--T:16-->
+Define the visual representation and the kinematic definition (see [[Robot_6-Axis|Robot 6-Axis]] and [[VRML Preparation for Robot Simulation|VRML Preparation for Robot Simulation]] for details about that)
+</translate>
+{{Code|code=
+App.activeDocument().Robot.RobotVrmlFile = App.getResourceDir()+"Mod/Robot/Lib/Kuka/kr500_1.wrl"
+App.activeDocument().Robot.RobotKinematicFile = App.getResourceDir()+"Mod/Robot/Lib/Kuka/kr500_1.csv"
+}}
+<translate>
+
+<!--T:17-->
+start positon of the Axis (only that which differ from 0)
+</translate>
+{{Code|code=
+App.activeDocument().Robot.Axis2 = -90
+App.activeDocument().Robot.Axis3 = 90
+}}
+<translate>
+
+<!--T:18-->
+retrieve the TCP position 
+</translate>
+{{Code|code=
+pos = FreeCAD.getDocument("Unnamed").getObject("Robot").Tcp
+}}
+<translate>
+
+<!--T:19-->
+move the robot
+</translate>
+{{Code|code=
+pos.move(App.Vector(-10,0,0))
+FreeCAD.getDocument("Unnamed").getObject("Robot").Tcp = pos
+}}
+<translate>
+
+<!--T:20-->
+create an empty Trajectory object in the active document
+</translate>
+{{Code|code=
+App.activeDocument().addObject("Robot::TrajectoryObject","Trajectory")
+}}
+<translate>
+
+<!--T:21-->
+get the Trajectory
+</translate>
+{{Code|code=
+t = App.activeDocument().Trajectory.Trajectory
+}}
+<translate>
+
+<!--T:22-->
+add the actual TCP position of the robot to the trajectory
+</translate>
+{{Code|code=
+StartTcp = App.activeDocument().Robot.Tcp
+t.insertWaypoints(StartTcp)
+App.activeDocument().Trajectory.Trajectory = t
+print App.activeDocument().Trajectory.Trajectory
+}}
+<translate>
+
+<!--T:23-->
+insert some more Waypoints and the start point at the end again:
+</translate>
+{{Code|code=
+for i in range(7):
+  t.insertWaypoints(Waypoint(Placement(Vector(0,1000,i*100+500),Vector(1,0,0),i),"LIN","Pt"))
+
+t.insertWaypoints(StartTcp) # end point of the trajectory
+App.activeDocument().Trajectory.Trajectory = t
+print App.activeDocument().Trajectory.Trajectory
+}}
+<translate>
+
+=== Simulation === <!--T:24-->
+To be done..... 
+ 
+=== Exporting the trajectory ===
+The trajectory is exported by Python. That means for every control cabinet type there is a post-processor
+Python module. Here is in detail the Kuka post-processor described
+</translate>
+{{Code|code=
+from KukaExporter import ExportCompactSub
+
+ExportCompactSub(App.activeDocument().Robot,App.activeDocument().Trajectory,'D:/Temp/TestOut.src')
+}}
+<translate>
+
+<!--T:25-->
+and that's kind of how it's done:
+</translate>
+{{Code|code=
+for w in App.activeDocument().Trajectory.Trajectory.Waypoints:
+	(A,B,C) = (w.Pos.Rotation.toEuler())
+	print ("LIN {X %.3f,Y %.3f,Z %.3f,A %.3f,B %.3f,C %.3f} ; %s"%(w.Pos.Base.x,w.Pos.Base.y,w.Pos.Base.z,A,B,C,w.Name))
+
+}}
+<translate>
+
+</translate>
+{{Robot Tools navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}
+[[Category:API{{#translation:}}]]

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       ref:
-        description: Optional FreeCAD ref override
+        description: Optional FreeCAD source ref override
         required: false
         type: string
   schedule:
@@ -20,6 +20,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -41,7 +42,7 @@ jobs:
       - name: Commit upstream documentation changes
         shell: bash
         run: |
-          if git diff --quiet; then
+          if [[ -z "$(git status --porcelain -- corpus manifest.json reports CORPUS_INFO.md LICENSE)" ]]; then
             echo "No selected documentation changes."
             exit 0
           fi

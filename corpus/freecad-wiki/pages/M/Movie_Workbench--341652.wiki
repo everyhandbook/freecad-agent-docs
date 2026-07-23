@@ -1,0 +1,108 @@
+<languages/>
+{{UnfinishedDocu}}
+<translate>
+
+<!--T:1-->
+[[Image:Movie_Workbench_icon.svg|thumb|128px|Movie Workbench icon]]
+
+</translate>
+{{TOCright}}
+<translate>
+
+== Introduction == <!--T:2-->
+
+<!--T:3-->
+[[Image:Movie_Workbench_icon.svg|24px]] [[Movie_Workbench|Movie]] is an [https://www.freecad.org/addons.php external workbench] to animate cameras and objects, and to record and play videos.
+
+== Toolbars == <!--T:4-->
+
+=== Cameras and objects tools === <!--T:5-->
+
+<!--T:6-->
+* [[Image:Movie_CreateMovieCamera.svg|24px]] [[Movie_CreateMovieCamera|MovieCamera]]
+
+<!--T:7-->
+* [[Image:Movie_EnableMovieCamera.svg|24px]] [[Movie_EnableMovieCamera|Enable a MovieCamera]]
+
+<!--T:8-->
+* [[Image:Movie_SetMoviePosA.svg|24px]] [[Movie_SetMoviePosA|Set position A]]
+
+<!--T:9-->
+* [[Image:Movie_SetMoviePosB.svg|24px]] [[Movie_SetMoviePosB|Set position B]]
+
+<!--T:10-->
+* [[Image:Movie_CreateMovieObjects.svg|24px]] [[Movie_CreateMovieObjects|MovieObjects]]
+
+<!--T:11-->
+* [[Image:Movie_EnableMovieObjects.svg|24px]] [[Movie_EnableMovieObjects|Enable a MovieObjects]]
+
+<!--T:12-->
+* [[Image:Movie_SetMovieObjectsAxis.svg|24px]] [[Movie_SetMovieObjectsAxis|Set an axis]]
+
+<!--T:13-->
+* [[Image:Movie_ExcludeMovieObjects.svg|24px]] [[Movie_ExcludeMovieObjects|Exclude a MovieObjects]]
+
+=== Animation tools === <!--T:14-->
+
+<!--T:15-->
+* [[Image:Movie_IniMovieAnimation.svg|24px]] [[Movie_IniMovieAnimation|Return to beginning]]
+
+<!--T:16-->
+* [[Image:Movie_PrevMovieAnimation.svg|24px]] [[Movie_PrevMovieAnimation|Take a step back]]
+
+<!--T:17-->
+* [[Image:Movie_PlayBackwardMovieAnimation.svg|24px]] [[Movie_PlayBackwardMovieAnimation|Play backward the animation]]
+
+<!--T:18-->
+* [[Image:Movie_PauseMovieAnimation.svg|24px]] [[Movie_PauseMovieAnimation|Pause the animation]]
+
+<!--T:19-->
+* [[Image:Movie_PlayMovieAnimation.svg|24px]] [[Movie_PlayMovieAnimation|Play the animation]]
+
+<!--T:20-->
+* [[Image:Movie_PostMovieAnimation.svg|24px]] [[Movie_PostMovieAnimation|Move one step forward]]
+
+<!--T:21-->
+* [[Image:Movie_EndMovieAnimation.svg|24px]] [[Movie_EndMovieAnimation|Move to the end]]
+
+=== Record and play tools === <!--T:22-->
+
+<!--T:23-->
+* [[Image:Movie_CreateClapperboard.svg|24px]] [[Movie_CreateClapperboard|Clapperboard]]
+
+<!--T:24-->
+* [[Image:Movie_EnableMovieClapperboard.svg|24px]] [[Movie_EnableMovieClapperboard|Enables a Clapperboard]]
+
+<!--T:25-->
+* [[Image:Movie_StartRecord3DView.svg|24px]] [[Movie_StartRecord3DView|"R1" - Record 3DViews]]
+
+<!--T:26-->
+* [[Image:Movie_StartRecordRender.svg|24px]] [[Movie_StartRecordRender|"R2" - Record Renders]]
+
+<!--T:27-->
+* [[Image:Movie_StopRecordCamera.svg|24px]] [[Movie_StopRecordCamera|Stop Recording]]
+
+<!--T:28-->
+* [[Image:Movie_CreateVideo.svg|24px]] [[Movie_CreateVideo|Create video]]
+
+<!--T:29-->
+* [[Image:Movie_PlayVideo.svg|24px]] [[Movie_PlayVideo|Play video]]
+
+== Installation == <!--T:30-->
+
+<!--T:31-->
+The [[Movie_Workbench|Movie Workbench]] is available through the [[Std_AddonMgr|Addon Manager]]. Any Movie 3rd party dependencies should be managed automatically through the Addon Manager. 
+
+== References == <!--T:32-->
+
+<!--T:33-->
+* Author: [[User:F_Rosa|Francisco Rosa]]
+* Home page and tutorials: https://github.com/Francisco-Rosa/FreeCAD-Movie/blob/master/README.md
+* Source code: https://github.com/Francisco-Rosa/FreeCAD-Movie
+* Bug reports and feature requests: https://github.com/Francisco-Rosa/FreeCAD-Movie/issues
+* Forum topic: https://forum.freecad.org/viewtopic.php?f=8&t=74432
+
+
+</translate>
+[[Category:User_Documentation{{#translation:}}]]
+[[Category:External_Workbenches{{#translation:}}]]
