@@ -233,7 +233,9 @@ def main():
             for discovery in discoveries:
                 if discovery["type"]=="github": files,skipped=download_github(discovery,staging); revision=discovery["metadata"]["commit"]
                 else: files,skipped=download_mediawiki(discovery,staging); revision=f"{len(discovery['entries'])} page revisions"
-                downloaded.extend(files); source_reports.append({"id":discovery["id"],"type":discovery["type"],"revision":revision,"metadata":discovery["metadata"],"selected_files":len(files),"selected_bytes":sum(e["size"] for e in files),"included":files,"skipped":skipped,"total_upstream_files":discovery["total_upstream_files"],"candidate_extension_stats":discovery.get("candidate_extension_stats",{})})
+                downloaded.extend(files)
+                source_files=[entry for entry in files if entry["source_id"]==discovery["id"]]
+                source_reports.append({"id":discovery["id"],"type":discovery["type"],"revision":revision,"metadata":discovery["metadata"],"selected_files":len(source_files),"selected_bytes":sum(e["size"] for e in source_files),"included":source_files,"skipped":skipped,"total_upstream_files":discovery["total_upstream_files"],"candidate_extension_stats":discovery.get("candidate_extension_stats",{})})
             actual=sum(e["size"] for e in downloaded)
             if actual>limit: raise SyncError(f"Generated corpus is {actual:,} bytes, above the {limit:,}-byte limit")
             if corpus_root.exists(): shutil.rmtree(corpus_root)

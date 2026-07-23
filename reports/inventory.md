@@ -10,8 +10,8 @@
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `3d9a7808cd40d5eb97e4deee5a2e8047a94995f9` | 73 | 109,328 | 33 |
-| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,735 | 8,928,807 | 237 |
+| `freecad-source` | github | `3cadb4f7ecfd237c106375ac53b28808f90ae36f` | 73 | 109,328 | 33 |
+| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,734 | 8,928,315 | 237 |
 
 ## `freecad-source` selected files
 
@@ -1861,7 +1861,6 @@
 - `Compile with OCCT` (7,275 bytes)
 - `Curves MapOnFace` (2,191 bytes)
 - `OCCT DRAW` (5,185 bytes)
-- `freecad-wiki/README.md` (492 bytes)
 
 ### `freecad-wiki` skipped files
 

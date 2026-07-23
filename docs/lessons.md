@@ -8,3 +8,4 @@
 - A clean Codex review may appear as an issue comment, while actionable findings may appear in formal reviews or inline comments. Check both surfaces and require the reviewed commit to match the current PR head.
 - Do not copy the FreeCAD Developers Handbook until redistribution terms are explicit; linking to it is safe and still useful.
 - A small repository-local workflow is easier to maintain than mirroring every agent product, hook, and optional pack from the general template.
+- On Windows, preserve UTF-8 bytes when importing non-ASCII skill files and run Python validators with UTF-8 mode; console pipelines can silently replace Korean text with question marks.
