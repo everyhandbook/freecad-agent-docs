@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,808
-- Selected bytes: 9,038,135
-- Rough token estimate: 2,259,534
+- Selected text files: 1,807
+- Selected bytes: 9,035,791
+- Rough token estimate: 2,258,948
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `3cadb4f7ecfd237c106375ac53b28808f90ae36f` | 73 | 109,328 | 33 |
-| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,734 | 8,928,315 | 237 |
+| `freecad-source` | github | `334aa4c7287491cc05905bcea35a32fc9378bb36` | 73 | 109,328 | 33 |
+| `freecad-wiki` | mediawiki | `1733 page revisions` | 1,733 | 8,925,971 | 237 |
 
 ## `freecad-source` selected files
 
@@ -260,7 +260,7 @@
 - `Draft Preferences` (16,605 bytes)
 - `Embedding FreeCAD` (8,380 bytes)
 - `Draft Dimension` (17,635 bytes)
-- `Scripted objects` (50,151 bytes)
+- `Scripted objects` (50,521 bytes)
 - `Scenegraph` (5,605 bytes)
 - `Pivy` (7,623 bytes)
 - `Macros` (5,237 bytes)
@@ -723,7 +723,7 @@
 - `FEM ConstraintFixed` (2,315 bytes)
 - `FEM ConstraintDisplacement` (5,640 bytes)
 - `FEM ConstraintPlaneRotation` (2,584 bytes)
-- `FEM ConstraintContact` (6,896 bytes)
+- `FEM ConstraintContact` (7,044 bytes)
 - `WebTools Sketchfab` (2,639 bytes)
 - `FEM ConstraintForce` (3,742 bytes)
 - `FEM ConstraintPressure` (3,104 bytes)
@@ -751,14 +751,14 @@
 - `Developing FreeCAD with GitKraken` (12,163 bytes)
 - `Arch AxisSystem` (3,676 bytes)
 - `Arch Nest` (2,716 bytes)
-- `PartDesign Body` (19,544 bytes)
+- `PartDesign Body` (19,795 bytes)
 - `Std Part` (11,813 bytes)
 - `PartDesign Point` (2,664 bytes)
 - `PartDesign Line` (2,626 bytes)
 - `PartDesign Plane` (4,049 bytes)
 - `PartDesign ShapeBinder` (11,365 bytes)
 - `PartDesign Thickness` (6,891 bytes)
-- `PartDesign Boolean` (4,324 bytes)
+- `PartDesign Boolean` (4,349 bytes)
 - `PartDesign Migrate` (2,308 bytes)
 - `PartDesign NewSketch` (4,436 bytes)
 - `PartDesign AdditiveLoft` (5,675 bytes)
@@ -823,7 +823,7 @@
 - `TechDraw Templates` (5,957 bytes)
 - `TechDraw TemplateHowTo` (6,924 bytes)
 - `Std Group` (5,348 bytes)
-- `PartDesign Clone` (2,752 bytes)
+- `PartDesign Clone` (2,898 bytes)
 - `Part EditAttachment` (14,540 bytes)
 - `PartDesign MoveTip` (2,190 bytes)
 - `PartDesign MoveFeature` (1,584 bytes)
@@ -1061,7 +1061,6 @@
 - `3D View` (1,728 bytes)
 - `Selection View` (5,814 bytes)
 - `Report View` (3,421 bytes)
-- `Python Console` (4,834 bytes)
 - `Start Preferences` (3,970 bytes)
 - `Tree View` (8,886 bytes)
 - `Combo View` (1,645 bytes)
@@ -1373,7 +1372,7 @@
 - `Rocket Fin` (8,828 bytes)
 - `Windows packaging/en` (109 bytes)
 - `FEM ConstraintSectionPrint` (2,473 bytes)
-- `FEM ConstraintTie` (6,009 bytes)
+- `FEM ConstraintTie` (6,577 bytes)
 - `FEM EquationElectricforce` (3,518 bytes)
 - `Headless FreeCAD` (12,154 bytes)
 - `FEM ConstantVacuumPermittivity` (1,469 bytes)
@@ -1635,12 +1634,12 @@
 - `Sketcher CreateArcSlot` (4,156 bytes)
 - `Sketcher ConstrainHorVer` (3,628 bytes)
 - `Sketcher Dimension` (4,980 bytes)
-- `Sketcher Rotate` (3,245 bytes)
+- `Sketcher Rotate` (3,943 bytes)
 - `Sketcher ArcOverlay` (1,804 bytes)
 - `Sketcher ConstrainCoincidentUnified` (3,776 bytes)
 - `OSH Automated Documentation` (2,085 bytes)
 - `Sketcher Scale` (2,680 bytes)
-- `Sketcher Translate` (4,198 bytes)
+- `Sketcher Translate` (4,482 bytes)
 - `FreeCAD-SH3D` (1,487 bytes)
 - `CAM Workbench` (16,421 bytes)
 - `PieMenu Workbench` (9,235 bytes)
