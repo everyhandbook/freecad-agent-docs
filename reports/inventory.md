@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,807
-- Selected bytes: 9,035,791
-- Rough token estimate: 2,258,948
+- Selected text files: 1,808
+- Selected bytes: 9,041,594
+- Rough token estimate: 2,260,398
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `334aa4c7287491cc05905bcea35a32fc9378bb36` | 73 | 109,328 | 33 |
-| `freecad-wiki` | mediawiki | `1733 page revisions` | 1,733 | 8,925,971 | 237 |
+| `freecad-source` | github | `17f203e1184596b580dd717c35422aec0dbd48f6` | 73 | 109,328 | 33 |
+| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,734 | 8,931,774 | 238 |
 
 ## `freecad-source` selected files
 
@@ -212,7 +212,7 @@
 - `Std Export` (2,446 bytes)
 - `Std FreeCADWebsite` (1,089 bytes)
 - `Std FreezeViews` (3,988 bytes)
-- `Std Import` (5,088 bytes)
+- `Std Import` (5,775 bytes)
 - `Std MeasureDistance` (2,815 bytes)
 - `Std New` (4,457 bytes)
 - `Std OnlineHelp` (1,431 bytes)
@@ -731,7 +731,7 @@
 - `FEM ConstraintGear` (595 bytes)
 - `FEM ConstraintPulley` (600 bytes)
 - `FEM ConstraintTemperature` (3,298 bytes)
-- `FEM ConstraintHeatflux` (4,637 bytes)
+- `FEM ConstraintHeatflux` (4,904 bytes)
 - `FEM ConstraintInitialTemperature` (3,450 bytes)
 - `FEM SolverControl` (2,030 bytes)
 - `FEM SolverRun` (1,465 bytes)
@@ -761,8 +761,8 @@
 - `PartDesign Boolean` (4,349 bytes)
 - `PartDesign Migrate` (2,308 bytes)
 - `PartDesign NewSketch` (4,436 bytes)
-- `PartDesign AdditiveLoft` (5,675 bytes)
-- `PartDesign AdditivePipe` (9,120 bytes)
+- `PartDesign AdditiveLoft` (5,684 bytes)
+- `PartDesign AdditivePipe` (9,129 bytes)
 - `PartDesign SubtractiveLoft` (5,232 bytes)
 - `PartDesign SubtractivePipe` (6,850 bytes)
 - `PartDesign Hole` (8,912 bytes)
@@ -823,7 +823,7 @@
 - `TechDraw Templates` (5,957 bytes)
 - `TechDraw TemplateHowTo` (6,924 bytes)
 - `Std Group` (5,348 bytes)
-- `PartDesign Clone` (2,898 bytes)
+- `PartDesign Clone` (2,894 bytes)
 - `Part EditAttachment` (14,540 bytes)
 - `PartDesign MoveTip` (2,190 bytes)
 - `PartDesign MoveFeature` (1,584 bytes)
@@ -871,7 +871,7 @@
 - `Creating a simple part with PartDesign` (24,350 bytes)
 - `Arch IfcSpreadsheet` (1,836 bytes)
 - `BIM Preferences` (1,486 bytes)
-- `Import Export Preferences` (39,650 bytes)
+- `Import Export Preferences` (39,651 bytes)
 - `FEM Preferences` (11,645 bytes)
 - `OpenSCAD Preferences` (687 bytes)
 - `PartDesign Preferences` (8,993 bytes)
@@ -1061,6 +1061,7 @@
 - `3D View` (1,728 bytes)
 - `Selection View` (5,814 bytes)
 - `Report View` (3,421 bytes)
+- `Python Console` (4,834 bytes)
 - `Start Preferences` (3,970 bytes)
 - `Tree View` (8,886 bytes)
 - `Combo View` (1,645 bytes)
@@ -2095,6 +2096,7 @@
 - `Macro Z Height Map`: title matched an exclude pattern
 - `Macro Zoom1 1`: title matched an exclude pattern
 - `Macro ZTest Over 128`: title matched an exclude pattern
+- `Sandbox:CoderTonyB/Keyboard Shortcuts`: title matched an exclude pattern
 - `Sandbox:Macro TechDrawTools`: title matched an exclude pattern
 - `Sandbox:Mario52 Macro Cartouche`: title matched an exclude pattern
 - `Sandbox:TechDraw template creation tutorial`: title matched an exclude pattern

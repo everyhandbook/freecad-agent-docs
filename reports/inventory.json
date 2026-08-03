@@ -1,10 +1,10 @@
 {
-  "estimated_tokens": 2258948,
-  "generated_at": "2026-07-27T06:44:23+00:00",
+  "estimated_tokens": 2260398,
+  "generated_at": "2026-08-03T06:36:32+00:00",
   "max_corpus_bytes": 9500000,
   "schema_version": 2,
-  "selected_bytes": 9035791,
-  "selected_files": 1807,
+  "selected_bytes": 9041594,
+  "selected_files": 1808,
   "sources": [
     {
       "candidate_extension_stats": {
@@ -17,7 +17,7 @@
           "files": 1
         },
         ".md": {
-          "bytes": 307436,
+          "bytes": 308462,
           "files": 72
         },
         ".mm": {
@@ -29,7 +29,7 @@
           "files": 21
         },
         ".txt": {
-          "bytes": 636073,
+          "bytes": 637142,
           "files": 209
         },
         ".uml": {
@@ -50,9 +50,9 @@
           "size": 27030,
           "source_id": "freecad-source",
           "source_path": "LICENSE",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/LICENSE"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/LICENSE"
         },
         {
           "git_blob_sha": "573a8cd5b06864c8514dada37ad292f03475c4e3",
@@ -61,9 +61,9 @@
           "size": 5105,
           "source_id": "freecad-source",
           "source_path": "README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/README.md"
         },
         {
           "git_blob_sha": "fa9b2fd547737943b8ce9b827b7348b0a14ecd58",
@@ -72,9 +72,9 @@
           "size": 2959,
           "source_id": "freecad-source",
           "source_path": "src/Doc/AsyncRecompute.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/AsyncRecompute.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/AsyncRecompute.dox"
         },
         {
           "git_blob_sha": "876e27123da76b7119b0b08ca1445d10a06b3229",
@@ -83,9 +83,9 @@
           "size": 2522,
           "source_id": "freecad-source",
           "source_path": "src/Doc/doctips.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/doctips.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/doctips.dox"
         },
         {
           "git_blob_sha": "713f24809484d47a814ddb38c3230df44416ff25",
@@ -94,9 +94,9 @@
           "size": 6492,
           "source_id": "freecad-source",
           "source_path": "src/Doc/mainpage.dox.in",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/mainpage.dox.in"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/mainpage.dox.in"
         },
         {
           "git_blob_sha": "30f40f2ec447068004533ccba7caf4093289e4ed",
@@ -105,9 +105,9 @@
           "size": 438,
           "source_id": "freecad-source",
           "source_path": "src/Doc/makingDocs.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/makingDocs.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/makingDocs.dox"
         },
         {
           "git_blob_sha": "d54bdc7504e94afafc4200fcefebce40479d4a93",
@@ -116,9 +116,9 @@
           "size": 515,
           "source_id": "freecad-source",
           "source_path": "src/Doc/primary-groups.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/primary-groups.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/primary-groups.dox"
         },
         {
           "git_blob_sha": "91624586e58137475594af24cfd8a596f0cca08a",
@@ -127,9 +127,9 @@
           "size": 979,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Arch.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Arch.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Arch.rst"
         },
         {
           "git_blob_sha": "f6874f7eaaf4cf1873bc9310bba08a4827086d46",
@@ -138,9 +138,9 @@
           "size": 193,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Document.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Document.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Document.rst"
         },
         {
           "git_blob_sha": "89ec3c1fb203bab73a1d835437f694891fdfc332",
@@ -149,9 +149,9 @@
           "size": 472,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/DocumentObject.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/DocumentObject.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/DocumentObject.rst"
         },
         {
           "git_blob_sha": "255a5dc448e0826e67dd450e1305f702e147ebf5",
@@ -160,9 +160,9 @@
           "size": 221,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Draft.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Draft.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Draft.rst"
         },
         {
           "git_blob_sha": "3b99de2b8e4c1faecb5a5e5bac64c13015c37d52",
@@ -171,9 +171,9 @@
           "size": 240,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/DraftGeomUtils.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/DraftGeomUtils.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/DraftGeomUtils.rst"
         },
         {
           "git_blob_sha": "45f25ffd3bab7d2e50cae3808c2f44e430d49a82",
@@ -182,9 +182,9 @@
           "size": 215,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/DraftSnap.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/DraftSnap.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/DraftSnap.rst"
         },
         {
           "git_blob_sha": "7478c937360e2ba2fe6f5526eb61b4c15ce22782",
@@ -193,9 +193,9 @@
           "size": 234,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/DraftTrackers.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/DraftTrackers.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/DraftTrackers.rst"
         },
         {
           "git_blob_sha": "1ec5d709b7b4fa4697f5102e72b1c3f00ec49880",
@@ -204,9 +204,9 @@
           "size": 249,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/DraftVecUtils.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/DraftVecUtils.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/DraftVecUtils.rst"
         },
         {
           "git_blob_sha": "3a0718837bab916b74cc6740ac88a657a167e714",
@@ -215,9 +215,9 @@
           "size": 297,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/DraftWorkingPlane.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/DraftWorkingPlane.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/DraftWorkingPlane.rst"
         },
         {
           "git_blob_sha": "d02a2477c3431da397ea7b07f3ac6955936ebc1e",
@@ -226,9 +226,9 @@
           "size": 153,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Drawing.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Drawing.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Drawing.rst"
         },
         {
           "git_blob_sha": "59ef5711978d044f210334e6c07e7f44eba8b410",
@@ -237,9 +237,9 @@
           "size": 196,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/FreeCAD.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/FreeCAD.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/FreeCAD.rst"
         },
         {
           "git_blob_sha": "25eb126773c058760cee0caef17124cee6b45b5a",
@@ -248,9 +248,9 @@
           "size": 163,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/FreeCADGui.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/FreeCADGui.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/FreeCADGui.rst"
         },
         {
           "git_blob_sha": "4cb1451c146fb18136a472dbc6ce9b99021752d4",
@@ -259,9 +259,9 @@
           "size": 180,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Matrix.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Matrix.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Matrix.rst"
         },
         {
           "git_blob_sha": "f4e18d4bad306ab9eaeca9c72a9e61ac6cad62fc",
@@ -270,9 +270,9 @@
           "size": 182,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Mesh.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Mesh.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Mesh.rst"
         },
         {
           "git_blob_sha": "9784c0ffa5c73419ad71060672adf98988d618e7",
@@ -281,9 +281,9 @@
           "size": 166,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Part.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Part.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Part.rst"
         },
         {
           "git_blob_sha": "6d278a9c04dcd682107b518c81e29d5338f05f4b",
@@ -292,9 +292,9 @@
           "size": 162,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/PartDesign.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/PartDesign.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/PartDesign.rst"
         },
         {
           "git_blob_sha": "312f69b6ba12bbe4a0fe4fae32a194d1967bb2ce",
@@ -303,9 +303,9 @@
           "size": 189,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Placement.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Placement.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Placement.rst"
         },
         {
           "git_blob_sha": "3452a5c98d9d03d785eab2cfc0d640c12ed5fb7f",
@@ -314,9 +314,9 @@
           "size": 156,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Sketch.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Sketch.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Sketch.rst"
         },
         {
           "git_blob_sha": "c8b110d8471e6eb31a208044685c2ad9c2b16e2f",
@@ -325,9 +325,9 @@
           "size": 180,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/Vector.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/Vector.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/Vector.rst"
         },
         {
           "git_blob_sha": "960c3e12a4e2ddbd97a6f119143a02e1e1079699",
@@ -336,9 +336,9 @@
           "size": 207,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/ViewProvider.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/ViewProvider.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/ViewProvider.rst"
         },
         {
           "git_blob_sha": "ea32f5d5a1b749ef8ee8cf1bcb7ca6566ecf2cc6",
@@ -347,9 +347,9 @@
           "size": 871,
           "source_id": "freecad-source",
           "source_path": "src/Doc/sphinx/index.rst",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Doc/sphinx/index.rst"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Doc/sphinx/index.rst"
         },
         {
           "git_blob_sha": "4adb844addae9e41a4c87b70407a01a532b049bc",
@@ -358,9 +358,9 @@
           "size": 104,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Assembly/assembly.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Assembly/assembly.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Assembly/assembly.dox"
         },
         {
           "git_blob_sha": "b825eaff500b1657ef2fa886ab4c025ed8f5cdb2",
@@ -369,9 +369,9 @@
           "size": 140,
           "source_id": "freecad-source",
           "source_path": "src/Mod/BIM/Dice3DS/dice3ds.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/BIM/Dice3DS/dice3ds.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/BIM/Dice3DS/dice3ds.dox"
         },
         {
           "git_blob_sha": "8508f695ee502c13a03fe295771aafeca496a515",
@@ -380,9 +380,9 @@
           "size": 58,
           "source_id": "freecad-source",
           "source_path": "src/Mod/BIM/arch.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/BIM/arch.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/BIM/arch.dox"
         },
         {
           "git_blob_sha": "9bd3fd8ee7c02e1a94865f3e91c0ddad61002130",
@@ -391,9 +391,9 @@
           "size": 138,
           "source_id": "freecad-source",
           "source_path": "src/Mod/BIM/coding_conventions.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/BIM/coding_conventions.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/BIM/coding_conventions.md"
         },
         {
           "git_blob_sha": "62492caa6638093ff109b64a3cbd626007b8937a",
@@ -402,9 +402,9 @@
           "size": 3648,
           "source_id": "freecad-source",
           "source_path": "src/Mod/CAM/GCode-description.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/CAM/GCode-description.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/CAM/GCode-description.md"
         },
         {
           "git_blob_sha": "4ad1f009b36271e9ee05d42200c23b47cb225873",
@@ -413,9 +413,9 @@
           "size": 11211,
           "source_id": "freecad-source",
           "source_path": "src/Mod/CAM/Path/Tool/assets/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/CAM/Path/Tool/assets/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/CAM/Path/Tool/assets/README.md"
         },
         {
           "git_blob_sha": "7ce3416f40fe6d2d447f71589eade2d47ffe5367",
@@ -424,9 +424,9 @@
           "size": 460,
           "source_id": "freecad-source",
           "source_path": "src/Mod/CAM/PathScripts/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/CAM/PathScripts/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/CAM/PathScripts/README.md"
         },
         {
           "git_blob_sha": "6a628f3be818db9c7ff7b85059d796c5c41a79e7",
@@ -435,9 +435,9 @@
           "size": 65,
           "source_id": "freecad-source",
           "source_path": "src/Mod/CAM/PathSimulator/PathSimulator.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/CAM/PathSimulator/PathSimulator.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/CAM/PathSimulator/PathSimulator.dox"
         },
         {
           "git_blob_sha": "8445d225a6a326e1794d10f64334f817ca9977af",
@@ -446,9 +446,9 @@
           "size": 5220,
           "source_id": "freecad-source",
           "source_path": "src/Mod/CAM/Tools/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/CAM/Tools/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/CAM/Tools/README.md"
         },
         {
           "git_blob_sha": "eb75636e86b522609fb62f42cea8e3dd295e146e",
@@ -457,9 +457,9 @@
           "size": 113,
           "source_id": "freecad-source",
           "source_path": "src/Mod/CAM/path.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/CAM/path.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/CAM/path.dox"
         },
         {
           "git_blob_sha": "d88526a48a9163994ef91e924735ec42ceb7f3ef",
@@ -468,9 +468,9 @@
           "size": 5469,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/coding_conventions.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/coding_conventions.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/coding_conventions.md"
         },
         {
           "git_blob_sha": "12dd1fafee2f9e325d0979934e61cb80171e2884",
@@ -479,9 +479,9 @@
           "size": 1996,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draft.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draft.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draft.dox"
         },
         {
           "git_blob_sha": "edacae44f840074f6237763ef43eb850e9b4cdbf",
@@ -490,9 +490,9 @@
           "size": 742,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draftfunctions/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draftfunctions/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draftfunctions/README.md"
         },
         {
           "git_blob_sha": "590d05d5c3f985237112a071de86c5849ff8b9c3",
@@ -501,9 +501,9 @@
           "size": 1984,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draftguitools/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draftguitools/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draftguitools/README.md"
         },
         {
           "git_blob_sha": "62de47b6d6d907b8102b79066e89f46fddcd409f",
@@ -512,9 +512,9 @@
           "size": 1521,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draftmake/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draftmake/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draftmake/README.md"
         },
         {
           "git_blob_sha": "1cc77ec9991ee8122530de6e2ff6125a5adfa012",
@@ -523,9 +523,9 @@
           "size": 1761,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draftobjects/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draftobjects/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draftobjects/README.md"
         },
         {
           "git_blob_sha": "6722be155222be4c5cb60617f5622a82536e874e",
@@ -534,9 +534,9 @@
           "size": 1526,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/drafttaskpanels/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/drafttaskpanels/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/drafttaskpanels/README.md"
         },
         {
           "git_blob_sha": "efc688e6da11489a41f26cbfa7261203e6d8e9e0",
@@ -545,9 +545,9 @@
           "size": 1397,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draftutils/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draftutils/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draftutils/README.md"
         },
         {
           "git_blob_sha": "ae9575684feae5cd1ec7d4d3588e1983c375f574",
@@ -556,9 +556,9 @@
           "size": 2076,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Draft/draftviewproviders/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Draft/draftviewproviders/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Draft/draftviewproviders/README.md"
         },
         {
           "git_blob_sha": "b706b25aea32ce8f6fc51b9fc6ccece8b9c544d7",
@@ -567,9 +567,9 @@
           "size": 6292,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Fem/coding_conventions.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Fem/coding_conventions.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Fem/coding_conventions.md"
         },
         {
           "git_blob_sha": "75b425c9e234e87b5c2d3f3dd06448389b4fd1de",
@@ -578,9 +578,9 @@
           "size": 182,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Fem/fem.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Fem/fem.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Fem/fem.dox"
         },
         {
           "git_blob_sha": "8db06d292d20d57dd48a56e2a9c09a624e00e33d",
@@ -589,9 +589,9 @@
           "size": 234,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Fem/femguiobjects/readme.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Fem/femguiobjects/readme.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Fem/femguiobjects/readme.md"
         },
         {
           "git_blob_sha": "446762d982cc531167df30a2b7050e522070a3dc",
@@ -600,9 +600,9 @@
           "size": 133,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Import/import.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Import/import.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Import/import.dox"
         },
         {
           "git_blob_sha": "43db6c6a220bfbeb39de1e02a0e8224ce813ec8e",
@@ -611,9 +611,9 @@
           "size": 65,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Inspection/Inspection.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Inspection/Inspection.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Inspection/Inspection.dox"
         },
         {
           "git_blob_sha": "dbef75b3911a22a35a911ad96dc0603ff4f0dfd6",
@@ -622,9 +622,9 @@
           "size": 100,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Material/material.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Material/material.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Material/material.dox"
         },
         {
           "git_blob_sha": "5ba9bb700a94231de7a9757fb5e9f3ac0739979a",
@@ -633,9 +633,9 @@
           "size": 56,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Measure/measure.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Measure/measure.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Measure/measure.dox"
         },
         {
           "git_blob_sha": "0edd24a4bdb5d69655ff8c49bef98a0f434250c9",
@@ -644,9 +644,9 @@
           "size": 103,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Mesh/mesh.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Mesh/mesh.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Mesh/mesh.dox"
         },
         {
           "git_blob_sha": "78f968f938f42c0b685413c471d5267b252fab45",
@@ -655,9 +655,9 @@
           "size": 124,
           "source_id": "freecad-source",
           "source_path": "src/Mod/MeshPart/meshpart.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/MeshPart/meshpart.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/MeshPart/meshpart.dox"
         },
         {
           "git_blob_sha": "884ade370f0c71c0a60b587c188963b45a2a4c44",
@@ -666,9 +666,9 @@
           "size": 103,
           "source_id": "freecad-source",
           "source_path": "src/Mod/OpenSCAD/OpenSCAD.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/OpenSCAD/OpenSCAD.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/OpenSCAD/OpenSCAD.dox"
         },
         {
           "git_blob_sha": "5b7cf2f095cec3c3794fce79594771d2e608356d",
@@ -677,9 +677,9 @@
           "size": 219,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Part/part.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Part/part.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Part/part.dox"
         },
         {
           "git_blob_sha": "785530d31e0b7528ffcf607a0c3065dfa376046c",
@@ -688,9 +688,9 @@
           "size": 953,
           "source_id": "freecad-source",
           "source_path": "src/Mod/PartDesign/fcgear/README",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/PartDesign/fcgear/README"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/PartDesign/fcgear/README"
         },
         {
           "git_blob_sha": "8225b61711a8a5bb2610a2f1ff7204a6fc518d32",
@@ -699,9 +699,9 @@
           "size": 908,
           "source_id": "freecad-source",
           "source_path": "src/Mod/PartDesign/fcsprocket/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/PartDesign/fcsprocket/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/PartDesign/fcsprocket/README.md"
         },
         {
           "git_blob_sha": "26894834204069f2fbba8c17eed8945928af5fb2",
@@ -710,9 +710,9 @@
           "size": 139,
           "source_id": "freecad-source",
           "source_path": "src/Mod/PartDesign/partdesign.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/PartDesign/partdesign.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/PartDesign/partdesign.dox"
         },
         {
           "git_blob_sha": "9c2ce0a92892c2706cb8e612610b6c6a0f222bfa",
@@ -721,9 +721,9 @@
           "size": 383,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Plot/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Plot/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Plot/README.md"
         },
         {
           "git_blob_sha": "8fe66d6b14ab7fa19137a3623408341765b869a2",
@@ -732,9 +732,9 @@
           "size": 118,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Plot/plot.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Plot/plot.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Plot/plot.dox"
         },
         {
           "git_blob_sha": "44a1625a755089a79f566917499438c612238d18",
@@ -743,9 +743,9 @@
           "size": 105,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Points/points.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Points/points.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Points/points.dox"
         },
         {
           "git_blob_sha": "6eea5afcc15852150ee7e3101ef07f8178b808bb",
@@ -754,9 +754,9 @@
           "size": 220,
           "source_id": "freecad-source",
           "source_path": "src/Mod/ReverseEngineering/reverseengineering.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/ReverseEngineering/reverseengineering.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/ReverseEngineering/reverseengineering.dox"
         },
         {
           "git_blob_sha": "5e80c1dbd126288651464576ff278da33191e1d6",
@@ -765,9 +765,9 @@
           "size": 104,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Robot/robot.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Robot/robot.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Robot/robot.dox"
         },
         {
           "git_blob_sha": "8390e4c77c64e51984accd3faa4c83162b25aa67",
@@ -776,9 +776,9 @@
           "size": 100,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Sketcher/sketcher.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Sketcher/sketcher.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Sketcher/sketcher.dox"
         },
         {
           "git_blob_sha": "740ef37b7525ce827e45312a856eb603e6832f51",
@@ -787,9 +787,9 @@
           "size": 196,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Spreadsheet/spreadsheet.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Spreadsheet/spreadsheet.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Spreadsheet/spreadsheet.dox"
         },
         {
           "git_blob_sha": "395965e0371e1c515629d9b9827e60b0dc49f165",
@@ -798,9 +798,9 @@
           "size": 4224,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Start/README.md",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Start/README.md"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Start/README.md"
         },
         {
           "git_blob_sha": "4ac28fb6932319e15128cad7bd1ffe236f7c8b93",
@@ -809,9 +809,9 @@
           "size": 197,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Surface/Surface.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Surface/Surface.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Surface/Surface.dox"
         },
         {
           "git_blob_sha": "c97973d0877f11f0337539de69c9f0e31f086518",
@@ -820,9 +820,9 @@
           "size": 154,
           "source_id": "freecad-source",
           "source_path": "src/Mod/TechDraw/techdraw.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/TechDraw/techdraw.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/TechDraw/techdraw.dox"
         },
         {
           "git_blob_sha": "3e1f4bca45a56562f64c91e6f77f55a8b6978d67",
@@ -831,9 +831,9 @@
           "size": 2149,
           "source_id": "freecad-source",
           "source_path": "src/Mod/Web/web.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/Web/web.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/Web/web.dox"
         },
         {
           "git_blob_sha": "8bc47a7ff0f32f203d51244266bf7d3665b45dbb",
@@ -842,19 +842,19 @@
           "size": 1172,
           "source_id": "freecad-source",
           "source_path": "src/Mod/mod.dox",
-          "source_revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+          "source_revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
           "source_type": "github",
-          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/334aa4c7287491cc05905bcea35a32fc9378bb36/src/Mod/mod.dox"
+          "source_url": "https://github.com/FreeCAD/FreeCAD/blob/17f203e1184596b580dd717c35422aec0dbd48f6/src/Mod/mod.dox"
         }
       ],
       "metadata": {
-        "commit": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+        "commit": "17f203e1184596b580dd717c35422aec0dbd48f6",
         "ref": "main",
         "repository": "FreeCAD/FreeCAD",
-        "tree": "d82c8118c4139705753c81e93340ac95759290a9",
+        "tree": "710b38beb016833db55d3eee110a0034cc5eab06",
         "web_url": "https://github.com/FreeCAD/FreeCAD"
       },
-      "revision": "334aa4c7287491cc05905bcea35a32fc9378bb36",
+      "revision": "17f203e1184596b580dd717c35422aec0dbd48f6",
       "selected_bytes": 109328,
       "selected_files": 73,
       "skipped": [
@@ -991,7 +991,7 @@
           "reason": "matched an exclude pattern"
         }
       ],
-      "total_upstream_files": 13088,
+      "total_upstream_files": 13094,
       "type": "github"
     },
     {
@@ -2288,12 +2288,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/S/Std_Import--144.wiki",
           "page_id": 144,
-          "revision_timestamp": "2026-03-31T07:08:20Z",
-          "sha256": "93b5e38d474639a981b9b45964eaca886753532aa549316713da2293a8b5aa26",
-          "size": 5088,
+          "revision_timestamp": "2026-07-29T10:07:53Z",
+          "sha256": "308e715552692ce676bd16143119ccd34a7b894c07c923bd0232b2fd3ce453b4",
+          "size": 5775,
           "source_id": "freecad-wiki",
           "source_path": "Std Import",
-          "source_revision": "1773155",
+          "source_revision": "1833429",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/Std_Import"
         },
@@ -10084,12 +10084,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/F/FEM_ConstraintHeatflux--78906.wiki",
           "page_id": 78906,
-          "revision_timestamp": "2026-03-25T10:56:13Z",
-          "sha256": "dcc162d1d41410ce9926ee38d2e9e77dd5baea28f961c16a84d9fc184d6d09df",
-          "size": 4637,
+          "revision_timestamp": "2026-08-02T09:50:41Z",
+          "sha256": "f69c9b813e4baacae2e3da2d3206afa07bce1362b473bdf937543ded272ef24b",
+          "size": 4904,
           "source_id": "freecad-wiki",
           "source_path": "FEM ConstraintHeatflux",
-          "source_revision": "1769010",
+          "source_revision": "1835791",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/FEM_ConstraintHeatflux"
         },
@@ -10536,12 +10536,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/P/PartDesign_AdditiveLoft--81689.wiki",
           "page_id": 81689,
-          "revision_timestamp": "2026-05-14T05:27:11Z",
-          "sha256": "eb41a33e6788161d94e856da52cd0d982e4cd1fc7dc766488fca642e0c157f6c",
-          "size": 5675,
+          "revision_timestamp": "2026-08-02T08:02:25Z",
+          "sha256": "2835a54a71351ecb084e45ddbf105b1a792a4cab939b842e73166ef9a706e890",
+          "size": 5684,
           "source_id": "freecad-wiki",
           "source_path": "PartDesign AdditiveLoft",
-          "source_revision": "1803192",
+          "source_revision": "1835708",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/PartDesign_AdditiveLoft"
         },
@@ -10551,12 +10551,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/P/PartDesign_AdditivePipe--81690.wiki",
           "page_id": 81690,
-          "revision_timestamp": "2026-06-08T08:23:20Z",
-          "sha256": "2c12e57d28ba34623cb8c0360fc69d87aad40d08046217f6ffce856fca37770d",
-          "size": 9120,
+          "revision_timestamp": "2026-08-02T08:03:05Z",
+          "sha256": "ca47045f38a1f060c0ddc39ab021edc50ca0e470a175600f5973e910518a4224",
+          "size": 9129,
           "source_id": "freecad-wiki",
           "source_path": "PartDesign AdditivePipe",
-          "source_revision": "1816594",
+          "source_revision": "1835709",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/PartDesign_AdditivePipe"
         },
@@ -11466,12 +11466,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/P/PartDesign_Clone--86815.wiki",
           "page_id": 86815,
-          "revision_timestamp": "2026-07-24T08:14:45Z",
-          "sha256": "30d8d5255884329084e0de5a9624f31ba6b3f7de59939a12cb322c6664c6e092",
-          "size": 2898,
+          "revision_timestamp": "2026-08-02T08:06:08Z",
+          "sha256": "9b251b370f5cbd0a30c6f1e40be7de4e64e936aa14b94835906ef134501b7d1a",
+          "size": 2894,
           "source_id": "freecad-wiki",
           "source_path": "PartDesign Clone",
-          "source_revision": "1832387",
+          "source_revision": "1835711",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/PartDesign_Clone"
         },
@@ -12186,12 +12186,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/I/Import_Export_Preferences--96362.wiki",
           "page_id": 96362,
-          "revision_timestamp": "2026-07-19T08:47:41Z",
-          "sha256": "10e028bc89bba4cd2ce2eb0cc81dade15444a1e8002da4f3f00bc453cc59c0ff",
-          "size": 39650,
+          "revision_timestamp": "2026-08-02T16:50:58Z",
+          "sha256": "23c11f438b6aec154358ed92f68c2734658b0eab8b8932b3f9eca9db52737481",
+          "size": 39651,
           "source_id": "freecad-wiki",
           "source_path": "Import Export Preferences",
-          "source_revision": "1830890",
+          "source_revision": "1836053",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/Import_Export_Preferences"
         },
@@ -15042,6 +15042,21 @@
           "categories": [
             "User Documentation"
           ],
+          "output_path": "corpus/freecad-wiki/pages/P/Python_Console--159271.wiki",
+          "page_id": 159271,
+          "revision_timestamp": "2026-07-27T07:27:54Z",
+          "sha256": "71dbbe02bd305bc0145bbb34603eef8e56f2b4b847a06a8e7f8ea975efda9efb",
+          "size": 4834,
+          "source_id": "freecad-wiki",
+          "source_path": "Python Console",
+          "source_revision": "1833049",
+          "source_type": "mediawiki",
+          "source_url": "https://wiki.freecad.org/Python_Console"
+        },
+        {
+          "categories": [
+            "User Documentation"
+          ],
           "output_path": "corpus/freecad-wiki/pages/S/Start_Preferences--159341.wiki",
           "page_id": 159341,
           "revision_timestamp": "2025-02-04T10:46:03Z",
@@ -16022,12 +16037,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/A/Assembly--178733.wiki",
           "page_id": 178733,
-          "revision_timestamp": "2026-05-13T14:28:35Z",
+          "revision_timestamp": "2026-07-28T12:54:45Z",
           "sha256": "5c9ea4e35e3ac298cc75bc0163c133a197fceecf2b1bec79acce1a1d12c628bc",
           "size": 3830,
           "source_id": "freecad-wiki",
           "source_path": "Assembly",
-          "source_revision": "1802726",
+          "source_revision": "1833271",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/Assembly"
         },
@@ -27023,12 +27038,12 @@
           ],
           "output_path": "corpus/freecad-wiki/pages/O/OCCT_DRAW--432850.wiki",
           "page_id": 432850,
-          "revision_timestamp": "2026-07-19T12:39:51Z",
-          "sha256": "183ef67e70ad102a223fd983c57f2ce85a6db4bb4cc973e48cb6ff33e034d276",
+          "revision_timestamp": "2026-08-01T12:49:58Z",
+          "sha256": "d6f3bc8f89345f6f5f35246421a5a7065c5a6e7c065b7a4278d205abe02de721",
           "size": 5185,
           "source_id": "freecad-wiki",
           "source_path": "OCCT DRAW",
-          "source_revision": "1831316",
+          "source_revision": "1835309",
           "source_type": "mediawiki",
           "source_url": "https://wiki.freecad.org/OCCT_DRAW"
         }
@@ -27046,9 +27061,9 @@
         "site_name": "FreeCAD Documentation",
         "web_url": "https://wiki.freecad.org"
       },
-      "revision": "1733 page revisions",
-      "selected_bytes": 8925971,
-      "selected_files": 1733,
+      "revision": "1734 page revisions",
+      "selected_bytes": 8931774,
+      "selected_files": 1734,
       "skipped": [
         {
           "path": "Draft DXF/ro",
@@ -27979,6 +27994,10 @@
           "reason": "title matched an exclude pattern"
         },
         {
+          "path": "Sandbox:CoderTonyB/Keyboard Shortcuts",
+          "reason": "title matched an exclude pattern"
+        },
+        {
           "path": "Sandbox:Macro TechDrawTools",
           "reason": "title matched an exclude pattern"
         },
@@ -27999,7 +28018,7 @@
           "reason": "page language is pt-br"
         }
       ],
-      "total_upstream_files": 1970,
+      "total_upstream_files": 1972,
       "type": "mediawiki"
     }
   ]
