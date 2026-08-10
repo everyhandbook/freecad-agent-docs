@@ -2,16 +2,16 @@
 
 - Sources: 2
 - Selected text files: 1,808
-- Selected bytes: 9,041,594
-- Rough token estimate: 2,260,398
+- Selected bytes: 9,049,108
+- Rough token estimate: 2,262,277
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `17f203e1184596b580dd717c35422aec0dbd48f6` | 73 | 109,328 | 33 |
-| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,734 | 8,931,774 | 238 |
+| `freecad-source` | github | `5c05a89431d4bc3500397c66cb6769c9129b5cf5` | 73 | 109,328 | 33 |
+| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,734 | 8,939,288 | 238 |
 
 ## `freecad-source` selected files
 
@@ -251,7 +251,7 @@
 - `Workbenches` (7,757 bytes)
 - `Draft OCA` (2,375 bytes)
 - `Draft ApplyStyle` (1,677 bytes)
-- `Preferences Editor` (52,122 bytes)
+- `Preferences Editor` (54,829 bytes)
 - `Document structure` (4,197 bytes)
 - `Image Workbench` (2,153 bytes)
 - `Points Workbench` (3,010 bytes)
@@ -311,7 +311,7 @@
 - `Draft Polygon` (7,661 bytes)
 - `Draft BSpline` (9,967 bytes)
 - `Part Chamfer` (5,777 bytes)
-- `Part Mirror` (5,421 bytes)
+- `Part Mirror` (5,373 bytes)
 - `Robot CreateRobot` (1,347 bytes)
 - `Robot tutorial` (2,620 bytes)
 - `Robot Simulate` (1,544 bytes)
@@ -335,16 +335,16 @@
 - `Sketcher Workbench` (48,426 bytes)
 - `PartDesign Revolution` (5,991 bytes)
 - `PartDesign Workbench` (15,340 bytes)
-- `PartDesign Pad` (8,742 bytes)
-- `PartDesign Pocket` (8,179 bytes)
+- `PartDesign Pad` (9,871 bytes)
+- `PartDesign Pocket` (9,352 bytes)
 - `Draft Shape2DView` (8,088 bytes)
 - `Arch IFC` (8,866 bytes)
 - `Arch DAE` (1,296 bytes)
 - `Arch OBJ` (2,125 bytes)
 - `Arch Wall` (14,842 bytes)
 - `Arch Structure` (9,875 bytes)
-- `Arch Floor` (3,350 bytes)
-- `Arch Building` (2,884 bytes)
+- `Arch Level` (3,361 bytes)
+- `Arch Building` (3,047 bytes)
 - `Arch Site` (11,881 bytes)
 - `Arch Window` (20,300 bytes)
 - `Arch SectionPlane` (11,950 bytes)
@@ -442,7 +442,7 @@
 - `Draft Facebinder` (5,873 bytes)
 - `Arch Stairs` (9,758 bytes)
 - `Arch Space` (9,824 bytes)
-- `Part Offset` (4,094 bytes)
+- `Part Offset` (4,171 bytes)
 - `Std View Menu` (13,169 bytes)
 - `Std Tools Menu` (3,941 bytes)
 - `Std Refresh` (3,081 bytes)
@@ -477,7 +477,7 @@
 - `BIM IfcExplorer` (1,635 bytes)
 - `Arch tutorial` (62,486 bytes)
 - `Part CrossSections` (2,274 bytes)
-- `Part RuledSurface` (1,425 bytes)
+- `Part RuledSurface` (1,498 bytes)
 - `Drawing Clip` (1,841 bytes)
 - `Drawing Openbrowser` (2,039 bytes)
 - `Drawing Symbol` (1,652 bytes)
@@ -674,9 +674,9 @@
 - `Part Slice` (8,740 bytes)
 - `Manual:Creating renderings` (6,924 bytes)
 - `Manual:A gentle introduction` (15,062 bytes)
-- `Manual:Creating and manipulating geometry` (15,728 bytes)
-- `Scripted Parts: Ball Bearing - Part 1` (4,220 bytes)
-- `Scripted Parts: Ball Bearing - Part 2` (6,782 bytes)
+- `Manual:Creating and manipulating geometry` (15,762 bytes)
+- `Scripted Parts: Ball Bearing - Part 1` (4,452 bytes)
+- `Scripted Parts: Ball Bearing - Part 2` (7,008 bytes)
 - `Manual:Creating parametric objects` (13,734 bytes)
 - `Manual:Creating interface tools` (11,921 bytes)
 - `The FreeCAD source code` (6,748 bytes)
@@ -739,7 +739,7 @@
 - `FEM ResultShow` (4,703 bytes)
 - `Continuous Integration` (965 bytes)
 - `FEM ConstraintSelfWeight` (3,227 bytes)
-- `Part Offset2D` (6,316 bytes)
+- `Part Offset2D` (6,360 bytes)
 - `WebTools Workbench` (1,261 bytes)
 - `Arch MultiMaterial` (4,845 bytes)
 - `Arch CloneComponent` (1,531 bytes)
@@ -751,7 +751,7 @@
 - `Developing FreeCAD with GitKraken` (12,163 bytes)
 - `Arch AxisSystem` (3,676 bytes)
 - `Arch Nest` (2,716 bytes)
-- `PartDesign Body` (19,795 bytes)
+- `PartDesign Body` (19,975 bytes)
 - `Std Part` (11,813 bytes)
 - `PartDesign Point` (2,664 bytes)
 - `PartDesign Line` (2,626 bytes)
@@ -765,7 +765,7 @@
 - `PartDesign AdditivePipe` (9,129 bytes)
 - `PartDesign SubtractiveLoft` (5,232 bytes)
 - `PartDesign SubtractivePipe` (6,850 bytes)
-- `PartDesign Hole` (8,912 bytes)
+- `PartDesign Hole` (8,931 bytes)
 - `Arch JSON` (1,499 bytes)
 - `Reinforcement UShapeRebar` (7,099 bytes)
 - `Reinforcement StraightRebar` (9,625 bytes)
@@ -823,8 +823,8 @@
 - `TechDraw Templates` (5,957 bytes)
 - `TechDraw TemplateHowTo` (6,924 bytes)
 - `Std Group` (5,348 bytes)
-- `PartDesign Clone` (2,894 bytes)
-- `Part EditAttachment` (14,540 bytes)
+- `PartDesign Clone` (3,039 bytes)
+- `Part EditAttachment` (14,892 bytes)
 - `PartDesign MoveTip` (2,190 bytes)
 - `PartDesign MoveFeature` (1,584 bytes)
 - `PartDesign MoveFeatureInTree` (2,043 bytes)
@@ -875,7 +875,7 @@
 - `FEM Preferences` (11,645 bytes)
 - `OpenSCAD Preferences` (687 bytes)
 - `PartDesign Preferences` (8,993 bytes)
-- `CAM Preferences` (1,800 bytes)
+- `CAM Preferences` (1,812 bytes)
 - `Raytracing Preferences` (494 bytes)
 - `Sketcher Preferences` (16,989 bytes)
 - `Installing Helpfile` (4,745 bytes)
@@ -1005,7 +1005,7 @@
 - `Part Defeaturing` (2,033 bytes)
 - `Create a FeaturePython object part I` (16,708 bytes)
 - `FeaturePython Custom Properties` (66,244 bytes)
-- `Tutorial custom placing of windows and doors` (22,446 bytes)
+- `Tutorial custom placing of windows and doors` (22,424 bytes)
 - `Create a FeaturePython object part II` (16,458 bytes)
 - `TechDraw Balloon` (4,628 bytes)
 - `Tutorial Render with Blender` (22,201 bytes)
@@ -1631,7 +1631,7 @@
 - `TechDraw ExtensionArcLengthAnnotation` (1,695 bytes)
 - `Sketcher Offset` (3,020 bytes)
 - `TechDraw CommandAddOffsetVertex` (1,789 bytes)
-- `FEM Geometry Preparation and Meshing` (36,497 bytes)
+- `FEM Geometry Preparation and Meshing` (37,504 bytes)
 - `Sketcher CreateArcSlot` (4,156 bytes)
 - `Sketcher ConstrainHorVer` (3,628 bytes)
 - `Sketcher Dimension` (4,980 bytes)

@@ -32,7 +32,7 @@ The '''Pocket''' tool cuts solids by extruding a sketch or a face of a solid alo
 [[File:PartDesign Pocket example.svg|none]]
 <translate>
 <!--T:8-->
-''Sketch profile (A) was mapped to the top face of base solid (B); result after pocketing through on the right. ''
+{{Caption|On the left, Sketch profile (A) was mapped to the top face of base solid (B). On the right, result after pocketing through.}}
 
 ==Usage== <!--T:46-->
 
@@ -51,6 +51,18 @@ When creating a pocket, or after double-clicking an existing pocket in the [[Tre
 
 <!--T:48-->
 [[Image:PartDesign_Pocket_Taskpanel.png|frame|left]]
+
+
+=== Start === <!--T:96-->
+
+<!--T:97-->
+Sets where the pocket begins. By default the pocket starts at the sketch or face used as its profile. {{Version|26.3}}
+* '''Profile''' (default): the pocket starts directly at the profile's sketch plane or face.
+* '''Offset''': the pocket starts at a numeric distance from the profile, entered in the '''Start Offset''' field.
+* '''Reference''': the pocket starts at a face, [[Part_DatumPlane|datum plane]], or sketch selected with the {{Button|Select reference}} button.
+
+<!--T:98-->
+This is useful to create multiple features from a single master sketch without needing separate offset planes for each one.
 
 ===Type=== <!--T:29-->
 
@@ -75,7 +87,7 @@ The pocket will extend up to the first face of the support it encounters in its 
 ====Up to face==== <!--T:54-->
 
 <!--T:13-->
-The pocket will extend up to a face. Press the {{Button|Select face}} button and select a face or a [[PartDesign_Plane|datum plane]] from the Body.
+The pocket will extend up to a face. Press the {{Button|Select face}} button and select a face or a [[Part_DatumPlane|datum plane]] from the Body.
 
 ====Two dimensions==== <!--T:55-->
 
@@ -169,6 +181,9 @@ Tapers the pocket in the opposite extrusion direction by the given angle. See ''
 * {{PropertyData|Offset|Length}}
 * {{PropertyData|Taper Angle|Angle}}
 * {{PropertyData|Taper Angle2|Angle}}
+* {{PropertyData|Start Type|Enumeration}}: sets how the pocket start is defined (Profile plane, Offset, Reference), see [[#Options|Options]]. {{Version|26.3}}
+* {{PropertyData|Start Offset|Length}}: distance between the profile and the start of the pocket. Only used if {{PropertyData|Start Type}} is '''Offset'''. {{Version|26.3}}
+* {{PropertyData|Start Reference|LinkSub}}: a face, plane, or sketch the pocket starts from. Only used if {{PropertyData|Start Type}} is '''Reference'''. {{Version|26.3}}
 
 <!--T:91-->
 {{TitleProperty|Sketch Based}}
