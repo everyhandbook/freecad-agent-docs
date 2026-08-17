@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,808
-- Selected bytes: 9,049,108
-- Rough token estimate: 2,262,277
+- Selected text files: 1,812
+- Selected bytes: 9,057,801
+- Rough token estimate: 2,264,450
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `5c05a89431d4bc3500397c66cb6769c9129b5cf5` | 73 | 109,328 | 33 |
-| `freecad-wiki` | mediawiki | `1734 page revisions` | 1,734 | 8,939,288 | 238 |
+| `freecad-source` | github | `ab440173c628abe9e212d5a96f7fbc39a3985a16` | 73 | 109,328 | 33 |
+| `freecad-wiki` | mediawiki | `1738 page revisions` | 1,738 | 8,947,981 | 238 |
 
 ## `freecad-source` selected files
 
@@ -251,7 +251,7 @@
 - `Workbenches` (7,757 bytes)
 - `Draft OCA` (2,375 bytes)
 - `Draft ApplyStyle` (1,677 bytes)
-- `Preferences Editor` (54,829 bytes)
+- `Preferences Editor` (54,742 bytes)
 - `Document structure` (4,197 bytes)
 - `Image Workbench` (2,153 bytes)
 - `Points Workbench` (3,010 bytes)
@@ -260,7 +260,7 @@
 - `Draft Preferences` (16,605 bytes)
 - `Embedding FreeCAD` (8,380 bytes)
 - `Draft Dimension` (17,635 bytes)
-- `Scripted objects` (50,521 bytes)
+- `Scripted objects` (50,547 bytes)
 - `Scenegraph` (5,605 bytes)
 - `Pivy` (7,623 bytes)
 - `Macros` (5,237 bytes)
@@ -473,7 +473,7 @@
 - `Draft FlipDimension` (2,237 bytes)
 - `Arch Rebar` (6,651 bytes)
 - `Arch Frame` (5,144 bytes)
-- `Arch Survey` (3,937 bytes)
+- `Arch Survey` (3,955 bytes)
 - `BIM IfcExplorer` (1,635 bytes)
 - `Arch tutorial` (62,486 bytes)
 - `Part CrossSections` (2,274 bytes)
@@ -588,7 +588,7 @@
 - `Localisation Sidebar` (2,691 bytes)
 - `Workbench creation` (24,636 bytes)
 - `Arch SetMaterial` (3,197 bytes)
-- `Arch Schedule` (7,698 bytes)
+- `Arch Schedule` (7,684 bytes)
 - `Part JoinEmbed` (5,386 bytes)
 - `Part JoinConnect` (5,699 bytes)
 - `Part JoinCutout` (5,062 bytes)
@@ -689,7 +689,7 @@
 - `TechDraw LengthDimension` (18,277 bytes)
 - `TechDraw API` (10,923 bytes)
 - `How to install additional workbenches` (7,677 bytes)
-- `Arch ToggleSubs` (1,948 bytes)
+- `Arch ToggleSubs` (1,932 bytes)
 - `Workfeature Workbench` (2,426 bytes)
 - `Arch panel tutorial` (17,979 bytes)
 - `Import/Export IFC - compiling IfcOpenShell` (6,467 bytes)
@@ -843,7 +843,7 @@
 - `FEM SolverCalculiX` (1,231 bytes)
 - `FEM SolverElmer` (9,860 bytes)
 - `FEM SolverZ88` (6,770 bytes)
-- `FEM EquationHeat` (4,209 bytes)
+- `FEM EquationHeat` (4,295 bytes)
 - `FEM EquationElasticity` (8,868 bytes)
 - `FEM EquationElectrostatic` (4,995 bytes)
 - `FEM EquationFlux` (5,232 bytes)
@@ -886,7 +886,7 @@
 - `Basic TechDraw Tutorial` (9,130 bytes)
 - `Sketcher ViewSection` (2,036 bytes)
 - `Artwork Guidelines` (16,145 bytes)
-- `BIM Workbench` (37,770 bytes)
+- `BIM Workbench` (37,764 bytes)
 - `Std AddonMgr` (9,891 bytes)
 - `FEM Solver` (21,661 bytes)
 - `FEM ConstraintElectromagnetic` (5,043 bytes)
@@ -938,7 +938,7 @@
 - `BIM ProjectManager` (3,212 bytes)
 - `Arch Reference` (2,935 bytes)
 - `BIM Library` (2,473 bytes)
-- `BIM Copy` (855 bytes)
+- `BIM Copy` (873 bytes)
 - `BIM Box` (1,655 bytes)
 - `BIM Clone` (2,481 bytes)
 - `DXF` (9,986 bytes)
@@ -1225,7 +1225,7 @@
 - `BIM IfcProperties` (3,855 bytes)
 - `BIM IfcQuantities` (2,342 bytes)
 - `BIM Layers` (3,140 bytes)
-- `BIM Preflight` (7,004 bytes)
+- `BIM Preflight` (6,992 bytes)
 - `Std ProjectUtil` (3,172 bytes)
 - `Std DemoMode` (1,894 bytes)
 - `Arch Truss` (3,600 bytes)
@@ -1361,8 +1361,8 @@
 - `Std LinkSelectAllLinks` (1,743 bytes)
 - `Std SelBack` (1,788 bytes)
 - `Std SelForward` (1,731 bytes)
-- `PartDesign AdditiveHelix` (7,300 bytes)
-- `PartDesign SubtractiveHelix` (6,445 bytes)
+- `PartDesign AdditiveHelix` (7,412 bytes)
+- `PartDesign SubtractiveHelix` (6,094 bytes)
 - `Rocket Workbench` (3,676 bytes)
 - `Rocket NoseCone` (7,227 bytes)
 - `Sketcher BSplineConvertToNURBS` (2,464 bytes)
@@ -1599,9 +1599,9 @@
 - `Fcmcua Workbench` (3,743 bytes)
 - `TechDraw AxoLengthDimension` (2,792 bytes)
 - `FEM ConstraintCurrentDensity` (3,624 bytes)
-- `FEM EquationMagnetodynamic2D` (6,315 bytes)
+- `FEM EquationMagnetodynamic2D` (6,299 bytes)
 - `FEM ConstraintMagnetization` (3,227 bytes)
-- `FEM EquationMagnetodynamic` (8,421 bytes)
+- `FEM EquationMagnetodynamic` (8,405 bytes)
 - `FEM PostFilterContours` (4,264 bytes)
 - `TechDraw HoleShaftFit` (2,130 bytes)
 - `FEM PostCreateFunctionCylinder` (2,936 bytes)
@@ -1645,12 +1645,12 @@
 - `CAM Workbench` (16,421 bytes)
 - `PieMenu Workbench` (9,235 bytes)
 - `Sketcher CreateChamfer` (1,806 bytes)
-- `Assembly Workbench` (43,520 bytes)
+- `Assembly Workbench` (44,062 bytes)
 - `Assembly CreateAssembly` (3,023 bytes)
 - `Assembly InsertLink` (1,625 bytes)
 - `Assembly SolveAssembly` (1,340 bytes)
-- `Assembly ToggleGrounded` (2,267 bytes)
-- `Assembly CreateJointFixed` (10,227 bytes)
+- `Assembly ToggleGrounded` (2,381 bytes)
+- `Assembly CreateJointFixed` (10,269 bytes)
 - `Assembly CreateJointRevolute` (2,174 bytes)
 - `Assembly CreateJointCylindrical` (2,189 bytes)
 - `Assembly CreateJointSlider` (2,162 bytes)
@@ -1659,7 +1659,7 @@
 - `TechDraw BrokenView` (3,943 bytes)
 - `Movie Workbench` (3,587 bytes)
 - `Part Workbench` (14,616 bytes)
-- `Assembly CreateView` (6,860 bytes)
+- `Assembly CreateView` (6,848 bytes)
 - `Assembly CreateJointRackPinion` (2,461 bytes)
 - `Assembly CreateJointScrew` (2,494 bytes)
 - `Assembly CreateJointGears` (3,014 bytes)
@@ -1720,7 +1720,7 @@
 - `FreeGrid Workbench` (2,369 bytes)
 - `BIM Trash` (1,020 bytes)
 - `BIM WPView` (696 bytes)
-- `BIM Diff` (2,154 bytes)
+- `BIM Diff` (2,178 bytes)
 - `Std RestartInSafeMode` (1,377 bytes)
 - `FreeGrid StorageBox` (3,856 bytes)
 - `FreeGrid StorageGrid` (2,882 bytes)
@@ -1729,7 +1729,7 @@
 - `SheetMetal AddCutout` (4,211 bytes)
 - `Sketcher Projection` (3,195 bytes)
 - `Sketcher Intersection` (3,239 bytes)
-- `Assembly CreateSimulation` (7,589 bytes)
+- `Assembly CreateSimulation` (7,613 bytes)
 - `Assembly InsertNewPart` (1,390 bytes)
 - `FreeCAD Manual Converter` (21,056 bytes)
 - `SheetMetal UnfoldUpdate` (1,695 bytes)
@@ -1808,7 +1808,7 @@
 - `Std DevHandbook` (1,154 bytes)
 - `Part ToleranceSet` (1,976 bytes)
 - `Templater ToleranceFrame` (3,611 bytes)
-- `BIM Report` (30,259 bytes)
+- `BIM Report` (30,243 bytes)
 - `Cables CableTerminal` (5,715 bytes)
 - `Cables ElectricalDevice` (13,971 bytes)
 - `Cables AttachInPlace` (3,715 bytes)
@@ -1831,10 +1831,10 @@
 - `Sketcher CreateText` (3,032 bytes)
 - `SheetMetal FromSolid` (4,885 bytes)
 - `SheetMetal AddHem` (9,033 bytes)
-- `Std MassProperties` (2,729 bytes)
+- `Std MassProperties` (2,766 bytes)
 - `Std AnnotationLabel` (2,210 bytes)
 - `Sketcher ConstrainGroup` (1,806 bytes)
-- `BIM Link` (1,475 bytes)
+- `BIM Link` (1,493 bytes)
 - `FEM MeshDistance` (3,861 bytes)
 - `FEM MeshShape` (2,922 bytes)
 - `FEM MeshManipulate` (4,611 bytes)
@@ -1845,10 +1845,10 @@
 - `Sketcher CancelSketch` (1,447 bytes)
 - `Std ToggleBottomPanels` (1,374 bytes)
 - `BIM Glue` (1,630 bytes)
-- `BIM ImagePlane` (1,593 bytes)
+- `BIM ImagePlane` (1,587 bytes)
 - `BIM Nudge` (2,803 bytes)
-- `BIM Rewire` (1,506 bytes)
-- `BIM Unclone` (1,402 bytes)
+- `BIM Rewire` (1,524 bytes)
+- `BIM Unclone` (1,354 bytes)
 - `BIM Reextrude` (1,361 bytes)
 - `Arch StructuralSystem` (1,860 bytes)
 - `Arch StructuresFromSelection` (1,379 bytes)
@@ -1861,6 +1861,10 @@
 - `Compile with OCCT` (7,275 bytes)
 - `Curves MapOnFace` (2,191 bytes)
 - `OCCT DRAW` (5,185 bytes)
+- `Assembly CreateSnapshot` (2,945 bytes)
+- `Assembly CreateJointRigidGroup` (2,307 bytes)
+- `Assembly LinkSelectLinked` (1,329 bytes)
+- `Assembly SelectJointsOfComponent` (1,633 bytes)
 
 ### `freecad-wiki` skipped files
 
