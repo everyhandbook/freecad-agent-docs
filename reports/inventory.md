@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,812
-- Selected bytes: 9,057,801
-- Rough token estimate: 2,264,450
+- Selected text files: 1,813
+- Selected bytes: 9,061,657
+- Rough token estimate: 2,265,414
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `ab440173c628abe9e212d5a96f7fbc39a3985a16` | 73 | 109,328 | 33 |
-| `freecad-wiki` | mediawiki | `1738 page revisions` | 1,738 | 8,947,981 | 238 |
+| `freecad-source` | github | `faf5feae9d2d7b0d9bb81ee9a9fda266ed38ae2c` | 74 | 110,181 | 33 |
+| `freecad-wiki` | mediawiki | `1738 page revisions` | 1,738 | 8,950,984 | 238 |
 
 ## `freecad-source` selected files
 
@@ -86,6 +86,7 @@
 - `src/Mod/Start/README.md` (4,224 bytes)
 - `src/Mod/Surface/Surface.dox` (197 bytes)
 - `src/Mod/TechDraw/techdraw.dox` (154 bytes)
+- `src/Mod/Tux/tux.dox` (853 bytes)
 - `src/Mod/Web/web.dox` (2,149 bytes)
 - `src/Mod/mod.dox` (1,172 bytes)
 
@@ -255,7 +256,7 @@
 - `Document structure` (4,197 bytes)
 - `Image Workbench` (2,153 bytes)
 - `Points Workbench` (3,010 bytes)
-- `Interface Customization` (9,534 bytes)
+- `Interface Customization` (9,566 bytes)
 - `Help FreeCAD` (11,921 bytes)
 - `Draft Preferences` (16,605 bytes)
 - `Embedding FreeCAD` (8,380 bytes)
@@ -335,8 +336,8 @@
 - `Sketcher Workbench` (48,426 bytes)
 - `PartDesign Revolution` (5,991 bytes)
 - `PartDesign Workbench` (15,340 bytes)
-- `PartDesign Pad` (9,871 bytes)
-- `PartDesign Pocket` (9,352 bytes)
+- `PartDesign Pad` (10,261 bytes)
+- `PartDesign Pocket` (9,791 bytes)
 - `Draft Shape2DView` (8,088 bytes)
 - `Arch IFC` (8,866 bytes)
 - `Arch DAE` (1,296 bytes)
@@ -713,9 +714,9 @@
 - `Draft WorkingPlaneProxy` (6,523 bytes)
 - `FEM FemMesh2Mesh` (2,379 bytes)
 - `FEM Analysis` (2,992 bytes)
-- `FEM SolverCalculixCcxtools` (12,939 bytes)
-- `FEM MeshNetgenFromShape` (8,227 bytes)
-- `FEM MeshGmshFromShape` (11,801 bytes)
+- `FEM SolverCalculixCcxtools` (12,937 bytes)
+- `FEM MeshNetgenFromShape` (8,225 bytes)
+- `FEM MeshGmshFromShape` (11,797 bytes)
 - `FEM CreateNodesSet` (669 bytes)
 - `FEM MaterialSolid` (2,398 bytes)
 - `FEM ElementGeometry1D` (5,898 bytes)
@@ -765,14 +766,14 @@
 - `PartDesign AdditivePipe` (9,129 bytes)
 - `PartDesign SubtractiveLoft` (5,232 bytes)
 - `PartDesign SubtractivePipe` (6,850 bytes)
-- `PartDesign Hole` (8,931 bytes)
+- `PartDesign Hole` (10,377 bytes)
 - `Arch JSON` (1,499 bytes)
-- `Reinforcement UShapeRebar` (7,099 bytes)
-- `Reinforcement StraightRebar` (9,625 bytes)
-- `Reinforcement LShapeRebar` (7,078 bytes)
-- `Reinforcement BentShapeRebar` (7,464 bytes)
-- `Reinforcement StirrupRebar` (6,761 bytes)
-- `Reinforcement HelicalRebar` (5,410 bytes)
+- `Reinforcement UShapeRebar` (7,082 bytes)
+- `Reinforcement StraightRebar` (9,612 bytes)
+- `Reinforcement LShapeRebar` (7,061 bytes)
+- `Reinforcement BentShapeRebar` (7,447 bytes)
+- `Reinforcement StirrupRebar` (6,744 bytes)
+- `Reinforcement HelicalRebar` (5,393 bytes)
 - `Reinforcement Custom Spacing` (906 bytes)
 - `CAM SelectLoop` (1,362 bytes)
 - `Toothbrush Head Stand` (19,552 bytes)
@@ -837,12 +838,12 @@
 - `FEM ConstraintInitialFlowVelocity` (2,517 bytes)
 - `FEM ConstraintFluidBoundary` (601 bytes)
 - `FEM ConstraintFlowVelocity` (4,235 bytes)
-- `FEM MeshBoundaryLayer` (3,020 bytes)
-- `FEM MeshRegion` (4,249 bytes)
-- `FEM MeshGroup` (4,133 bytes)
+- `FEM MeshBoundaryLayer` (3,016 bytes)
+- `FEM MeshRegion` (4,245 bytes)
+- `FEM MeshGroup` (4,129 bytes)
 - `FEM SolverCalculiX` (1,231 bytes)
-- `FEM SolverElmer` (9,860 bytes)
-- `FEM SolverZ88` (6,770 bytes)
+- `FEM SolverElmer` (9,858 bytes)
+- `FEM SolverZ88` (6,768 bytes)
 - `FEM EquationHeat` (4,295 bytes)
 - `FEM EquationElasticity` (8,868 bytes)
 - `FEM EquationElectrostatic` (4,995 bytes)
@@ -1234,7 +1235,7 @@
 - `Scripted objects migration` (30,314 bytes)
 - `Arch SHP` (2,140 bytes)
 - `OSE 3D Printer Workbench` (291 bytes)
-- `Viewprovider` (5,558 bytes)
+- `Viewprovider` (5,559 bytes)
 - `Scripted objects saving attributes` (7,719 bytes)
 - `Dialog creation with various widgets` (15,895 bytes)
 - `Custom icon in tree view` (10,507 bytes)
@@ -1460,7 +1461,7 @@
 - `Draft Scale Widget` (2,321 bytes)
 - `Draft Snap Widget` (1,361 bytes)
 - `Draft SetStyle` (5,999 bytes)
-- `Reinforcement SlabRebars` (18,643 bytes)
+- `Reinforcement SlabRebars` (18,636 bytes)
 - `Coin3d snippets` (7,957 bytes)
 - `Onboarding FEM Devs` (3,610 bytes)
 - `Assembly3 GroupObjects` (2,078 bytes)
@@ -1477,7 +1478,7 @@
 - `Assembly3 ConstraintPointsProjectDistance` (2,334 bytes)
 - `Assembly3 ConstraintColinear` (2,257 bytes)
 - `Assembly3 ConstraintEqualPointLineDistance` (2,183 bytes)
-- `Reinforcement FootingRebars` (27,191 bytes)
+- `Reinforcement FootingRebars` (27,141 bytes)
 - `SheetMetal UnattendedUnfold` (3,209 bytes)
 - `TechDraw ExtensionCircleCenterLines` (1,928 bytes)
 - `TechDraw ExtensionThreadHoleSide` (1,950 bytes)
@@ -1631,7 +1632,7 @@
 - `TechDraw ExtensionArcLengthAnnotation` (1,695 bytes)
 - `Sketcher Offset` (3,020 bytes)
 - `TechDraw CommandAddOffsetVertex` (1,789 bytes)
-- `FEM Geometry Preparation and Meshing` (37,504 bytes)
+- `FEM Geometry Preparation and Meshing` (37,959 bytes)
 - `Sketcher CreateArcSlot` (4,156 bytes)
 - `Sketcher ConstrainHorVer` (3,628 bytes)
 - `Sketcher Dimension` (4,980 bytes)
@@ -1667,7 +1668,7 @@
 - `FEM ConstraintRigidBody` (5,387 bytes)
 - `CfdOF Features` (1,678 bytes)
 - `CfdOF Analysis` (1,670 bytes)
-- `CfdOF Workbench` (4,598 bytes)
+- `CfdOF Workbench` (4,664 bytes)
 - `CfdOF Physics Model` (5,648 bytes)
 - `Assembly CreateJointAngle` (2,147 bytes)
 - `Assembly CreateJointPerpendicular` (2,178 bytes)
@@ -1737,15 +1738,15 @@
 - `Part DatumPlane` (3,293 bytes)
 - `Part DatumLine` (2,088 bytes)
 - `Part DatumPoint` (1,842 bytes)
-- `Cables Workbench` (10,874 bytes)
+- `Cables Workbench` (11,044 bytes)
 - `Cables WireFlex` (13,787 bytes)
 - `Cables AddVertex` (2,366 bytes)
 - `Cables DelVertex` (2,499 bytes)
-- `Cables Profile` (6,808 bytes)
+- `Cables Profile` (6,910 bytes)
 - `Cables AttachVertex` (2,996 bytes)
 - `Cables RemoveVertexAttachment` (2,624 bytes)
 - `Draft AddToLayer` (1,772 bytes)
-- `Cables Cable` (9,397 bytes)
+- `Cables Cable` (9,506 bytes)
 - `Cables CableBox` (14,308 bytes)
 - `Ship ResistanceAmadeo` (973 bytes)
 - `Ship ResistanceBlountFox` (5,467 bytes)
@@ -1835,13 +1836,13 @@
 - `Std AnnotationLabel` (2,210 bytes)
 - `Sketcher ConstrainGroup` (1,806 bytes)
 - `BIM Link` (1,493 bytes)
-- `FEM MeshDistance` (3,861 bytes)
-- `FEM MeshShape` (2,922 bytes)
-- `FEM MeshManipulate` (4,611 bytes)
-- `FEM MeshAdvanced` (5,233 bytes)
-- `FEM MeshTransfiniteCurve` (3,205 bytes)
-- `FEM MeshTransfiniteSurface` (3,873 bytes)
-- `FEM MeshTransfiniteVolume` (3,796 bytes)
+- `FEM MeshDistance` (3,857 bytes)
+- `FEM MeshShape` (2,918 bytes)
+- `FEM MeshManipulate` (4,607 bytes)
+- `FEM MeshAdvanced` (5,229 bytes)
+- `FEM MeshTransfiniteCurve` (3,201 bytes)
+- `FEM MeshTransfiniteSurface` (3,869 bytes)
+- `FEM MeshTransfiniteVolume` (3,792 bytes)
 - `Sketcher CancelSketch` (1,447 bytes)
 - `Std ToggleBottomPanels` (1,374 bytes)
 - `BIM Glue` (1,630 bytes)
