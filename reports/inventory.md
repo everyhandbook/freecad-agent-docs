@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,813
-- Selected bytes: 9,061,657
-- Rough token estimate: 2,265,414
+- Selected text files: 1,816
+- Selected bytes: 9,090,819
+- Rough token estimate: 2,272,705
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `faf5feae9d2d7b0d9bb81ee9a9fda266ed38ae2c` | 74 | 110,181 | 33 |
-| `freecad-wiki` | mediawiki | `1738 page revisions` | 1,738 | 8,950,984 | 238 |
+| `freecad-source` | github | `433b2b142dc89b12d20dacb92217f7378f4bbfc9` | 75 | 123,116 | 33 |
+| `freecad-wiki` | mediawiki | `1740 page revisions` | 1,740 | 8,967,211 | 238 |
 
 ## `freecad-source` selected files
 
@@ -72,7 +72,8 @@
 - `src/Mod/Mesh/mesh.dox` (103 bytes)
 - `src/Mod/MeshPart/meshpart.dox` (124 bytes)
 - `src/Mod/OpenSCAD/OpenSCAD.dox` (103 bytes)
-- `src/Mod/Part/part.dox` (219 bytes)
+- `src/Mod/Part/part.dox` (360 bytes)
+- `src/Mod/Part/previews.dox` (12,794 bytes)
 - `src/Mod/PartDesign/fcgear/README` (953 bytes)
 - `src/Mod/PartDesign/fcsprocket/README.md` (908 bytes)
 - `src/Mod/PartDesign/partdesign.dox` (139 bytes)
@@ -261,7 +262,7 @@
 - `Draft Preferences` (16,605 bytes)
 - `Embedding FreeCAD` (8,380 bytes)
 - `Draft Dimension` (17,635 bytes)
-- `Scripted objects` (50,547 bytes)
+- `Scripted objects` (50,632 bytes)
 - `Scenegraph` (5,605 bytes)
 - `Pivy` (7,623 bytes)
 - `Macros` (5,237 bytes)
@@ -333,11 +334,11 @@
 - `Basic modeling tutorial` (10,671 bytes)
 - `Python scripting tutorial` (19,144 bytes)
 - `Draft ToggleDisplayMode` (2,016 bytes)
-- `Sketcher Workbench` (48,426 bytes)
+- `Sketcher Workbench` (52,011 bytes)
 - `PartDesign Revolution` (5,991 bytes)
 - `PartDesign Workbench` (15,340 bytes)
-- `PartDesign Pad` (10,261 bytes)
-- `PartDesign Pocket` (9,791 bytes)
+- `PartDesign Pad` (10,279 bytes)
+- `PartDesign Pocket` (9,815 bytes)
 - `Draft Shape2DView` (8,088 bytes)
 - `Arch IFC` (8,866 bytes)
 - `Arch DAE` (1,296 bytes)
@@ -566,9 +567,9 @@
 - `Arch CutPlane` (4,299 bytes)
 - `FreeCAD and Mesh Import` (2,120 bytes)
 - `Part Loft Technical Details` (6,885 bytes)
-- `Sketcher CreateEllipseByCenter` (4,175 bytes)
+- `Sketcher CreateEllipseByCenter` (4,226 bytes)
 - `Sketcher RestoreInternalAlignmentGeometry` (2,190 bytes)
-- `Sketcher CreateArcOfEllipse` (2,855 bytes)
+- `Sketcher CreateArcOfEllipse` (3,593 bytes)
 - `Sketcher SelectRedundantConstraints` (2,535 bytes)
 - `Sketcher SelectConflictingConstraints` (2,282 bytes)
 - `Sketcher SelectElementsAssociatedWithConstraints` (2,363 bytes)
@@ -587,7 +588,7 @@
 - `Python Development Environment` (24,891 bytes)
 - `Spreadsheet Workbench` (24,246 bytes)
 - `Localisation Sidebar` (2,691 bytes)
-- `Workbench creation` (24,636 bytes)
+- `Workbench creation` (25,244 bytes)
 - `Arch SetMaterial` (3,197 bytes)
 - `Arch Schedule` (7,684 bytes)
 - `Part JoinEmbed` (5,386 bytes)
@@ -609,9 +610,9 @@
 - `Raytracing tutorial` (4,501 bytes)
 - `Sketcher MirrorSketch` (1,879 bytes)
 - `Sketcher Symmetry` (2,743 bytes)
-- `Sketcher Clone` (2,093 bytes)
-- `Sketcher Copy` (1,784 bytes)
-- `Sketcher RectangularArray` (2,630 bytes)
+- `Sketcher Clone` (2,157 bytes)
+- `Sketcher Copy` (1,848 bytes)
+- `Sketcher RectangularArray` (2,694 bytes)
 - `CAM scripting` (19,477 bytes)
 - `CAM Post` (6,910 bytes)
 - `CAM Fixture` (1,789 bytes)
@@ -664,7 +665,7 @@
 - `Parts Library Workbench` (2,407 bytes)
 - `Import from STL or OBJ` (5,762 bytes)
 - `Export to STL or OBJ` (3,688 bytes)
-- `Gear Workbench` (7,377 bytes)
+- `Gear Workbench` (7,573 bytes)
 - `Lattice2 Workbench` (10,744 bytes)
 - `Symbols Library Workbench` (2,527 bytes)
 - `Timber Workbench` (2,284 bytes)
@@ -702,7 +703,7 @@
 - `TechDraw VerticalDimension` (1,624 bytes)
 - `TechDraw AngleDimension` (3,289 bytes)
 - `TechDraw Symbol` (3,673 bytes)
-- `TechDraw Preferences` (19,061 bytes)
+- `TechDraw Preferences` (19,166 bytes)
 - `Arch Panel Cut` (4,427 bytes)
 - `Arch Panel Sheet` (4,906 bytes)
 - `Cfd Workbench` (1,700 bytes)
@@ -766,7 +767,7 @@
 - `PartDesign AdditivePipe` (9,129 bytes)
 - `PartDesign SubtractiveLoft` (5,232 bytes)
 - `PartDesign SubtractivePipe` (6,850 bytes)
-- `PartDesign Hole` (10,377 bytes)
+- `PartDesign Hole` (10,457 bytes)
 - `Arch JSON` (1,499 bytes)
 - `Reinforcement UShapeRebar` (7,082 bytes)
 - `Reinforcement StraightRebar` (9,612 bytes)
@@ -878,7 +879,7 @@
 - `PartDesign Preferences` (8,993 bytes)
 - `CAM Preferences` (1,812 bytes)
 - `Raytracing Preferences` (494 bytes)
-- `Sketcher Preferences` (16,989 bytes)
+- `Sketcher Preferences` (17,775 bytes)
 - `Installing Helpfile` (4,745 bytes)
 - `Crowdin Scripts` (5,444 bytes)
 - `Arch BuildingPart` (10,979 bytes)
@@ -887,7 +888,7 @@
 - `Basic TechDraw Tutorial` (9,130 bytes)
 - `Sketcher ViewSection` (2,036 bytes)
 - `Artwork Guidelines` (16,145 bytes)
-- `BIM Workbench` (37,764 bytes)
+- `BIM Workbench` (37,956 bytes)
 - `Std AddonMgr` (9,891 bytes)
 - `FEM Solver` (21,661 bytes)
 - `FEM ConstraintElectromagnetic` (5,043 bytes)
@@ -895,13 +896,13 @@
 - `Sketcher ConstrainBlock` (3,357 bytes)
 - `TechDraw 3PtAngleDimension` (3,362 bytes)
 - `Pyrate Workbench` (1,060 bytes)
-- `Sketcher CreateArcOfParabola` (2,539 bytes)
-- `Sketcher CreateArcOfHyperbola` (2,653 bytes)
+- `Sketcher CreateArcOfParabola` (3,303 bytes)
+- `Sketcher CreateArcOfHyperbola` (3,399 bytes)
 - `Std FreeCADUserHub` (1,085 bytes)
 - `Std ViewZoomIn` (1,977 bytes)
-- `Sketcher Move` (2,166 bytes)
+- `Sketcher Move` (2,230 bytes)
 - `DynamicData Workbench` (1,903 bytes)
-- `Sketcher CreateRegularPolygon` (2,947 bytes)
+- `Sketcher CreateRegularPolygon` (2,969 bytes)
 - `Python` (5,202 bytes)
 - `BIM Door` (1,117 bytes)
 - `Tutorial for open windows` (21,143 bytes)
@@ -911,7 +912,7 @@
 - `TechDraw ArchView` (6,366 bytes)
 - `Sketcher CreatePoint` (2,237 bytes)
 - `Sketcher CreateLine` (3,252 bytes)
-- `Sketcher CreatePolyline` (3,288 bytes)
+- `Sketcher CreatePolylineLegacy` (2,904 bytes)
 - `Sketcher CreateRectangle` (5,001 bytes)
 - `Sketcher CreateSlot` (2,693 bytes)
 - `Sketcher CreateFillet` (4,360 bytes)
@@ -952,7 +953,7 @@
 - `Sketcher DeleteAllGeometry` (1,710 bytes)
 - `Sketcher DeleteAllConstraints` (1,705 bytes)
 - `BIM IfcElements` (1,600 bytes)
-- `BIM Views` (2,978 bytes)
+- `BIM Views` (3,204 bytes)
 - `BIM Classification` (2,757 bytes)
 - `Image CreateImagePlane` (2,286 bytes)
 - `Image Open` (1,014 bytes)
@@ -1005,7 +1006,7 @@
 - `Points Merge` (1,190 bytes)
 - `Part Defeaturing` (2,033 bytes)
 - `Create a FeaturePython object part I` (16,708 bytes)
-- `FeaturePython Custom Properties` (66,244 bytes)
+- `FeaturePython Custom Properties` (66,290 bytes)
 - `Tutorial custom placing of windows and doors` (22,424 bytes)
 - `Create a FeaturePython object part II` (16,458 bytes)
 - `TechDraw Balloon` (4,628 bytes)
@@ -1585,7 +1586,7 @@
 - `FCGear InternalInvoluteGear` (6,279 bytes)
 - `FCGear CycloidRack` (5,378 bytes)
 - `FCGear HypoCycloidGear` (4,577 bytes)
-- `FCGear GearConnector` (2,702 bytes)
+- `FCGear GearConnector` (2,838 bytes)
 - `FEM PostCreateFunctionSphere` (2,644 bytes)
 - `FEM PostCreateFunctionPlane` (3,083 bytes)
 - `FEMbyGEN Workbench` (3,633 bytes)
@@ -1637,7 +1638,7 @@
 - `Sketcher ConstrainHorVer` (3,628 bytes)
 - `Sketcher Dimension` (4,980 bytes)
 - `Sketcher Rotate` (3,943 bytes)
-- `Sketcher ArcOverlay` (1,804 bytes)
+- `Sketcher ArcOverlay` (1,911 bytes)
 - `Sketcher ConstrainCoincidentUnified` (3,776 bytes)
 - `OSH Automated Documentation` (2,085 bytes)
 - `Sketcher Scale` (2,680 bytes)
@@ -1866,6 +1867,8 @@
 - `Assembly CreateJointRigidGroup` (2,307 bytes)
 - `Assembly LinkSelectLinked` (1,329 bytes)
 - `Assembly SelectJointsOfComponent` (1,633 bytes)
+- `Sketcher CreatePolyline` (4,649 bytes)
+- `FCGear PlanetaryGear` (3,191 bytes)
 
 ### `freecad-wiki` skipped files
 
