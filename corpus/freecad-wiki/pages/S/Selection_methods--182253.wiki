@@ -19,7 +19,7 @@
 ==3D View== <!--T:3-->
 
 <!--T:4-->
-In the [[3D_View|3D View]] there are various ways of selecting objects.
+There are several methods to select objects in the [[3D_View|3D View]]. For all methods [[Part_SelectFilter|selection filters]] are taken into account.
 
 ===Simple selection=== <!--T:5-->
 
@@ -27,6 +27,9 @@ In the [[3D_View|3D View]] there are various ways of selecting objects.
 Simple selection with the mouse (by default left-click) and pre-selection (hover) are described in the [[Mouse_navigation|mouse navigation]] page.
 
 ===Repeated clicks=== <!--T:7-->
+
+<!--T:40-->
+{{VersionMinus|1.1}}
 
 <!--T:8-->
 The first click selects a sub-element (vertex, edge or face) of the object under the mouse. A second click selects the whole object.
@@ -90,6 +93,9 @@ Double clicking will open any associated [[task_panel|task panel]] containing ac
 
 <!--T:27-->
 More methods are available by opening the context menu (right-click), depending on the object selected or the active workbench; see the information in [[Tree_View|Tree View]].
+
+<!--T:41-->
+With the [[Part_SelectFilter|vertex, edge and face selection filter]] options, selecting from the Tree View is not possible.
 
 ==Scripting== <!--T:28-->
 

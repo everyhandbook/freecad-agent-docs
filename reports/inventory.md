@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,816
-- Selected bytes: 9,090,819
-- Rough token estimate: 2,272,705
+- Selected text files: 1,817
+- Selected bytes: 9,109,549
+- Rough token estimate: 2,277,387
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `433b2b142dc89b12d20dacb92217f7378f4bbfc9` | 75 | 123,116 | 33 |
-| `freecad-wiki` | mediawiki | `1740 page revisions` | 1,740 | 8,967,211 | 238 |
+| `freecad-source` | github | `44012a2442c4248369f8538b2023203a878e55a6` | 75 | 123,116 | 33 |
+| `freecad-wiki` | mediawiki | `1741 page revisions` | 1,741 | 8,985,941 | 238 |
 
 ## `freecad-source` selected files
 
@@ -334,11 +334,11 @@
 - `Basic modeling tutorial` (10,671 bytes)
 - `Python scripting tutorial` (19,144 bytes)
 - `Draft ToggleDisplayMode` (2,016 bytes)
-- `Sketcher Workbench` (52,011 bytes)
-- `PartDesign Revolution` (5,991 bytes)
+- `Sketcher Workbench` (51,929 bytes)
+- `PartDesign Revolution` (7,143 bytes)
 - `PartDesign Workbench` (15,340 bytes)
 - `PartDesign Pad` (10,279 bytes)
-- `PartDesign Pocket` (9,815 bytes)
+- `PartDesign Pocket` (10,350 bytes)
 - `Draft Shape2DView` (8,088 bytes)
 - `Arch IFC` (8,866 bytes)
 - `Arch DAE` (1,296 bytes)
@@ -378,8 +378,8 @@
 - `PartDesign Fillet` (8,475 bytes)
 - `Aeroplane` (8,274 bytes)
 - `Draft Point` (6,422 bytes)
-- `PartDesign Groove` (5,943 bytes)
-- `PartDesign Mirrored` (4,456 bytes)
+- `PartDesign Groove` (7,629 bytes)
+- `PartDesign Mirrored` (4,468 bytes)
 - `PartDesign LinearPattern` (5,484 bytes)
 - `PartDesign PolarPattern` (6,723 bytes)
 - `PartDesign Scaled` (4,838 bytes)
@@ -560,7 +560,7 @@
 - `Sketcher SelectVerticalAxis` (1,602 bytes)
 - `Sketcher SelectHorizontalAxis` (1,604 bytes)
 - `Draft Pattern` (3,343 bytes)
-- `FreeCAD and DWG Import` (9,506 bytes)
+- `FreeCAD and DWG Import` (9,611 bytes)
 - `FreeCAD Howto Import Export` (6,204 bytes)
 - `Importing From Sketchup` (2,057 bytes)
 - `FreeCAD and DXF Import` (2,621 bytes)
@@ -609,7 +609,7 @@
 - `Donate` (8,093 bytes)
 - `Raytracing tutorial` (4,501 bytes)
 - `Sketcher MirrorSketch` (1,879 bytes)
-- `Sketcher Symmetry` (2,743 bytes)
+- `Sketcher Symmetry` (2,747 bytes)
 - `Sketcher Clone` (2,157 bytes)
 - `Sketcher Copy` (1,848 bytes)
 - `Sketcher RectangularArray` (2,694 bytes)
@@ -759,15 +759,15 @@
 - `PartDesign Line` (2,626 bytes)
 - `PartDesign Plane` (4,049 bytes)
 - `PartDesign ShapeBinder` (11,365 bytes)
-- `PartDesign Thickness` (6,891 bytes)
+- `PartDesign Thickness` (6,913 bytes)
 - `PartDesign Boolean` (4,349 bytes)
 - `PartDesign Migrate` (2,308 bytes)
 - `PartDesign NewSketch` (4,436 bytes)
 - `PartDesign AdditiveLoft` (5,684 bytes)
 - `PartDesign AdditivePipe` (9,129 bytes)
-- `PartDesign SubtractiveLoft` (5,232 bytes)
-- `PartDesign SubtractivePipe` (6,850 bytes)
-- `PartDesign Hole` (10,457 bytes)
+- `PartDesign SubtractiveLoft` (5,748 bytes)
+- `PartDesign SubtractivePipe` (7,379 bytes)
+- `PartDesign Hole` (10,885 bytes)
 - `Arch JSON` (1,499 bytes)
 - `Reinforcement UShapeRebar` (7,082 bytes)
 - `Reinforcement StraightRebar` (9,612 bytes)
@@ -812,14 +812,14 @@
 - `PartDesign AdditiveTorus` (3,423 bytes)
 - `PartDesign AdditiveWedge` (2,652 bytes)
 - `FEM Shear of a Composite Block` (10,228 bytes)
-- `PartDesign SubtractiveBox` (3,159 bytes)
-- `PartDesign SubtractiveCone` (3,050 bytes)
-- `PartDesign SubtractiveCylinder` (3,506 bytes)
-- `PartDesign SubtractiveEllipsoid` (3,702 bytes)
-- `PartDesign SubtractivePrism` (3,179 bytes)
-- `PartDesign SubtractiveSphere` (3,549 bytes)
-- `PartDesign SubtractiveTorus` (3,607 bytes)
-- `PartDesign SubtractiveWedge` (2,858 bytes)
+- `PartDesign SubtractiveBox` (3,695 bytes)
+- `PartDesign SubtractiveCone` (3,589 bytes)
+- `PartDesign SubtractiveCylinder` (4,057 bytes)
+- `PartDesign SubtractiveEllipsoid` (4,256 bytes)
+- `PartDesign SubtractivePrism` (3,721 bytes)
+- `PartDesign SubtractiveSphere` (4,094 bytes)
+- `PartDesign SubtractiveTorus` (4,149 bytes)
+- `PartDesign SubtractiveWedge` (3,400 bytes)
 - `TechDraw Hatching` (3,960 bytes)
 - `TechDraw LineGroup` (2,799 bytes)
 - `TechDraw Templates` (5,957 bytes)
@@ -915,7 +915,7 @@
 - `Sketcher CreatePolylineLegacy` (2,904 bytes)
 - `Sketcher CreateRectangle` (5,001 bytes)
 - `Sketcher CreateSlot` (2,693 bytes)
-- `Sketcher CreateFillet` (4,360 bytes)
+- `Sketcher CreateFillet` (4,401 bytes)
 - `Sketcher CreateArc` (3,974 bytes)
 - `Sketcher Create3PointArc` (1,741 bytes)
 - `Sketcher CreateCircle` (3,088 bytes)
@@ -1004,7 +1004,7 @@
 - `Points Convert` (2,962 bytes)
 - `Points PolyCut` (1,369 bytes)
 - `Points Merge` (1,190 bytes)
-- `Part Defeaturing` (2,033 bytes)
+- `Part Defeaturing` (2,084 bytes)
 - `Create a FeaturePython object part I` (16,708 bytes)
 - `FeaturePython Custom Properties` (66,290 bytes)
 - `Tutorial custom placing of windows and doors` (22,424 bytes)
@@ -1152,7 +1152,7 @@
 - `Assembly4 Workbench` (2,349 bytes)
 - `Post-Processing of FEM Results with Paraview` (28,287 bytes)
 - `Compile on Docker` (6,458 bytes)
-- `Selection methods` (5,502 bytes)
+- `Selection methods` (5,754 bytes)
 - `Arch CutLine` (1,981 bytes)
 - `Datum` (2,251 bytes)
 - `PartDesign SubShapeBinder` (9,909 bytes)
@@ -1364,7 +1364,7 @@
 - `Std SelBack` (1,788 bytes)
 - `Std SelForward` (1,731 bytes)
 - `PartDesign AdditiveHelix` (7,412 bytes)
-- `PartDesign SubtractiveHelix` (6,094 bytes)
+- `PartDesign SubtractiveHelix` (6,800 bytes)
 - `Rocket Workbench` (3,676 bytes)
 - `Rocket NoseCone` (7,227 bytes)
 - `Sketcher BSplineConvertToNURBS` (2,464 bytes)
@@ -1859,7 +1859,7 @@
 - `Fasteners RestoreProperties` (1,597 bytes)
 - `Fasteners Search` (1,835 bytes)
 - `Draft PathTwistedArray` (8,029 bytes)
-- `Draft PathTwistedLinkArray` (1,587 bytes)
+- `Draft PathTwistedLinkArray` (1,586 bytes)
 - `Compile with OCCT` (7,275 bytes)
 - `Curves MapOnFace` (2,191 bytes)
 - `OCCT DRAW` (5,185 bytes)
@@ -1868,7 +1868,8 @@
 - `Assembly LinkSelectLinked` (1,329 bytes)
 - `Assembly SelectJointsOfComponent` (1,633 bytes)
 - `Sketcher CreatePolyline` (4,649 bytes)
-- `FCGear PlanetaryGear` (3,191 bytes)
+- `FCGear PlanetaryGear` (8,134 bytes)
+- `PartDesign Defeaturing` (3,480 bytes)
 
 ### `freecad-wiki` skipped files
 
