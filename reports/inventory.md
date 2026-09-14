@@ -1,25 +1,26 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,817
-- Selected bytes: 9,109,549
-- Rough token estimate: 2,277,387
+- Selected text files: 1,819
+- Selected bytes: 9,143,320
+- Rough token estimate: 2,285,830
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `44012a2442c4248369f8538b2023203a878e55a6` | 75 | 123,116 | 33 |
-| `freecad-wiki` | mediawiki | `1741 page revisions` | 1,741 | 8,985,941 | 238 |
+| `freecad-source` | github | `6a0f9980ec5f4f807ff14374837107c71538d497` | 76 | 130,820 | 33 |
+| `freecad-wiki` | mediawiki | `1742 page revisions` | 1,742 | 9,012,008 | 238 |
 
 ## `freecad-source` selected files
 
 - `LICENSE` (27,030 bytes)
 - `README.md` (5,105 bytes)
 - `src/Doc/AsyncRecompute.dox` (2,959 bytes)
+- `src/Doc/NumericInput.dox` (7,635 bytes)
 - `src/Doc/doctips.dox` (2,522 bytes)
-- `src/Doc/mainpage.dox.in` (6,492 bytes)
+- `src/Doc/mainpage.dox.in` (6,561 bytes)
 - `src/Doc/makingDocs.dox` (438 bytes)
 - `src/Doc/primary-groups.dox` (515 bytes)
 - `src/Doc/sphinx/Arch.rst` (979 bytes)
@@ -137,7 +138,7 @@
 - `Compile on Windows` (41,286 bytes)
 - `Contributors` (10,767 bytes)
 - `Debugging` (15,165 bytes)
-- `Developer hub` (7,526 bytes)
+- `Developer hub` (7,539 bytes)
 - `Dialog creation` (17,177 bytes)
 - `Download` (3,916 bytes)
 - `Draft Arc` (4,864 bytes)
@@ -146,7 +147,7 @@
 - `Draft DXF` (8,043 bytes)
 - `Draft Downgrade` (3,914 bytes)
 - `Draft Line` (6,176 bytes)
-- `Draft Workbench` (24,703 bytes)
+- `Draft Workbench` (24,700 bytes)
 - `Draft Move` (8,459 bytes)
 - `Draft Offset` (6,626 bytes)
 - `Draft Rectangle` (8,043 bytes)
@@ -154,7 +155,7 @@
 - `Draft SVG` (3,697 bytes)
 - `Draft Snap` (8,070 bytes)
 - `Draft Text` (7,426 bytes)
-- `Draft Trimex` (6,628 bytes)
+- `Draft Trimex` (6,013 bytes)
 - `Draft Upgrade` (4,446 bytes)
 - `Drawing Workbench` (4,321 bytes)
 - `Extra python modules` (19,986 bytes)
@@ -288,7 +289,7 @@
 - `PythonOCC` (3,296 bytes)
 - `Embedding FreeCADGui` (18,407 bytes)
 - `PySide` (6,818 bytes)
-- `File Format FCStd` (7,947 bytes)
+- `File Format FCStd` (7,950 bytes)
 - `Installing additional components` (8,542 bytes)
 - `Scripting and macros` (4,115 bytes)
 - `Compiling` (1,460 bytes)
@@ -334,9 +335,9 @@
 - `Basic modeling tutorial` (10,671 bytes)
 - `Python scripting tutorial` (19,144 bytes)
 - `Draft ToggleDisplayMode` (2,016 bytes)
-- `Sketcher Workbench` (51,929 bytes)
+- `Sketcher Workbench` (51,932 bytes)
 - `PartDesign Revolution` (7,143 bytes)
-- `PartDesign Workbench` (15,340 bytes)
+- `PartDesign Workbench` (15,534 bytes)
 - `PartDesign Pad` (10,279 bytes)
 - `PartDesign Pocket` (10,350 bytes)
 - `Draft Shape2DView` (8,088 bytes)
@@ -564,7 +565,7 @@
 - `FreeCAD Howto Import Export` (6,204 bytes)
 - `Importing From Sketchup` (2,057 bytes)
 - `FreeCAD and DXF Import` (2,621 bytes)
-- `Arch CutPlane` (4,299 bytes)
+- `Arch CutPlane` (4,335 bytes)
 - `FreeCAD and Mesh Import` (2,120 bytes)
 - `Part Loft Technical Details` (6,885 bytes)
 - `Sketcher CreateEllipseByCenter` (4,226 bytes)
@@ -624,7 +625,7 @@
 - `CAM Copy` (1,321 bytes)
 - `Draft tutorial` (19,482 bytes)
 - `Basic Sketcher Tutorial` (21,302 bytes)
-- `External workbenches` (48,821 bytes)
+- `External workbenches` (70,686 bytes)
 - `Thread for Screw Tutorial` (25,204 bytes)
 - `Inspection Workbench` (1,405 bytes)
 - `Reverse Engineering Workbench` (1,399 bytes)
@@ -759,7 +760,7 @@
 - `PartDesign Line` (2,626 bytes)
 - `PartDesign Plane` (4,049 bytes)
 - `PartDesign ShapeBinder` (11,365 bytes)
-- `PartDesign Thickness` (6,913 bytes)
+- `PartDesign Thickness` (7,035 bytes)
 - `PartDesign Boolean` (4,349 bytes)
 - `PartDesign Migrate` (2,308 bytes)
 - `PartDesign NewSketch` (4,436 bytes)
@@ -888,7 +889,7 @@
 - `Basic TechDraw Tutorial` (9,130 bytes)
 - `Sketcher ViewSection` (2,036 bytes)
 - `Artwork Guidelines` (16,145 bytes)
-- `BIM Workbench` (37,956 bytes)
+- `BIM Workbench` (38,066 bytes)
 - `Std AddonMgr` (9,891 bytes)
 - `FEM Solver` (21,661 bytes)
 - `FEM ConstraintElectromagnetic` (5,043 bytes)
@@ -936,7 +937,7 @@
 - `Sketcher Extend` (3,227 bytes)
 - `Sketcher CarbonCopy` (2,880 bytes)
 - `Sketcher SelectElementsWithDoFs` (2,138 bytes)
-- `BIM Setup` (1,538 bytes)
+- `BIM Setup` (1,552 bytes)
 - `BIM ProjectManager` (3,212 bytes)
 - `Arch Reference` (2,935 bytes)
 - `BIM Library` (2,473 bytes)
@@ -958,7 +959,7 @@
 - `Image CreateImagePlane` (2,286 bytes)
 - `Image Open` (1,014 bytes)
 - `Image Scaling` (1,258 bytes)
-- `Addon` (2,034 bytes)
+- `Addon` (2,015 bytes)
 - `Feature editing` (7,865 bytes)
 - `Points Export` (1,326 bytes)
 - `Points Import` (2,884 bytes)
@@ -1014,7 +1015,7 @@
 - `Tutorial FreeCAD POV ray` (34,840 bytes)
 - `Constructive solid geometry` (2,607 bytes)
 - `Part scripting` (7,802 bytes)
-- `Topological naming problem` (15,215 bytes)
+- `Topological naming problem` (15,216 bytes)
 - `TechDraw LeaderLine` (6,137 bytes)
 - `TechDraw RichTextAnnotation` (3,446 bytes)
 - `Draft Arc 3Points` (6,218 bytes)
@@ -1146,7 +1147,7 @@
 - `TechDraw GeometricHatch` (4,305 bytes)
 - `TechDraw ToggleFrame` (3,266 bytes)
 - `TechDraw Annotation` (3,990 bytes)
-- `Std SendToPythonConsole` (3,848 bytes)
+- `Std SendToPythonConsole` (4,221 bytes)
 - `Migrating to FreeCAD from SolidWorks` (2,476 bytes)
 - `Assembly3 Workbench` (50,641 bytes)
 - `Assembly4 Workbench` (2,349 bytes)
@@ -1162,7 +1163,7 @@
 - `TechDraw LandmarkDimension` (3,742 bytes)
 - `CurvedShapes Workbench` (2,949 bytes)
 - `CurvedShapes CurvedArray` (3,195 bytes)
-- `Scripts` (16,997 bytes)
+- `Scripts` (17,012 bytes)
 - `Silk Workbench` (1,199 bytes)
 - `IfcOpenShell` (21,364 bytes)
 - `FCGear InvoluteGear` (14,483 bytes)
@@ -1644,7 +1645,7 @@
 - `Sketcher Scale` (2,680 bytes)
 - `Sketcher Translate` (4,482 bytes)
 - `FreeCAD-SH3D` (1,487 bytes)
-- `CAM Workbench` (16,421 bytes)
+- `CAM Workbench` (16,422 bytes)
 - `PieMenu Workbench` (9,235 bytes)
 - `Sketcher CreateChamfer` (1,806 bytes)
 - `Assembly Workbench` (44,062 bytes)
@@ -1669,7 +1670,7 @@
 - `FEM ConstraintRigidBody` (5,387 bytes)
 - `CfdOF Features` (1,678 bytes)
 - `CfdOF Analysis` (1,670 bytes)
-- `CfdOF Workbench` (4,664 bytes)
+- `CfdOF Workbench` (5,311 bytes)
 - `CfdOF Physics Model` (5,648 bytes)
 - `Assembly CreateJointAngle` (2,147 bytes)
 - `Assembly CreateJointPerpendicular` (2,178 bytes)
@@ -1869,7 +1870,8 @@
 - `Assembly SelectJointsOfComponent` (1,633 bytes)
 - `Sketcher CreatePolyline` (4,649 bytes)
 - `FCGear PlanetaryGear` (8,134 bytes)
-- `PartDesign Defeaturing` (3,480 bytes)
+- `PartDesign Defeaturing` (3,473 bytes)
+- `BIM ExtrudeFace` (3,314 bytes)
 
 ### `freecad-wiki` skipped files
 

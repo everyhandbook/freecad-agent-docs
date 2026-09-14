@@ -189,6 +189,9 @@ These tools apply a treatment to edges or faces.
 <!--T:95-->
 * [[File:PartDesign_Thickness.svg|32px]] [[PartDesign_Thickness|Thickness]]: creates a thick shell from the active body and opens selected face.
 
+<!--T:155-->
+* [[Image:PartDesign_Defeaturing.svg|32px]] [[PartDesign_Defeaturing|Defeaturing]]: removes selected faces from a feature and heals the resulting gap by extending adjacent faces.
+
 === Part Design Transformation Features toolbar === <!--T:84-->
 
 <!--T:85-->
@@ -265,7 +268,7 @@ Some additional tools available in the Part Design menu:
 == Tutorials == <!--T:107-->
 
 <!--T:108-->
-* [http://help-freecad-jpg87.fr/ How to use FreeCAD], a website describing the workflow for mechanical design.
+* [https://help-freecad-jpg87.fr/ How to use FreeCAD], a website describing the workflow for mechanical design.
 * [[Creating_a_simple_part_with_PartDesign|Creating a simple part with PartDesign]]
 * [[Basic_Part_Design_Tutorial_019|Basic Part Design Tutorial 019]]
 * [[PartDesign_Bearingholder_Tutorial_I|PartDesign Bearingholder Tutorial I]] (needs updating)
