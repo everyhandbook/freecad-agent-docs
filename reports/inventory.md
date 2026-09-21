@@ -1,26 +1,26 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,819
-- Selected bytes: 9,143,320
-- Rough token estimate: 2,285,830
+- Selected text files: 1,821
+- Selected bytes: 9,167,885
+- Rough token estimate: 2,291,971
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `6a0f9980ec5f4f807ff14374837107c71538d497` | 76 | 130,820 | 33 |
-| `freecad-wiki` | mediawiki | `1742 page revisions` | 1,742 | 9,012,008 | 238 |
+| `freecad-source` | github | `dfbb99298dec8b362ed82187b76b5e9252b5d55b` | 76 | 131,853 | 32 |
+| `freecad-wiki` | mediawiki | `1744 page revisions` | 1,744 | 9,035,540 | 238 |
 
 ## `freecad-source` selected files
 
 - `LICENSE` (27,030 bytes)
-- `README.md` (5,105 bytes)
+- `README.md` (4,993 bytes)
 - `src/Doc/AsyncRecompute.dox` (2,959 bytes)
-- `src/Doc/NumericInput.dox` (7,635 bytes)
+- `src/Doc/NumericInput.dox` (8,776 bytes)
 - `src/Doc/doctips.dox` (2,522 bytes)
-- `src/Doc/mainpage.dox.in` (6,561 bytes)
+- `src/Doc/mainpage.dox.in` (6,565 bytes)
 - `src/Doc/makingDocs.dox` (438 bytes)
 - `src/Doc/primary-groups.dox` (515 bytes)
 - `src/Doc/sphinx/Arch.rst` (979 bytes)
@@ -117,7 +117,6 @@
 - `src/Mod/CAM/Roadmap/Functionality/Stock and Work-piece Setup.md`: matched an exclude pattern
 - `src/Mod/CAM/Roadmap/Functionality/Tool Management.md`: matched an exclude pattern
 - `src/Mod/CAM/Roadmap/README.md`: matched an exclude pattern
-- `src/Mod/CAM/libarea/kurve/README`: matched an exclude pattern
 - `src/Mod/Draft/Resources/README.md`: matched an exclude pattern
 - `src/Mod/Draft/drafttests/README.md`: matched an exclude pattern
 - `src/Mod/Fem/femtest/failing_tests.md`: matched an exclude pattern
@@ -284,7 +283,7 @@
 - `Part Common` (1,765 bytes)
 - `Part Cut` (1,688 bytes)
 - `Part Fillet` (3,453 bytes)
-- `Part Revolve` (5,500 bytes)
+- `Part Revolve` (5,557 bytes)
 - `Part Section` (3,458 bytes)
 - `PythonOCC` (3,296 bytes)
 - `Embedding FreeCADGui` (18,407 bytes)
@@ -339,7 +338,7 @@
 - `PartDesign Revolution` (7,143 bytes)
 - `PartDesign Workbench` (15,534 bytes)
 - `PartDesign Pad` (10,279 bytes)
-- `PartDesign Pocket` (10,350 bytes)
+- `PartDesign Pocket` (11,951 bytes)
 - `Draft Shape2DView` (8,088 bytes)
 - `Arch IFC` (8,866 bytes)
 - `Arch DAE` (1,296 bytes)
@@ -448,8 +447,8 @@
 - `Part Offset` (4,171 bytes)
 - `Std View Menu` (13,169 bytes)
 - `Std Tools Menu` (3,941 bytes)
-- `Std Refresh` (3,081 bytes)
-- `Quantity` (14,452 bytes)
+- `Std Refresh` (2,825 bytes)
+- `Quantity` (14,462 bytes)
 - `Std UnitsCalculator` (3,408 bytes)
 - `Sketcher ValidateSketch` (4,653 bytes)
 - `Draft PathArray` (15,589 bytes)
@@ -607,7 +606,7 @@
 - `FEM tutorial` (5,856 bytes)
 - `FEM Workbench` (26,968 bytes)
 - `Qt Example` (57,492 bytes)
-- `Donate` (8,093 bytes)
+- `Donate` (8,112 bytes)
 - `Raytracing tutorial` (4,501 bytes)
 - `Sketcher MirrorSketch` (1,879 bytes)
 - `Sketcher Symmetry` (2,747 bytes)
@@ -619,7 +618,7 @@
 - `CAM Fixture` (1,789 bytes)
 - `CAM Comment` (1,462 bytes)
 - `CAM Stop` (1,081 bytes)
-- `CAM Profile` (12,204 bytes)
+- `CAM Profile` (12,164 bytes)
 - `CAM Pocket Shape` (8,139 bytes)
 - `CAM Drilling` (7,293 bytes)
 - `CAM Copy` (1,321 bytes)
@@ -880,7 +879,7 @@
 - `PartDesign Preferences` (8,993 bytes)
 - `CAM Preferences` (1,812 bytes)
 - `Raytracing Preferences` (494 bytes)
-- `Sketcher Preferences` (17,775 bytes)
+- `Sketcher Preferences` (18,536 bytes)
 - `Installing Helpfile` (4,745 bytes)
 - `Crowdin Scripts` (5,444 bytes)
 - `Arch BuildingPart` (10,979 bytes)
@@ -1072,7 +1071,7 @@
 - `Interface` (9,064 bytes)
 - `DAG View` (2,901 bytes)
 - `Status Bar` (4,143 bytes)
-- `Std Base` (8,647 bytes)
+- `Std Base` (8,768 bytes)
 - `Part ElementCopy` (1,519 bytes)
 - `Part TransformedCopy` (1,733 bytes)
 - `Part Feature` (14,013 bytes)
@@ -1088,7 +1087,7 @@
 - `Linux packaging` (742 bytes)
 - `Windows packaging` (145 bytes)
 - `MacOS packaging` (181 bytes)
-- `Compile on Linux` (52,740 bytes)
+- `Compile on Linux` (52,911 bytes)
 - `Std ViewIsometric` (2,484 bytes)
 - `Key ASCII` (18,990 bytes)
 - `Std ViewTop` (1,515 bytes)
@@ -1300,7 +1299,7 @@
 - `Mesh CrossSections` (3,233 bytes)
 - `MeshPart CreateFlatMesh` (1,627 bytes)
 - `MeshPart CreateFlatFace` (1,206 bytes)
-- `OpenCASCADE` (8,303 bytes)
+- `OpenCASCADE` (8,308 bytes)
 - `TechDraw HowTo Page` (1,996 bytes)
 - `IfcPlusPlus` (12,718 bytes)
 - `FeaturePython methods` (4,205 bytes)
@@ -1378,7 +1377,7 @@
 - `FEM ConstraintSectionPrint` (2,473 bytes)
 - `FEM ConstraintTie` (6,577 bytes)
 - `FEM EquationElectricforce` (3,518 bytes)
-- `Headless FreeCAD` (12,154 bytes)
+- `Headless FreeCAD` (15,114 bytes)
 - `FEM ConstantVacuumPermittivity` (1,469 bytes)
 - `Part and PartDesign` (11,564 bytes)
 - `Design456 Workbench` (10,363 bytes)
@@ -1400,7 +1399,7 @@
 - `SheetMetal AddBend` (4,769 bytes)
 - `SheetMetal SketchOnSheet` (5,743 bytes)
 - `SheetMetal Forming` (11,677 bytes)
-- `SheetMetal AddCornerRelief` (8,832 bytes)
+- `SheetMetal AddCornerRelief` (10,009 bytes)
 - `Design456 LoftOnDirection` (1,931 bytes)
 - `Design456 PartMerge` (1,279 bytes)
 - `Design456 PartSubtract` (1,345 bytes)
@@ -1668,16 +1667,17 @@
 - `Assembly CreateJointGears` (3,014 bytes)
 - `Assembly CreateJointBelt` (2,660 bytes)
 - `FEM ConstraintRigidBody` (5,387 bytes)
-- `CfdOF Features` (1,678 bytes)
-- `CfdOF Analysis` (1,670 bytes)
-- `CfdOF Workbench` (5,311 bytes)
-- `CfdOF Physics Model` (5,648 bytes)
+- `CfdOF Features` (1,888 bytes)
+- `CfdOF Install` (11,065 bytes)
+- `CfdOF Analysis` (1,880 bytes)
+- `CfdOF Workbench` (5,544 bytes)
+- `CfdOF PhysicsModel` (6,664 bytes)
 - `Assembly CreateJointAngle` (2,147 bytes)
 - `Assembly CreateJointPerpendicular` (2,178 bytes)
 - `Assembly CreateJointParallel` (2,161 bytes)
-- `CfdOF Fluid Properties` (6,862 bytes)
+- `CfdOF FluidMaterial` (7,782 bytes)
 - `Std Measure` (5,972 bytes)
-- `CfdOF CFD Mesh` (7,194 bytes)
+- `CfdOF MeshFromShape` (8,307 bytes)
 - `TechDraw FillTemplateFields` (2,248 bytes)
 - `BIM Sketch` (2,609 bytes)
 - `BIM Slab` (2,940 bytes)
@@ -1688,8 +1688,8 @@
 - `BIM DimensionVertical` (1,311 bytes)
 - `BIM DimensionHorizontal` (1,393 bytes)
 - `BIM DimensionAligned` (1,330 bytes)
-- `CfdOF Mesh Refinement` (3,250 bytes)
-- `CfdOF CFD Solver` (574 bytes)
+- `CfdOF MeshRegion` (3,840 bytes)
+- `CfdOF SolverControl` (785 bytes)
 - `Assembly CreateBom` (3,363 bytes)
 - `BIM TDPage` (1,073 bytes)
 - `BIM TDView` (1,092 bytes)
@@ -1711,7 +1711,7 @@
 - `Part SelectFilter` (2,880 bytes)
 - `Std TreeSelectAllInstances` (1,175 bytes)
 - `Std ToggleFreeze` (1,191 bytes)
-- `Std VarSet` (5,341 bytes)
+- `Std VarSet` (5,317 bytes)
 - `Assembly Preferences` (1,897 bytes)
 - `TechDraw Dimension` (2,310 bytes)
 - `CAM SimulatorGL` (2,920 bytes)
@@ -1825,7 +1825,7 @@
 - `FCGear TimingGearT` (3,312 bytes)
 - `Robot AddToolShape` (1,027 bytes)
 - `Robot ExportKukaFull` (1,140 bytes)
-- `Std LinkMakeGroup` (6,761 bytes)
+- `Std LinkMakeGroup` (6,779 bytes)
 - `SheetMetal NewSketch` (1,885 bytes)
 - `App LinkGroup` (784 bytes)
 - `BIM Covering` (21,942 bytes)
@@ -1872,6 +1872,7 @@
 - `FCGear PlanetaryGear` (8,134 bytes)
 - `PartDesign Defeaturing` (3,473 bytes)
 - `BIM ExtrudeFace` (3,314 bytes)
+- `Std Recompute` (1,384 bytes)
 
 ### `freecad-wiki` skipped files
 
