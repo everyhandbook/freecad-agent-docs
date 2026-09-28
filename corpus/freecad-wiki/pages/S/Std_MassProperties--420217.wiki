@@ -4,10 +4,10 @@
 <!--T:1-->
 {{Docnav
 |[[Std_Measure|Measure]]
-|[[Std_AnnotationLabel|AnnotationLabel]]
+|[[Std_UnitsCalculator|UnitsCalculator]]
 |[[Std_Tools_Menu|Std Tools Menu]]
 |IconL=Std_Measure.svg
-|IconR=Std_AnnotationLabel.svg
+|IconR=Std_UnitsCalculator.svg
 |IconC=Freecad.svg
 }}
 
@@ -73,10 +73,10 @@ The '''Std MassProperties''' command starts the mass properties measurement feat
 <!--T:10-->
 {{Docnav
 |[[Std_Measure|Measure]]
-|[[Std_AnnotationLabel|AnnotationLabel]]
+|[[Std_UnitsCalculator|UnitsCalculator]]
 |[[Std_Tools_Menu|Std Tools Menu]]
 |IconL=Std_Measure.svg
-|IconR=Std_AnnotationLabel.svg
+|IconR=Std_UnitsCalculator.svg
 |IconC=Freecad.svg
 }}
 

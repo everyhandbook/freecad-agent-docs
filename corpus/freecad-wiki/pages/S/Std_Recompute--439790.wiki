@@ -3,10 +3,10 @@
 
 <!--T:1-->
 {{Docnav
-|[[Std_VarSet|VarSet]]
+|
 |[[Std_LinkMakeGroup|LinkMakeGroup]]
 |[[Std_Base|Std Base]]
-|IconL=Std_VarSet.svg
+|IconL=
 |IconR=Std_LinkMakeGroup.svg
 |IconC=Freecad.svg
 }}
@@ -46,10 +46,10 @@ See [[Std_Refresh#Scripting|Std Refresh]].
 
 <!--T:11-->
 {{Docnav
-|[[Std_VarSet|VarSet]]
+|
 |[[Std_LinkMakeGroup|LinkMakeGroup]]
 |[[Std_Base|Std Base]]
-|IconL=Std_VarSet.svg
+|IconL=
 |IconR=Std_LinkMakeGroup.svg
 |IconC=Freecad.svg
 }}

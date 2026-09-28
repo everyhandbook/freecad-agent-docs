@@ -4,8 +4,8 @@
 <!--T:1-->
 {{Docnav
 |[[Part_CoordinateSystem|Part CoordinateSystem]]
-|[[Part_DatumLine|Part_DatumLine]]
-|[[Std_Base|Std Base]]
+|[[Part_DatumLine|Part DatumLine]]
+|[[Std_Edit_Menu|Std Edit Menu]]
 |IconL=Part_CoordinateSystem.svg
 |IconR=Part_DatumLine.svg
 |IconC=Freecad.svg
@@ -14,6 +14,7 @@
 <!--T:2-->
 {{GuiCommand
 |Name=Part DatumPlane
+|MenuLocation=Edit → Create → Datums → Datum Plane
 |Workbenches=All
 |Version=1.1
 |SeeAlso=[[Part_CoordinateSystem|Part CoordinateSystem]], [[Part_DatumLine|Part DatumLine]], [[Part_DatumPoint|Part DatumPoint]]
@@ -106,8 +107,8 @@ doc.recompute()
 <!--T:27-->
 {{Docnav
 |[[Part_CoordinateSystem|Part CoordinateSystem]]
-|[[Part_DatumLine|Part_DatumLine]]
-|[[Std_Base|Std Base]]
+|[[Part_DatumLine|Part DatumLine]]
+|[[Std_Edit_Menu|Std Edit Menu]]
 |IconL=Part_CoordinateSystem.svg
 |IconR=Part_DatumLine.svg
 |IconC=Freecad.svg
