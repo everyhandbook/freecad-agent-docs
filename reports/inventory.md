@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,825
-- Selected bytes: 9,304,308
-- Rough token estimate: 2,326,077
+- Selected text files: 1,830
+- Selected bytes: 9,337,593
+- Rough token estimate: 2,334,398
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `f2065c6624af8afa3587646193980618cf1208fd` | 76 | 131,853 | 32 |
-| `freecad-wiki` | mediawiki | `1748 page revisions` | 1,748 | 9,171,963 | 239 |
+| `freecad-source` | github | `eccfb5b8550bf0e64b13609431c27d5c2fb573f4` | 76 | 131,853 | 32 |
+| `freecad-wiki` | mediawiki | `1753 page revisions` | 1,753 | 9,205,248 | 240 |
 
 ## `freecad-source` selected files
 
@@ -146,7 +146,7 @@
 - `Draft DXF` (8,043 bytes)
 - `Draft Downgrade` (3,914 bytes)
 - `Draft Line` (6,176 bytes)
-- `Draft Workbench` (24,700 bytes)
+- `Draft Workbench` (24,897 bytes)
 - `Draft Move` (8,459 bytes)
 - `Draft Offset` (6,626 bytes)
 - `Draft Rectangle` (8,043 bytes)
@@ -253,7 +253,7 @@
 - `Workbenches` (7,757 bytes)
 - `Draft OCA` (2,375 bytes)
 - `Draft ApplyStyle` (1,677 bytes)
-- `Preferences Editor` (54,804 bytes)
+- `Preferences Editor` (54,805 bytes)
 - `Document structure` (4,197 bytes)
 - `Image Workbench` (2,153 bytes)
 - `Points Workbench` (3,010 bytes)
@@ -331,15 +331,15 @@
 - `Video tutorials` (8,788 bytes)
 - `3Dconnexion input devices` (9,806 bytes)
 - `Draft DAT` (746 bytes)
-- `Basic modeling tutorial` (10,671 bytes)
+- `Basic modeling tutorial` (9,992 bytes)
 - `Python scripting tutorial` (19,144 bytes)
 - `Draft ToggleDisplayMode` (2,016 bytes)
 - `Sketcher Workbench` (52,064 bytes)
 - `PartDesign Revolution` (7,535 bytes)
-- `PartDesign Workbench` (15,534 bytes)
+- `PartDesign Workbench` (15,551 bytes)
 - `PartDesign Pad` (10,279 bytes)
 - `PartDesign Pocket` (11,951 bytes)
-- `Draft Shape2DView` (8,088 bytes)
+- `Draft Shape2DView` (8,201 bytes)
 - `Arch IFC` (8,866 bytes)
 - `Arch DAE` (1,296 bytes)
 - `Arch OBJ` (2,125 bytes)
@@ -389,7 +389,7 @@
 - `Draft Array` (2,308 bytes)
 - `Draft Clone` (4,660 bytes)
 - `OpenSCAD Workbench` (9,426 bytes)
-- `Draft SelectPlane` (11,140 bytes)
+- `Draft SelectPlane` (11,176 bytes)
 - `Draft ToggleConstructionMode` (2,589 bytes)
 - `OpenSCAD AddOpenSCADElement` (3,095 bytes)
 - `OpenSCAD CSG` (989 bytes)
@@ -888,7 +888,7 @@
 - `Basic TechDraw Tutorial` (9,130 bytes)
 - `Sketcher ViewSection` (2,036 bytes)
 - `Artwork Guidelines` (16,145 bytes)
-- `BIM Workbench` (38,066 bytes)
+- `BIM Workbench` (38,264 bytes)
 - `Std AddonMgr` (9,891 bytes)
 - `FEM Solver` (21,661 bytes)
 - `FEM ConstraintElectromagnetic` (5,043 bytes)
@@ -908,7 +908,7 @@
 - `Tutorial for open windows` (21,143 bytes)
 - `Sketcher ConstrainDiameter` (4,276 bytes)
 - `Draft Snap Grid` (2,797 bytes)
-- `SVG` (5,271 bytes)
+- `SVG` (5,432 bytes)
 - `TechDraw ArchView` (6,366 bytes)
 - `Sketcher CreatePoint` (2,237 bytes)
 - `Sketcher CreateLine` (3,252 bytes)
@@ -1355,7 +1355,7 @@
 - `TechDraw Geometric dimensioning and tolerancing` (15,555 bytes)
 - `ModernUI Workbench` (3,717 bytes)
 - `Mesh SplitComponents` (1,614 bytes)
-- `Sketcher scripting` (11,097 bytes)
+- `Sketcher scripting` (12,097 bytes)
 - `Advanced TechDraw Tutorial` (11,461 bytes)
 - `Part MakeFace` (1,672 bytes)
 - `Std LinkSelectLinked` (1,749 bytes)
@@ -1647,7 +1647,7 @@
 - `CAM Workbench` (16,422 bytes)
 - `PieMenu Workbench` (9,235 bytes)
 - `Sketcher CreateChamfer` (1,806 bytes)
-- `Assembly Workbench` (44,062 bytes)
+- `Assembly Workbench` (44,774 bytes)
 - `Assembly CreateAssembly` (3,023 bytes)
 - `Assembly InsertLink` (1,625 bytes)
 - `Assembly SolveAssembly` (1,340 bytes)
@@ -1694,7 +1694,7 @@
 - `BIM TDPage` (1,073 bytes)
 - `BIM TDView` (1,092 bytes)
 - `BIM Shape2DView` (4,064 bytes)
-- `Material Workbench` (8,362 bytes)
+- `Material Workbench` (8,668 bytes)
 - `BIM SetWPTop` (1,374 bytes)
 - `BIM SetWPFront` (1,357 bytes)
 - `BIM SetWPSide` (1,343 bytes)
@@ -1877,6 +1877,11 @@
 - `Assembly Workbench/1.0` (40,751 bytes)
 - `FEM Workbench/1.1` (23,487 bytes)
 - `FEM Workbench/1.0` (22,014 bytes)
+- `Sketcher CreatePolyline/1.1` (3,288 bytes)
+- `Draft UpdateShape2DView` (1,769 bytes)
+- `Std Base/1.1` (6,836 bytes)
+- `Std Base/1.0` (5,274 bytes)
+- `Part Workbench/0.21` (14,056 bytes)
 
 ### `freecad-wiki` skipped files
 
@@ -1911,6 +1916,7 @@
 - `Macro BSurf from grid`: title matched an exclude pattern
 - `Macro Build Utility`: title matched an exclude pattern
 - `Macro Cabinets32`: title matched an exclude pattern
+- `Macro Cam Cycloid`: title matched an exclude pattern
 - `Macro Center Align Objects with Faces or Edges`: title matched an exclude pattern
 - `Macro CenterFace`: title matched an exclude pattern
 - `Macro CenterOfMass`: title matched an exclude pattern
