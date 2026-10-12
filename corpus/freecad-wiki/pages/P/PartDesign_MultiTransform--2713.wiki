@@ -3,10 +3,10 @@
 
 <!--T:6-->
 {{Docnav
-|[[PartDesign_PolarPattern|Polar Pattern]]
+|[[PartDesign_PointPattern|Point Pattern]]
 |[[PartDesign_Scaled|Scale]]
 |[[PartDesign_Workbench|PartDesign]]
-|IconL=PartDesign_PolarPattern.svg
+|IconL=PartDesign_PointPattern.svg
 |IconR=PartDesign_Scaled.svg
 |IconC=Workbench_PartDesign.svg
 }}
@@ -16,7 +16,7 @@
 |Name=PartDesign MultiTransform
 |MenuLocation=Part Design → Transformation Features → Multi-Transform
 |Workbenches=[[PartDesign_Workbench|PartDesign]]
-|SeeAlso=[[PartDesign_Mirrored|PartDesign Mirrored]], [[PartDesign_LinearPattern|PartDesign LinearPattern]], [[PartDesign_PolarPattern|PartDesign PolarPattern]], [[PartDesign_Scaled|PartDesign Scaled]]
+|SeeAlso=[[PartDesign_Mirrored|PartDesign Mirrored]], [[PartDesign_LinearPattern|PartDesign LinearPattern]], [[PartDesign_PolarPattern|PartDesign PolarPattern]], [[PartDesign_CircularPattern|PartDesign CircularPattern]], [[PartDesign_PathPattern|PartDesign PathPattern]], [[PartDesign_PointPattern|PartDesign PointPattern]], [[PartDesign_Scaled|PartDesign Scaled]]
 }}
 
 ==Description== <!--T:2-->
@@ -25,7 +25,7 @@
 The [[Image:PartDesign_MultiTransform.svg|24px]] '''PartDesign MultiTransform''' tool creates a pattern of one or more features. The pattern can include multiple transformations where each subsequent transformation is applied to the result of the previous transformation.
 
 <!--T:42-->
-The available transformations are: [[Image:PartDesign_Mirrored.svg|16px|link=PartDesign_Mirrored]] [[PartDesign_Mirrored|Mirror]], [[Image:PartDesign_LinearPattern.svg|16px|link=PartDesign_LinearPattern]] [[PartDesign_LinearPattern|Linear Pattern]], [[Image:PartDesign_PolarPattern.svg|16px|link=PartDesign_PolarPattern]] [[PartDesign_PolarPattern|Polar Pattern]] and [[Image:PartDesign_Scaled.svg|16px|link=PartDesign_Scaled]] [[PartDesign_Scaled|Scale]]. The first three are also available as separate tools.
+The available transformations are: [[Image:PartDesign_Mirrored.svg|16px|link=PartDesign_Mirrored]] [[PartDesign_Mirrored|Mirror]], [[Image:PartDesign_LinearPattern.svg|16px|link=PartDesign_LinearPattern]] [[PartDesign_LinearPattern|Linear Pattern]], [[Image:PartDesign_PolarPattern.svg|16px|link=PartDesign_PolarPattern]] [[PartDesign_PolarPattern|Polar Pattern]], [[Image:PartDesign_CircularPattern.svg|16px|link=PartDesign_CircularPattern]] [[PartDesign_CircularPattern|Circular Pattern]] {{VersionNote|26.3}}, [[Image:PartDesign_PathPattern.svg|16px|link=PartDesign_PathPattern]] [[PartDesign_PathPattern|Path Pattern]] {{VersionNote|26.3}}, [[Image:PartDesign_PointPattern.svg|16px|link=PartDesign_PointPattern]] [[PartDesign_PointPattern|Point Pattern]] {{VersionNote|26.3}},  and [[Image:PartDesign_Scaled.svg|16px|link=PartDesign_Scaled]] [[PartDesign_Scaled|Scale]]. All except the last one are also available as separate tools.
 
 </translate>
 [[Image:multitransform_example.png|600px]]
@@ -59,7 +59,7 @@ The available transformations are: [[Image:PartDesign_Mirrored.svg|16px|link=Par
 === Combine existing transformations === <!--T:47-->
 
 <!--T:48-->
-It is possible to create a MultiTransform object from existing [[PartDesign_Mirrored|Mirror]],  [[PartDesign_LinearPattern|LinearPattern]] and [[PartDesign_PolarPattern|Polar Pattern]] transformations.
+It is possible to create a MultiTransform object from existing pattern transformations.
 
 <!--T:49-->
 # Check the {{PropertyData|Originals}} property of the existing transformations to make sure they have been applied to the same features.
@@ -99,10 +99,13 @@ It is possible to create a MultiTransform object from existing [[PartDesign_Mirr
 *# If there are existing transformations: select the transformation after which the new transformation should be added.
 *# Right-click the {{MenuCommand|Transformations}} list.
 *# Select one the following options from the context menu:
-*#* {{MenuCommand|Add Mirror Transformation}}. See [[PartDesign_Mirrored|PartDesign Mirrored]].
-*#* {{MenuCommand|Add Linear Pattern}}. See [[PartDesign_LinearPattern|PartDesign LinearPattern]].
-*#* {{MenuCommand|Add Polar Pattern}} See [[PartDesign_PolarPattern|PartDesign PolarPattern]].
-*#* {{MenuCommand|Add Scaled Transformation}}. See [[PartDesign_Scaled|PartDesign Scaled]].
+*#* {{MenuCommand|Add Mirror Transformation}}, see [[PartDesign_Mirrored|PartDesign Mirrored]].
+*#* {{MenuCommand|Add Linear Pattern}}, see [[PartDesign_LinearPattern|PartDesign LinearPattern]].
+*#* {{MenuCommand|Add Polar Pattern}}, see [[PartDesign_PolarPattern|PartDesign PolarPattern]].
+*#* {{MenuCommand|Add Circular Pattern}}, see [[PartDesign_CircularPattern|PartDesign CircularPattern]]. ({{Version|26.3}})
+*#* {{MenuCommand|Add Path Pattern}}, see [[PartDesign_PathPattern|PartDesign PathPattern]]. ({{Version|26.3}})
+*#* {{MenuCommand|Add Point Pattern}}, see [[PartDesign_PointPattern|PartDesign PointPattern]]. ({{Version|26.3}})
+*#* {{MenuCommand|Add Scaled Transformation}}, see [[PartDesign_Scaled|PartDesign Scaled]].
 *# The selected transformation is added to the list and the settings for the transformation are displayed below the list.
 *# Adjust the settings to suit.
 *# Press the {{Button|OK}} bar at the bottom.
@@ -157,10 +160,10 @@ To verify that the part is fully parametric open the initial sketch with the qua
 
 <!--T:7-->
 {{Docnav
-|[[PartDesign_PolarPattern|Polar Pattern]]
+|[[PartDesign_PointPattern|Point Pattern]]
 |[[PartDesign_Scaled|Scale]]
 |[[PartDesign_Workbench|PartDesign]]
-|IconL=PartDesign_PolarPattern.svg
+|IconL=PartDesign_PointPattern.svg
 |IconR=PartDesign_Scaled.svg
 |IconC=Workbench_PartDesign.svg
 }}

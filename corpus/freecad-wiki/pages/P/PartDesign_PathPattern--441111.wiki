@@ -1,0 +1,137 @@
+<languages/>
+<translate>
+
+<!--T:1-->
+{{Docnav
+|[[PartDesign_CircularPattern|Circular Pattern]]
+|[[PartDesign_PointPattern|Point Pattern]]
+|[[PartDesign_Workbench|PartDesign]]
+|IconL=PartDesign_CircularPattern.svg
+|IconR=PartDesign_PointPattern.svg
+|IconC=Workbench_PartDesign.svg
+}}
+
+<!--T:2-->
+{{GuiCommand
+|Name=PartDesign PathPattern
+|MenuLocation=Part Design → Transformation Features → Path Pattern
+|Workbenches=[[PartDesign_Workbench|PartDesign]]
+|Version=26.3
+|SeeAlso=[[PartDesign_MultiTransform|PartDesign MultiTransform]]
+}}
+
+==Description== <!--T:3-->
+
+<!--T:4-->
+The [[Image:PartDesign_PathPattern.svg|24px]] '''PartDesign PathPattern''' tool duplicates selected features or the active body along a path. This tool allows to disable individual pattern elements.
+
+</translate>
+[[Image:PartDesign_PathPattern-01.png|200px]]
+[[Image:Button_right.svg|16px|link=]]
+[[Image:PartDesign_PathPattern-04.png|200px]]
+[[Image:Button_right.svg|16px|link=]]
+[[Image:PartDesign_PathPattern-05.png|200px]]
+<translate>
+
+<!--T:10-->
+{{Caption|Existing rectangular base feature with PA-shaped subtractive feature → "Path Pattern" preview mode with deactivated third and sixth element (red ''x'' symbols deactivate elements, green ''+'' symbols reactivate elements) → Resulting solid (PathPattern feature)} - The extra dot is to show the location of the element origin on the path}}
+
+</translate>
+[[Image:PartDesign_PathPattern-01.png|200px]]
+[[Image:Button_right.svg|16px|link=]]
+[[Image:PartDesign_PathPattern-02.png|200px]]
+[[Image:Button_right.svg|16px|link=]]
+[[Image:PartDesign_PathPattern-03.png|200px]]
+<translate>
+
+<!--T:11-->
+{{Caption|Same sequence as above with "Align to path" option checked}}
+
+==Usage== <!--T:5-->
+
+<!--T:6-->
+# Optionally [[PartDesign_Body#Active_status|activate]] the correct Body.
+# Optionally select one or more features in the [[Tree_View|Tree View]] or the [[3D_View|3D View]].
+# There are several ways to invoke the tool:
+#* Press the {{Button|[[Image:PartDesign_PathPattern.svg|16px]] [[PartDesign_PathPattern|Path Pattern]]}} button.
+#* Select the {{MenuCommand|Part Design → Transformation Features → [[Image:PartDesign_PathPattern.svg|16px]] Path Pattern}} option from the menu.
+# If there is no active Body, and there are two or more Bodies in the document, the {{MenuCommand|Active Body Required}} dialog will open and prompt you to activate one. If there is a single Body it will be activated automatically.
+# The {{MenuCommand|Path Pattern Parameters}} [[Task_Panel|task panel]] opens. See [[#Options|Options]] for more information.
+# Press the {{Button|OK}} button to finish.
+
+==Options== <!--T:7-->
+
+<!--T:8-->
+Coming soon ...
+
+== Properties == <!--T:12-->
+
+<!--T:13-->
+See also: [[Property_View|Property View]].
+
+<!--T:14-->
+A PartDesign '''PathPattern''' object is derived from a [[...]] object and inherits all its properties. It also has the following additional properties:
+
+=== Data === <!--T:15-->
+
+<!--T:16-->
+{{Properties_Title|Base}}
+
+<!--T:17-->
+* {{PropertyData|Originals|LinkList|}}: A list of selected features. Will be ignored, if the {{PropertyData|Transform Mode}} property is set to {{value|Whole shape}}.
+* {{PropertyData|Transform Mode|Enumeration|}}:
+*: {{value|Features}} (default)
+*: {{value|Whole shape}}.
+
+<!--T:18-->
+{{Properties_Title|Part Design}}
+
+<!--T:19-->
+* {{PropertyData|Refine|Bool|}}: Default is {{value|True}}. Refine shape (clean up redundant edges) after operations.
+* {{PropertyData|Fuzzy Tolerance|FloatConstraint|}}: Default is {{value|-1.0}}. Fuzzy tolerance:
+*: If value > 0: use the value
+*: If value = 0: leave default value
+*: If value < 0: determine value
+
+<!--T:20-->
+{{Properties_Title|PathPattern}}
+
+<!--T:21-->
+* {{PropertyData|Path|LinkSub}}: Path edges used by the pattern.
+* {{PropertyData|Count|IntegerConstraint}}: Maximum number of occurrences.
+* {{PropertyData|Spacing Mode|Enumeration}}: Selects how to control occurrences, options are:
+*: {{value|Fixed count}} (default)
+*: {{value|Fixed spacing}}
+*: {{value|Fixed count and spacing}}
+* {{PropertyData|Spacing|Length|hidden}}: Distance between occurrences.
+* {{PropertyData|Start Offset|Length}}: Default is {{value|0.0 mm}}. Unused distance at path start.
+* {{PropertyData|End Offset|Length}}: Default is {{value|0.0 mm}}. Unused distance at path end.
+* {{PropertyData|Reverse Path|Bool}}: Default is {{value|False}}. Traverses the path in reverse.
+* {{PropertyData|Align|Bool}}: Default is {{value|True}}. Aligns the occurrence X axes to the path.
+* {{PropertyData|Vertical Vector|Vector}}: Default is {{value|Vector (0.0, 0.0, 1.0)}}. Preferred local Z direction when aligning occurrences.
+
+<!--T:22-->
+{{Properties_Title|Transformation}}
+
+<!--T:23-->
+* {{PropertyData|Suppressed Indices|IntegerList}}: Indices of pattern instances that are suppressed.
+
+==Notes== <!--T:24-->
+
+<!--T:25-->
+* If a sketch is used, the path should start at the sketch origin, and the origins of sketch and feature to be duplicated should be coincident for clarity reasons, or else the locations of the pattern elements may appear a bit weird.
+
+
+<!--T:9-->
+{{Docnav
+|[[PartDesign_CircularPattern|Circular Pattern]]
+|[[PartDesign_PointPattern|Point Pattern]]
+|[[PartDesign_Workbench|PartDesign]]
+|IconL=PartDesign_CircularPattern.svg
+|IconR=PartDesign_PointPattern.svg
+|IconC=Workbench_PartDesign.svg
+}}
+
+</translate>
+{{PartDesign Tools navi{{#translation:}}}}
+{{Userdocnavi{{#translation:}}}}

@@ -1,17 +1,17 @@
 # FreeCAD documentation inventory
 
 - Sources: 2
-- Selected text files: 1,830
-- Selected bytes: 9,337,593
-- Rough token estimate: 2,334,398
+- Selected text files: 1,838
+- Selected bytes: 9,377,619
+- Rough token estimate: 2,344,405
 - Corpus byte limit: 9,500,000
 
 ## Source summary
 
 | Source | Type | Revision | Files | Bytes | Skipped |
 |---|---|---|---:|---:|---:|
-| `freecad-source` | github | `eccfb5b8550bf0e64b13609431c27d5c2fb573f4` | 76 | 131,853 | 32 |
-| `freecad-wiki` | mediawiki | `1753 page revisions` | 1,753 | 9,205,248 | 240 |
+| `freecad-source` | github | `44d332262e946287289fc2647f41c8e589e67a7b` | 76 | 131,853 | 32 |
+| `freecad-wiki` | mediawiki | `1761 page revisions` | 1,761 | 9,245,274 | 240 |
 
 ## `freecad-source` selected files
 
@@ -199,7 +199,7 @@
 - `Screenshots` (2,821 bytes)
 - `Source documentation` (7,399 bytes)
 - `Splash screen` (1,388 bytes)
-- `Start up and Configuration` (22,904 bytes)
+- `Start up and Configuration` (22,620 bytes)
 - `Std About` (4,070 bytes)
 - `Std Copy` (1,687 bytes)
 - `Std Cut` (1,621 bytes)
@@ -332,11 +332,11 @@
 - `3Dconnexion input devices` (9,806 bytes)
 - `Draft DAT` (746 bytes)
 - `Basic modeling tutorial` (9,992 bytes)
-- `Python scripting tutorial` (19,144 bytes)
+- `Python scripting tutorial` (19,219 bytes)
 - `Draft ToggleDisplayMode` (2,016 bytes)
 - `Sketcher Workbench` (52,064 bytes)
 - `PartDesign Revolution` (7,535 bytes)
-- `PartDesign Workbench` (15,551 bytes)
+- `PartDesign Workbench` (16,275 bytes)
 - `PartDesign Pad` (10,279 bytes)
 - `PartDesign Pocket` (11,951 bytes)
 - `Draft Shape2DView` (8,201 bytes)
@@ -379,11 +379,11 @@
 - `Aeroplane` (8,274 bytes)
 - `Draft Point` (6,422 bytes)
 - `PartDesign Groove` (8,021 bytes)
-- `PartDesign Mirrored` (4,468 bytes)
-- `PartDesign LinearPattern` (5,484 bytes)
-- `PartDesign PolarPattern` (6,723 bytes)
+- `PartDesign Mirrored` (5,778 bytes)
+- `PartDesign LinearPattern` (11,392 bytes)
+- `PartDesign PolarPattern` (10,258 bytes)
 - `PartDesign Scaled` (4,838 bytes)
-- `PartDesign MultiTransform` (9,764 bytes)
+- `PartDesign MultiTransform` (10,591 bytes)
 - `Draft WireToBSpline` (2,868 bytes)
 - `Draft Draft2Sketch` (5,031 bytes)
 - `Draft Array` (2,308 bytes)
@@ -432,8 +432,8 @@
 - `PartDesign Draft` (7,796 bytes)
 - `Sketcher External` (3,617 bytes)
 - `Draft ToggleContinueMode` (1,621 bytes)
-- `Draft ShapeString` (11,217 bytes)
-- `Copying Objects` (2,449 bytes)
+- `Draft ShapeString` (11,326 bytes)
+- `Copying Objects` (2,645 bytes)
 - `Standard Menu` (2,004 bytes)
 - `Std Edit Menu` (6,430 bytes)
 - `Std File Menu` (3,237 bytes)
@@ -764,7 +764,7 @@
 - `PartDesign Migrate` (2,308 bytes)
 - `PartDesign NewSketch` (4,436 bytes)
 - `PartDesign AdditiveLoft` (5,684 bytes)
-- `PartDesign AdditivePipe` (9,129 bytes)
+- `PartDesign AdditivePipe` (9,576 bytes)
 - `PartDesign SubtractiveLoft` (5,748 bytes)
 - `PartDesign SubtractivePipe` (7,379 bytes)
 - `PartDesign Hole` (10,885 bytes)
@@ -883,7 +883,7 @@
 - `Installing Helpfile` (4,745 bytes)
 - `Crowdin Scripts` (5,444 bytes)
 - `Arch BuildingPart` (10,979 bytes)
-- `Part CompoundFilter` (5,814 bytes)
+- `Part CompoundFilter` (5,852 bytes)
 - `Defeaturing Workbench` (7,982 bytes)
 - `Basic TechDraw Tutorial` (9,130 bytes)
 - `Sketcher ViewSection` (2,036 bytes)
@@ -1035,7 +1035,7 @@
 - `Reinforcement ColumnRebars` (23,045 bytes)
 - `CAM OpActiveToggle` (3,086 bytes)
 - `Multithreading` (992 bytes)
-- `Part ProjectionOnSurface` (6,276 bytes)
+- `Part ProjectionOnSurface` (8,036 bytes)
 - `Std TransformManip` (24,020 bytes)
 - `Sketcher Dialog` (18,410 bytes)
 - `MOOC Workbench` (3,330 bytes)
@@ -1647,7 +1647,7 @@
 - `CAM Workbench` (16,422 bytes)
 - `PieMenu Workbench` (9,235 bytes)
 - `Sketcher CreateChamfer` (1,806 bytes)
-- `Assembly Workbench` (44,774 bytes)
+- `Assembly Workbench` (44,772 bytes)
 - `Assembly CreateAssembly` (3,023 bytes)
 - `Assembly InsertLink` (1,625 bytes)
 - `Assembly SolveAssembly` (1,340 bytes)
@@ -1660,7 +1660,7 @@
 - `Assembly CreateJointDistance` (2,349 bytes)
 - `TechDraw BrokenView` (3,943 bytes)
 - `Movie Workbench` (3,587 bytes)
-- `Part Workbench` (14,616 bytes)
+- `Part Workbench` (15,426 bytes)
 - `Assembly CreateView` (6,848 bytes)
 - `Assembly CreateJointRackPinion` (2,461 bytes)
 - `Assembly CreateJointScrew` (2,494 bytes)
@@ -1689,7 +1689,7 @@
 - `BIM DimensionHorizontal` (1,393 bytes)
 - `BIM DimensionAligned` (1,330 bytes)
 - `CfdOF MeshRegion` (3,840 bytes)
-- `CfdOF SolverControl` (2,144 bytes)
+- `CfdOF SolverControl` (2,194 bytes)
 - `Assembly CreateBom` (3,363 bytes)
 - `BIM TDPage` (1,073 bytes)
 - `BIM TDView` (1,092 bytes)
@@ -1882,6 +1882,14 @@
 - `Std Base/1.1` (6,836 bytes)
 - `Std Base/1.0` (5,274 bytes)
 - `Part Workbench/0.21` (14,056 bytes)
+- `PartDesign PointPattern` (2,052 bytes)
+- `PartDesign PathPattern` (5,438 bytes)
+- `PartDesign CircularPattern` (4,287 bytes)
+- `Part LinkArrayCircular` (2,906 bytes)
+- `Part LinkArrayLinear` (2,666 bytes)
+- `Part LinkArrayPath` (2,593 bytes)
+- `Part LinkArrayPoint` (2,039 bytes)
+- `Part LinkArrayPolar` (2,542 bytes)
 
 ### `freecad-wiki` skipped files
 

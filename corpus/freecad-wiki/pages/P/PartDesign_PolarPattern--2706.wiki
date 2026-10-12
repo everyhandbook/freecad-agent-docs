@@ -4,10 +4,10 @@
 <!--T:28-->
 {{Docnav
 |[[PartDesign_LinearPattern|Linear Pattern]]
-|[[PartDesign_MultiTransform|Multi-Transform]]
+|[[PartDesign_CircularPattern|Circular Pattern]]
 |[[PartDesign_Workbench|PartDesign]]
 |IconL=PartDesign_LinearPattern.svg
-|IconR=PartDesign_MultiTransform.svg
+|IconR=PartDesign_CircularPattern.svg
 |IconC=Workbench_PartDesign.svg
 }}
 
@@ -22,13 +22,28 @@
 ==Description== <!--T:2-->
 
 <!--T:11-->
-The [[Image:PartDesign_PolarPattern.svg|24px]] '''PartDesign PolarPattern''' tool creates a polar pattern of one or more features.
+The [[Image:PartDesign_PolarPattern.svg|24px]] '''PartDesign PolarPattern''' tool creates a polar pattern of selected features or the active body {{VersionNote|1.0}}.
 
 </translate>
 [[File:PartDesign PolarPattern example.png|none]]
 <translate>
+
 <!--T:12-->
 {{Caption|A slot-shaped pocket (B) made on top of a base pad (A, also referred to as support) is used for a polar pattern. The result (C) is shown on the right.}}
+
+<!--T:57-->
+{{Version|26.3}}: This tool allows to disable individual pattern elements and to edit each angle individually.
+
+</translate>
+[[Image:PartDesign_PolarPattern-01.png|200px]]
+[[Image:Button_right.svg|16px|link=]]
+[[Image:PartDesign_PolarPattern-02.png|200px]]
+[[Image:Button_right.svg|16px|link=]]
+[[Image:PartDesign_PolarPattern-03.png|200px]]
+<translate>
+
+<!--T:58-->
+{{Caption|Existing rectangular base feature with PP-shaped additive feature → "Polar Pattern" preview mode with deactivated original element (red ''x'' symbols deactivate elements, green ''+'' symbols reactivate elements) and an individually set second to last angle (grey dimensions: general angles, red dimension: individual angle) → Resulting solid (PolarPattern feature)}}
 
 ==Usage== <!--T:13-->
 
@@ -100,6 +115,52 @@ If some of the selected features are additive and others subtractive, their orde
 <!--T:32-->
 {{Caption|Effect of the feature order}}
 
+== Properties == <!--T:59-->
+
+=== Data === <!--T:60-->
+
+<!--T:61-->
+{{Properties_Title|Base}}
+
+<!--T:62-->
+* {{PropertyData|Originals|LinkList|}}: A list of selected features. Will be ignored, if the {{PropertyData|Transform Mode}} property is set to {{value|Whole shape}}.
+* {{PropertyData|Transform Mode|Enumeration|}}:
+*: {{value|Features}} (default)
+*: {{value|Whole shape}}.
+
+<!--T:63-->
+{{Properties_Title|Part Design}}
+
+<!--T:64-->
+* {{PropertyData|Refine|Bool|}}: Default is {{value|True}}. Refine shape (clean up redundant edges) after operations.
+* {{PropertyData|Fuzzy Tolerance|FloatConstraint|}}: Default is {{value|-1.0}}. Fuzzy tolerance:
+*: If value > 0: use the value
+*: If value = 0: leave default value
+*: If value < 0: determine value
+
+<!--T:65-->
+{{Properties_Title|PolarPattern}}
+
+<!--T:66-->
+* {{PropertyData|Axis|LinkSub|}}: The axis of rotation for the pattern. This can be a datum axis, a sketch axis, a circular edge, or the normal of a planar face.
+*: This is only used when the {{PropertyData|Mode}} property is set to {{value|Extent}}.
+* {{PropertyData|Reversed|Bool|}}: Default is {{value|False}}. Reverses the pattern direction from counter-clockwise (default) to clockwise.
+* {{PropertyData|Mode|Enumeration|}}: Selects how the pattern is dimensioned.
+*: {{value|Extent}}: Uses the total angle from the first to the last instance.
+*: {{value|Spacing}} (default): Uses the angle between consecutive instances.
+* {{PropertyData|Angle|Angle|ReadOnly}}: Default is {{value|360.0 deg}}. The total angle of the pattern, measured from the first to the last instance.
+* {{PropertyData|Offset|Angle|}}: Default is {{value|50.0 deg}}. The angular distance between each instance of the pattern.
+*: This is only used when the {{PropertyData|Mode}} property is set to {{value|Spacing}}.
+* {{PropertyData|Spacings|FloatList|}}: Default is {{value|[-1.0]}}. A list of custom angular spacings between instances. If a value is -1, the global 'Offset' is used for that spacing. The list should have one less item than the number of occurrences.
+* {{PropertyData|SpacingPattern|FloatList|}}: Default is {{value|[0.0]}}. Defines a repeating pattern of spacings. For example, a list of [10, 20] will create alternating spacings of 10mm and 20mm. (Experimental and subject to change. To enable this in the UI you can add a boolean parameter 'ExperiementalFeature' in Preferences/Mod/Part)
+* {{PropertyData|Occurrences|IntegerConstraint|}}: Default is {{value|2}}. The total number of instances in the pattern, including the original feature.
+
+<!--T:67-->
+{{TitleProperty|Transformation}}
+
+<!--T:68-->
+* {{PropertyData|Suppressed Indices|IntegerList}}: Indices of pattern instances that are suppressed. {{Version|26.3}}
+
 ==Limitations== <!--T:3-->
 
 <!--T:56-->
@@ -111,10 +172,10 @@ If some of the selected features are additive and others subtractive, their orde
 <!--T:29-->
 {{Docnav
 |[[PartDesign_LinearPattern|Linear Pattern]]
-|[[PartDesign_MultiTransform|Multi-Transform]]
+|[[PartDesign_CircularPattern|Circular Pattern]]
 |[[PartDesign_Workbench|PartDesign]]
 |IconL=PartDesign_LinearPattern.svg
-|IconR=PartDesign_MultiTransform.svg
+|IconR=PartDesign_CircularPattern.svg
 |IconC=Workbench_PartDesign.svg
 }}
 
